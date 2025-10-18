@@ -1,0 +1,9 @@
+TODO 
+
+- create hugging face login
+- preprocessing function (once get access to SPeDaC/ pipeline steps)
+- apply preprocessing funciton to dataset using .map func
+
+https://www.datacamp.com/tutorial/fine-tuning-large-language-models
+
+Model from hugging face: https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D
