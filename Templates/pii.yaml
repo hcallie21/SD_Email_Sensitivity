@@ -1,0 +1,1314 @@
+- id: PII001
+  text: "Please confirm that your full name is {name} and your date of birth is {date} before we proceed with verification."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII002
+  text: "The shipment to {address} has been delayed due to an incomplete postal code."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: PII003
+  text: "We have updated the contact details on your account to reflect your new email {email} and phone number {phone}."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII004
+  text: "For privacy reasons, do not include personal information such as your address or birthdate in this message."
+  sensitive: false
+  spans: []
+
+- id: PII005
+  text: "{name} has submitted a request to change the primary address on file from {address} to {address2}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{address2}"
+      reason: ["PII:Contact Info"]
+
+- id: PII006
+  text: "The onboarding form requires you to enter your contact number and residential address."
+  sensitive: false
+  spans: []
+
+- id: PII007
+  text: "The employee list includes {name} with ID number {id_number} assigned to department {department}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII008
+  text: "Your login request from {city} on {date} has been flagged for verification."
+  sensitive: true
+  spans:
+    - text: "{city}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII009
+  text: "Customers often forget to update their email and phone information after moving to a new address."
+  sensitive: false
+  spans: []
+
+- id: PII010
+  text: "The visitor signed in under the name {name} and provided phone number {phone} for security records."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII011
+  text: "Please verify that your registered email address is {email} so we can send the activation link."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII012
+  text: "All employees must confirm their full legal name and contact number before the audit."
+  sensitive: false
+  spans: []
+
+- id: PII013
+  text: "The system shows that {name}'s ID number {id_number} is linked to multiple profiles."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII014
+  text: "{name} updated their phone number from {phone} to {phone2} after moving to {city}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone2}"
+      reason: ["PII:Contact Info"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+
+- id: PII015
+  text: "The registration form requires your date of birth and permanent address."
+  sensitive: false
+  spans: []
+
+- id: PII016
+  text: "Your date of birth {date} has been verified for your new passport application."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII017
+  text: "If your phone or email has changed, please update it in your account profile."
+  sensitive: false
+  spans: []
+
+- id: PII018
+  text: "The package addressed to {name} at {address} could not be delivered due to an invalid ZIP code."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: PII019
+  text: "For privacy reasons, the customer list no longer includes home addresses or phone numbers."
+  sensitive: false
+  spans: []
+
+- id: PII020
+  text: "The hospital confirmed that patient {name} was born on {date} and currently resides at {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII021
+  text: "{name}'s email {email} has been unsubscribed from promotional notifications."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII022
+  text: "We’ll need your identification number and date of birth to recover your account."
+  sensitive: false
+  spans: []
+
+- id: PII023
+  text: "Your confirmation code was sent to {email}. Please check your inbox to continue."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII024
+  text: "According to our HR records, {name} joined the company on {date} with employee ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII025
+  text: "Ensure that no personal identifiers like name or address appear in the shared report."
+  sensitive: false
+  spans: []
+
+- id: PII026
+  text: "The invoice associated with {name} was mailed to {address} on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII027
+  text: "The student roster includes {name} with contact number {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII028
+  text: "Students must provide their ID card and date of birth to collect exam results."
+  sensitive: false
+  spans: []
+
+- id: PII029
+  text: "We confirmed that {name}'s address {address} matches the billing record."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: PII030
+  text: "The help desk will never ask for your ID number or password by phone or email."
+  sensitive: false
+  spans: []
+
+- id: PII031
+  text: "The attendance sheet includes {name}, employee ID {id_number}, and department {department}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII032
+  text: "{name} submitted a correction request for the birth date {date} on their medical file."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII033
+  text: "For safety reasons, always mask names and addresses before sharing documents externally."
+  sensitive: false
+  spans: []
+
+- id: PII034
+  text: "We’ve issued a replacement ID card for {name} under ID number {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII035
+  text: "The client file contains {name}'s date of birth {date} and email address {email}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII036
+  text: "New members are asked to provide their full name and home address during registration."
+  sensitive: false
+  spans: []
+
+- id: PII037
+  text: "{name}'s profile lists primary contact {email} and backup number {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII038
+  text: "Your request for name change from {name} to {name2} has been approved."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+
+- id: PII039
+  text: "We remind users not to include contact details in public forum posts."
+  sensitive: false
+  spans: []
+
+- id: PII040
+  text: "The visitor record shows {name} entered the building at {time} and listed {phone} for contact."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII041
+  text: "{name} provided proof of identity using ID number {id_number} issued in {country}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{country}"
+      reason: ["Location:Fixed"]
+
+- id: PII042
+  text: "To complete your background check, submit copies of your identification documents."
+  sensitive: false
+  spans: []
+
+- id: PII043
+  text: "The support ticket from {name} was received via email {email} on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII044
+  text: "Your recovery link will be sent to the registered email once your ID number is confirmed."
+  sensitive: false
+  spans: []
+
+- id: PII045
+  text: "Employee {name} verified their residential address {address} for payroll delivery."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII046
+  text: "To ensure accurate records, please confirm your phone number and mailing address."
+  sensitive: false
+  spans: []
+
+- id: PII047
+  text: "{name}'s government file lists date of birth {date} and national ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII048
+  text: "The verification email was sent to {email} after you reset your password."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII049
+  text: "For compliance, redact any names or personal identifiers before forwarding documents."
+  sensitive: false
+  spans: []
+
+- id: PII050
+  text: "We received {name}'s updated contact information including address {address} and phone {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII051
+  text: "Your confirmation was recorded on {date} for the address {address} provided during registration."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: PII052
+  text: "Team members are reminded not to disclose customer contact or ID details in meetings."
+  sensitive: false
+  spans: []
+
+- id: PII053
+  text: "The consent form lists {name} as guardian, residing at {address}, reachable via {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII054
+  text: "If your birth date or ID number has changed, please submit supporting documentation."
+  sensitive: false
+  spans: []
+
+- id: PII055
+  text: "The billing statement for {name} was mailed to {address} and confirmed by phone at {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII056
+  text: "{name} provided date of birth {date} and national ID {id_number} during onboarding."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII057
+  text: "To protect privacy, do not upload screenshots containing names or addresses."
+  sensitive: false
+  spans: []
+
+- id: PII058
+  text: "The rental agreement lists {name} as tenant residing at {address} since {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII059
+  text: "Customer {name} changed their contact email to {email} following the data update request."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII060
+  text: "Before processing, please double-check that the contact details and ID fields are complete."
+  sensitive: false
+  spans: []
+
+
+- id: PII061
+  text: "The HR department confirmed that {name}'s contact number {phone} has been deactivated. A new number will be updated once verified."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII062
+  text: "Please do not include your ID number or address when sending attachments to shared mailboxes."
+  sensitive: false
+  spans: []
+
+- id: PII063
+  text: "The form lists {name} and {name2} as joint account holders registered at {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII064
+  text: "Your appointment on {date} has been confirmed. Please bring a valid ID for verification."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII065
+  text: "Staff are reminded to mask personal data, such as names and email addresses, in training screenshots."
+  sensitive: false
+  spans: []
+
+- id: PII066
+  text: "The system log shows that {name} accessed the file from {city} using a registered account."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+
+- id: PII067
+  text: "All team members must submit updated contact forms with their home address and emergency phone number."
+  sensitive: false
+  spans: []
+
+- id: PII068
+  text: "The lease record shows {name}'s address as {address} and contact number as {phone}. The file was updated last week."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII069
+  text: "{name} submitted a correction request for their date of birth {date} and national ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII070
+  text: "The survey asks for basic demographic data, but do not enter your name or contact details."
+  sensitive: false
+  spans: []
+
+- id: PII071
+  text: "We have registered your email {email} for future billing updates. Please check your inbox for confirmation."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII072
+  text: "The report lists {name} as the authorized representative with ID {id_number} and email {email}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII073
+  text: "Avoid storing personal data such as phone numbers or birthdates in spreadsheet comments."
+  sensitive: false
+  spans: []
+
+- id: PII074
+  text: "The security badge for {name} was printed using ID number {id_number} and approved by {name2}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{name2}"
+      reason: [ "PII:Name" ]
+
+- id: PII075
+  text: "Thank you for confirming your address {address}. Your package will arrive within three business days."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII076
+  text: "All participants should ensure no confidential or personal identifiers are visible in uploaded videos."
+  sensitive: false
+  spans: []
+
+- id: PII077
+  text: "{name}'s student file includes email {email}, phone {phone}, and date of birth {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII078
+  text: "To process your background check, we require your full name, address, and national ID."
+  sensitive: false
+  spans: []
+
+- id: PII079
+  text: "{name} signed the release form on {date} authorizing use of their contact details for future communication."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII080
+  text: "The travel form should only include destination city names, not personal information."
+  sensitive: false
+  spans: []
+
+- id: PII081
+  text: "The employee file shows {name} relocated to {city} and updated their address to {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII082
+  text: "We received your identity verification documents. Please note that ID numbers must be redacted before archiving."
+  sensitive: false
+  spans: []
+
+- id: PII083
+  text: "According to our client database, {name}'s profile includes phone {phone} and address {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: PII084
+  text: "Your appointment with {name} on {date} at {venue} has been confirmed."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: PII085
+  text: "The export log includes customer names, emails, and phone numbers. Ensure this data is encrypted."
+  sensitive: false
+  spans: []
+
+- id: PII086
+  text: "The visitor list shows {name} entering the premises at {time} and leaving at {time2}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: PII087
+  text: "{name} confirmed their move to {city} and updated their emergency contact {phone} accordingly."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII088
+  text: "Team leads should never request date of birth or ID numbers from other employees by message."
+  sensitive: false
+  spans: []
+
+- id: PII089
+  text: "The document lists {name} as primary contact at {company}, reachable via {email}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII090
+  text: "All customer onboarding forms must include fields for address and contact number."
+  sensitive: false
+  spans: []
+
+- id: PII091
+  text: "The membership record for {name} includes date of birth {date} and registered city {city}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+
+- id: PII092
+  text: "Do not share any internal spreadsheet containing employee names or addresses externally."
+  sensitive: false
+  spans: []
+
+- id: PII093
+  text: "The resident file indicates {name}'s national ID {id_number} was verified on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII094
+  text: "The IT team confirmed that {email} is linked to multiple inactive accounts."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII095
+  text: "{name}'s updated home address {address} will take effect starting next month."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII096
+  text: "All reports must exclude columns containing names, contact numbers, or birthdates before submission."
+  sensitive: false
+  spans: []
+
+- id: PII097
+  text: "The background check for {name} was completed using ID {id_number} and confirmed by HR on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII098
+  text: "{name} received a call at {phone} regarding verification of their address {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: PII099
+  text: "When designing data collection forms, always mark PII fields like name and ID as required."
+  sensitive: false
+  spans: []
+
+- id: PII100
+  text: "The resident directory includes {name}'s apartment address {address} and emergency contact {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII101
+  text: "The student record lists {name} enrolled on {date} under student ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII102
+  text: "Names and email addresses must be anonymized before sharing data with external vendors."
+  sensitive: false
+  spans: []
+
+- id: PII103
+  text: "{name} submitted an insurance claim with contact {email} and supporting ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII104
+  text: "The shipping receipt includes {name}'s address {address} and dispatch date {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII105
+  text: "For audits, ensure all ID numbers and contact data are replaced with placeholder codes."
+  sensitive: false
+  spans: []
+
+- id: PII106
+  text: "The signature form identifies {name} by ID {id_number} and residence {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII107
+  text: "All training materials should refer to fictional names and dummy data, never real identifiers."
+  sensitive: false
+  spans: []
+
+- id: PII108
+  text: "The client history for {name} includes updated contact number {phone} and verification date {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII109
+  text: "After review, {name}'s account was linked to national ID {id_number} and address {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII110
+  text: "We remind all departments to remove any columns containing personal identifiers before exporting data."
+  sensitive: false
+  spans: []
+
+- id: PII111
+  text: "The HR team recorded {name}'s new mailing address {address} and updated contact number {phone}. The changes will reflect in payroll records next month."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII112
+  text: "Before sharing reports externally, ensure all personal data such as names and ID numbers are anonymized."
+  sensitive: false
+  spans: []
+
+- id: PII113
+  text: "The system confirmed that {name}'s ID number {id_number} was issued on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII114
+  text: "The call center representative requested confirmation of the customer's full name and billing address."
+  sensitive: false
+  spans: []
+
+- id: PII115
+  text: "We have registered {name} for the webinar using email {email}. A confirmation will be sent shortly."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII116
+  text: "{name} provided their phone {phone} and address {address} for warranty claim verification."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII117
+  text: "Users are reminded that no personal details such as date of birth or contact number should be entered into chat logs."
+  sensitive: false
+  spans: []
+
+- id: PII118
+  text: "The enrollment record includes {name}'s birth date {date} and student ID {id_number}. This data is stored securely."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII119
+  text: "Please confirm whether your home address or email address has changed since your last update."
+  sensitive: false
+  spans: []
+
+- id: PII120
+  text: "The visitor badge issued to {name} on {date} was linked to contact number {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII121
+  text: "{name}'s updated profile lists address {address} and emergency contact {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII122
+  text: "All staff must review the privacy guidelines before processing forms containing personal identifiers."
+  sensitive: false
+  spans: []
+
+- id: PII123
+  text: "The records show that {name} renewed their ID {id_number} on {date} at {city}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+
+- id: PII124
+  text: "If your contact email or mailing address changes, please update your account information promptly."
+  sensitive: false
+  spans: []
+
+- id: PII125
+  text: "The client contract was signed by {name} and validated against ID number {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII126
+  text: "{name} verified their identity using national ID {id_number} and provided date of birth {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII127
+  text: "The customer support policy prohibits recording phone calls that mention personal identifiers."
+  sensitive: false
+  spans: []
+
+- id: PII128
+  text: "We’ve confirmed that {name}'s package shipped to {address} and delivery confirmation was received on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII129
+  text: "All submissions must remove any identifiable information before review by external auditors."
+  sensitive: false
+  spans: []
+
+- id: PII130
+  text: "The membership renewal for {name} was processed using contact {email} and verified on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII131
+  text: "During onboarding, staff must avoid collecting unnecessary identifiers or birth details."
+  sensitive: false
+  spans: []
+
+- id: PII132
+  text: "{name} changed their email from {email} to {email2} to consolidate communication channels."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{email2}"
+      reason: ["PII:Contact Info"]
+
+- id: PII133
+  text: "The property lease document identifies {name} as the tenant at {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII134
+  text: "The monthly performance reports must exclude columns containing names, IDs, or phone numbers."
+  sensitive: false
+  spans: []
+
+- id: PII135
+  text: "Our database shows {name}'s date of birth {date} and ID number {id_number} were confirmed during the last audit."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII136
+  text: "{name} provided updated contact {phone} and address {address} following their relocation to {city}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+
+- id: PII137
+  text: "All training examples should use placeholder data, never real birthdates or contact info."
+  sensitive: false
+  spans: []
+
+- id: PII138
+  text: "The application lists {name}'s residence address {address} and phone {phone} for verification."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII139
+  text: "The internal report references multiple customers by name and ID. These entries will be redacted."
+  sensitive: false
+  spans: []
+
+- id: PII140
+  text: "The delivery record confirms {name}'s shipment to {address} on {date} was successful."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII141
+  text: "{name}'s credentials, including ID {id_number} and email {email}, were verified during onboarding."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII142
+  text: "To comply with privacy policy, employees must delete any spreadsheets that contain phone numbers."
+  sensitive: false
+  spans: []
+
+- id: PII143
+  text: "The insurance file lists {name} with date of birth {date} and address {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII144
+  text: "Support staff should never disclose customer information such as ID or address in emails."
+  sensitive: false
+  spans: []
+
+- id: PII145
+  text: "The payroll department recorded {name}'s contact email {email} and verified ID number {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII146
+  text: "{name} confirmed phone {phone} and home address {address} for emergency contact updates."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: PII147
+  text: "To prevent unauthorized disclosure, redact names and dates of birth before sharing reports."
+  sensitive: false
+  spans: []
+
+- id: PII148
+  text: "The audit record shows {name}'s ID {id_number} was used in two separate verification files."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: PII149
+  text: "{name} submitted updated address {address} and email {email} for correspondence."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII150
+  text: "All external communications should avoid including customer identifiers or home addresses."
+  sensitive: false
+  spans: []
+
+- id: PII151
+  text: "The compliance report includes {name}'s verified ID number {id_number} and contact {email}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII152
+  text: "For data audits, ensure birth dates and IDs are stored separately from personal names."
+  sensitive: false
+  spans: []
+
+- id: PII153
+  text: "The hospital file identifies {name} by ID {id_number} and contact {phone}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII154
+  text: "{name}'s employment file was updated with address {address} and verification date {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+- id: PII155
+  text: "Personal contact info should be collected only when essential for the intended purpose."
+  sensitive: false
+  spans: []
+
+- id: PII156
+  text: "The university database lists {name}'s date of birth {date}, student ID {id_number}, and email {email}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: PII157
+  text: "The registration desk confirmed your ID and verified your contact number earlier today."
+  sensitive: false
+  spans: []
+
+- id: PII158
+  text: "{name} verified address {address} and phone {phone} before the record transfer."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+
+- id: PII159
+  text: "Please ensure all internal documents mask ID numbers before emailing them to external auditors."
+  sensitive: false
+  spans: []
+
+- id: PII160
+  text: "The personnel file contains {name}'s national ID {id_number}, email {email}, and date of birth {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["PII:Birth Details"]
+
+

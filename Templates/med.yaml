@@ -1,0 +1,1461 @@
+- id: MED003
+  text: "{provider} prescribed {medication} as part of the {treatment} plan for {condition}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED004
+  text: "The {record_id} for {name}'s {treatment} was successfully updated in the system."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED005
+  text: "Please bring your {record_id} and any details of {medication} when visiting {provider} on {date}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED006
+  text: "The clinic will host a seminar on managing chronic {condition} at {venue} this weekend."
+  sensitive: false
+  spans: []
+
+- id: MED007
+  text: "The latest audit confirmed that {provider} completed {treatment} for {name} on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED010
+  text: "{provider} requested that {name} schedule a {treatment} follow-up on {date2}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED011
+  text: "The research team at {provider} announced a breakthrough in treating {condition}."
+  sensitive: false
+  spans: []
+
+- id: MED013
+  text: "A recent report showed an increase in {condition} cases across {city} this quarter."
+  sensitive: false
+  spans: []
+
+- id: MED014
+  text: "{provider} verified that the patient’s {record_id} corresponds to {name}'s {treatment} record."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED015
+  text: "The hospital’s new protocol ensures all {treatment} details are linked to the correct {record_id}."
+  sensitive: false
+  spans: []
+
+- id: MED016
+  text: "Please confirm that the {treatment} for {condition} was completed on {date} under {provider}."
+  sensitive: true
+  spans:
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED017
+  text: "According to {provider}, {name} responded well to {treatment} after {medication} adjustments."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED018
+  text: "Our records show that {name}'s {condition} is stable following {treatment} completed on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED019
+  text: "{provider} reminded all staff to log {treatment} details accurately under the correct {record_id}."
+  sensitive: false
+  spans: []
+
+- id: MED020
+  text: "We have received your inquiry about managing {condition}; our {provider} will contact you soon."
+  sensitive: false
+  spans: []
+
+- id: MED021
+  text: "The {record_id} linked to {treatment} was reviewed during the audit by {department}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+
+- id: MED023
+  text: "A training workshop at {provider} covered the safe administration of {treatment} and {medication}."
+  sensitive: false
+  spans: []
+
+- id: MED025
+  text: "Please ensure all test results and {record_id} are securely stored per policy."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED026
+  text: "The quarterly report analyzed how {condition} rates changed following new {treatment} methods."
+  sensitive: false
+  spans: []
+
+- id: MED027
+  text: "During the review, {provider} noted that {name}'s {condition} had worsened since {date2}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED028
+  text: "{provider} entered {name}'s {record_id} for {treatment} performed at {venue}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED029
+  text: "Data from {record_id} was anonymized for a study on {condition} recovery times."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED030
+  text: "All staff must verify that {treatment} entries match the associated {record_id} before approval."
+  sensitive: false
+  spans: []
+
+- id: MED031
+  text: "{provider} canceled {name}'s {treatment} appointment on {date} due to equipment maintenance."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED032
+  text: "The {provider} system automatically logs each {treatment} with its start {time} and completion {time2}."
+  sensitive: false
+  spans: []
+
+
+- id: MED035
+  text: "A {treatment} summary will be provided to {provider} within 24 hours of completion."
+  sensitive: false
+  spans: []
+
+- id: MED036
+  text: "{provider} advised {name} to continue {medication} for seven days and return on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED037
+  text: "The {record_id} references multiple {treatment} sessions completed by {provider}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED038
+  text: "An alert was triggered when {record_id} showed duplicate {treatment} entries."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED039
+  text: "{provider} performed the {treatment} at {venue} and documented results under {record_id}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED040
+  text: "The updated {treatment} list will be shared with {provider} after the audit."
+  sensitive: false
+  spans: []
+
+- id: MED041
+  text: "{provider} initiated {treatment} immediately after diagnosing {name} with {condition}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED043
+  text: "The {treatment} handbook by {provider} is now available online for patient education."
+  sensitive: false
+  spans: []
+
+- id: MED044
+  text: "Records indicate {provider} handled {name}'s {condition} case using standard {treatment}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED045
+  text: "The clinical committee discussed possible {treatment} protocols for rare {condition}s."
+  sensitive: false
+  spans: []
+
+- id: MED046
+  text: "A {record_id} discrepancy was found in files relating to {treatment} logged by {provider}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED047
+  text: "{provider} discharged {name} after confirming {condition} recovery on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED048
+  text: "The policy document outlines how {provider} must report {treatment} outcomes quarterly."
+  sensitive: false
+  spans: []
+
+- id: MED050
+  text: "The patient satisfaction survey for {provider} focused on the quality of {treatment} provided."
+  sensitive: false
+  spans: []
+
+- id: MED001
+  text: "{provider} confirmed that {name} was diagnosed with {condition} after reviewing the recent results on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED002
+  text: "The patient reported {symptom} during the follow-up call with {provider}."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED008
+  text: "{provider} submitted documentation of {treatment} and {medication} to {government_agency} for review."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED009
+  text: "Symptoms such as {symptom} or fatigue should be reported promptly to your {provider}."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED012
+  text: "Please notify {provider} immediately if you experience {symptom} after starting {medication}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED022
+  text: "If {symptom} persists beyond two days, report it immediately to {provider} for evaluation."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED024
+  text: "{provider} confirmed the {condition} and recommended {treatment} starting on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED033
+  text: "{provider} observed that {name} showed {symptom} improvement after {medication} adjustments."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED034
+  text: "If {symptom} reoccurs, contact {provider} before resuming {medication}."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED042
+  text: "{provider} noted that {symptom} appeared again on {date2} after completion of {treatment}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED049
+  text: "According to {provider}, {name}'s {symptom} subsided following new {medication}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED051
+  text: "{provider} verified that {name}'s {condition} was correctly entered under {record_id} on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED052
+  text: "Please contact {provider} immediately if new {symptom} develops during your {treatment}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED053
+  text: "{provider} is organizing a workshop on the safe use of {medication} for managing chronic {condition}s."
+  sensitive: false
+  spans: []
+
+- id: MED054
+  text: "The {record_id} for {name}'s {treatment} was updated after reviewing the {condition} report on {date2}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED055
+  text: "The hospital confirmed that {provider} performed {treatment} at {venue} on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED056
+  text: "The research team analyzed how {condition} outcomes varied across different {treatment} plans."
+  sensitive: false
+  spans: []
+
+- id: MED057
+  text: "{provider} prescribed {medication} to reduce {symptom} associated with {condition}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED058
+  text: "The {record_id} linked to {treatment} must be archived within 30 days of completion."
+  sensitive: false
+  spans: []
+
+- id: MED059
+  text: "{provider} recorded {symptom} and adjusted {medication} dosage on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED060
+  text: "The {treatment} log shows a discrepancy with {record_id} created by {provider}."
+  sensitive: true
+  spans:
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED061
+  text: "{provider} confirmed that {name} completed the final {treatment} session on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED062
+  text: "The report includes anonymized data about {condition} and its response to {medication}."
+  sensitive: false
+  spans: []
+
+- id: MED063
+  text: "{provider} reopened {record_id} to add notes about the patient’s {symptom} progression."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED064
+  text: "Our clinic offers new {treatment} programs for managing {condition} effectively."
+  sensitive: false
+  spans: []
+
+- id: MED065
+  text: "The {record_id} associated with {name}'s {condition} was transferred to {provider} for review."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED066
+  text: "{provider} verified that {treatment} and {medication} complied with updated safety protocols."
+  sensitive: false
+  spans: []
+
+- id: MED067
+  text: "If {symptom} worsens, {provider} may change {medication} or recommend alternative {treatment}."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED068
+  text: "The quality team reviewed {record_id} and confirmed that all {treatment} data were accurate."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED069
+  text: "{provider} documented that {name}'s {symptom} subsided following {treatment} on {date2}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED070
+  text: "The {provider} database was updated to include recent {treatment} outcomes."
+  sensitive: false
+  spans: []
+
+- id: MED071
+  text: "{provider} issued an alert that {medication} must not be mixed with other treatments for {condition}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED072
+  text: "{provider} completed {treatment} and logged the procedure under {record_id}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED073
+  text: "A {condition} awareness campaign will be held by {provider} in {city} next week."
+  sensitive: false
+  spans: []
+
+- id: MED074
+  text: "The {treatment} report was finalized by {provider} and validated against {record_id}."
+  sensitive: true
+  spans:
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED075
+  text: "All {record_id} entries must be reviewed by {provider} before closing the {treatment} cycle."
+  sensitive: false
+  spans: []
+
+- id: MED076
+  text: "{provider} informed {name} that {condition} is under control with current {medication}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED077
+  text: "The {provider} team revised {treatment} methods to improve recovery for {condition}."
+  sensitive: false
+  spans: []
+
+- id: MED078
+  text: "During {treatment}, {provider} observed {symptom} and documented it under {record_id}."
+  sensitive: true
+  spans:
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED079
+  text: "{provider} reminded staff to verify {date} and {record_id} before logging any {treatment}."
+  sensitive: false
+  spans: []
+
+- id: MED080
+  text: "{provider} administered {treatment} for {name}'s {condition} on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED081
+  text: "The {record_id} will be deactivated automatically after {treatment} completion."
+  sensitive: false
+  spans: []
+
+- id: MED082
+  text: "If {symptom} returns, please visit {provider} and bring all {medication} details."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED083
+  text: "The audit revealed that {provider} duplicated {record_id} during {treatment} entry."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED084
+  text: "{provider} noticed {name}'s {symptom} improved after switching to a different {medication}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED085
+  text: "The {provider} directory now lists all available {treatment} specialists."
+  sensitive: false
+  spans: []
+
+- id: MED086
+  text: "{provider} verified that {treatment} was completed and entered correctly under {record_id} on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED087
+  text: "The {condition} monitoring guidelines have been revised based on new {treatment} data."
+  sensitive: false
+  spans: []
+
+- id: MED088
+  text: "{provider} contacted {name} to discuss {condition} progress following {treatment} on {date2}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED089
+  text: "A reminder has been sent to {provider} to verify all {record_id} entries this quarter."
+  sensitive: false
+  spans: []
+
+- id: MED090
+  text: "If you notice unusual {symptom}, consult {provider} before taking any {medication}."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED091
+  text: "{provider} logged {name}'s {treatment} results under {record_id} after confirming {condition} recovery."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED092
+  text: "The {provider} newsletter highlighted advances in {treatment} for rare {condition}s."
+  sensitive: false
+  spans: []
+
+- id: MED093
+  text: "All {treatment} procedures completed by {provider} on {date} were added to {record_id} logs."
+  sensitive: true
+  spans:
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED094
+  text: "If {symptom} persists despite {treatment}, contact {provider} for reevaluation."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED095
+  text: "The quarterly meeting at {provider} will cover compliance for all {treatment} protocols."
+  sensitive: false
+  spans: []
+
+- id: MED096
+  text: "The {record_id} showed an error when {provider} attempted to update {treatment} data."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED097
+  text: "{provider} sent {name} new instructions regarding {medication} dosage."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED098
+  text: "The {treatment} summary includes anonymized {record_id} data from {provider} clinics."
+  sensitive: false
+  spans: []
+
+- id: MED099
+  text: "The clinical report confirmed {name} displayed no {symptom} after {treatment} concluded on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED100
+  text: "{provider} reported that {condition} recurrence occurred after completion of {treatment}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED101
+  text: "{provider} entered updates to {record_id} after reviewing {name}'s {treatment} notes on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED102
+  text: "All staff at {provider} are required to complete annual training on safe {treatment} documentation."
+  sensitive: false
+  spans: []
+
+- id: MED103
+  text: "{provider} confirmed that {symptom} severity decreased after switching to new {medication}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED104
+  text: "The {record_id} shows multiple {treatment} entries performed by {provider} on {date2}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED105
+  text: "Reports indicate that {condition} relapse rates improved after new {treatment} programs."
+  sensitive: false
+  spans: []
+
+- id: MED106
+  text: "{provider} advised {name} to pause {medication} use due to emerging {symptom} on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED107
+  text: "{provider} logged completion of {treatment} and archived the associated {record_id}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED108
+  text: "The team discussed new {treatment} methods for early-stage {condition} detection."
+  sensitive: false
+  spans: []
+
+- id: MED109
+  text: "A follow-up with {provider} was scheduled on {date} to review {treatment} progress for {name}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: MED110
+  text: "The {record_id} for {treatment} performed on {date} has been marked as complete by {provider}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED111
+  text: "Research at {provider} demonstrated positive outcomes from early {medication} intervention."
+  sensitive: false
+  spans: []
+
+- id: MED112
+  text: "{provider} reported that {name}'s {condition} stabilized after consistent {treatment} sessions."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED113
+  text: "If {symptom} intensifies, consult {provider} immediately for {treatment} adjustments."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED114
+  text: "All {treatment} data under {record_id} must be verified for completeness by {provider}."
+  sensitive: false
+  spans: []
+
+- id: MED115
+  text: "The audit revealed {provider} entered duplicate {record_id} references for {treatment} cases."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED116
+  text: "{provider} performed {treatment} for {name}'s {condition} at {venue} on {date2}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED117
+  text: "The {provider} conference focused on improving {treatment} efficiency through digital records."
+  sensitive: false
+  spans: []
+
+- id: MED118
+  text: "According to {provider}, {symptom} reduction typically begins within 48 hours of {medication} use."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED119
+  text: "{provider} added additional {treatment} notes to {record_id} after observing {condition} recurrence."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED120
+  text: "A {condition} information session will be hosted at {provider} next month."
+  sensitive: false
+  spans: []
+
+- id: MED121
+  text: "The system flagged an inconsistency between {record_id} and {treatment} entered by {provider}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED122
+  text: "If {symptom} worsens, stop {medication} immediately and contact {provider}."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED123
+  text: "The {provider} team conducted an internal review of {treatment} documentation accuracy."
+  sensitive: false
+  spans: []
+
+- id: MED124
+  text: "{provider} sent {name} updated instructions about {treatment} scheduled on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED125
+  text: "A duplicate {record_id} was found for {name}'s {treatment} case, requiring {provider} confirmation."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED126
+  text: "All staff must confirm {date} entries in {record_id} match {treatment} records."
+  sensitive: false
+  spans: []
+
+- id: MED127
+  text: "{provider} reported that {name}'s {symptom} reappeared after completing {treatment}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED128
+  text: "A monthly summary of {treatment} outcomes will be distributed to {provider} teams."
+  sensitive: false
+  spans: []
+
+- id: MED129
+  text: "The {record_id} was reopened by {provider} to update {condition} status after {date} visit."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED130
+  text: "{provider} initiated {treatment} based on {condition} findings from the previous session."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED131
+  text: "A {provider} roundtable will review updated {treatment} guidelines this quarter."
+  sensitive: false
+  spans: []
+
+- id: MED132
+  text: "After reviewing {record_id}, {provider} confirmed {treatment} completion for {name} on {date}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED133
+  text: "{provider} instructed {name} to continue {medication} for three weeks and schedule follow-up on {date2}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED134
+  text: "The {provider} research team analyzed long-term outcomes of various {treatment} methods."
+  sensitive: false
+  spans: []
+
+- id: MED135
+  text: "According to {provider}, {name}'s {condition} is improving with current {medication} regimen."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED136
+  text: "A discrepancy was found between {record_id} and {treatment} times entered by {provider}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED137
+  text: "The {provider} orientation covered correct procedures for {record_id} handling and {treatment} coding."
+  sensitive: false
+  spans: []
+
+- id: MED138
+  text: "If {symptom} continues despite {medication}, {provider} may alter your {treatment} plan."
+  sensitive: true
+  spans:
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED139
+  text: "{provider} completed {treatment} on {date2} and entered results under {record_id}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date2}"
+      reason: ["Medical:Date of Service"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED140
+  text: "The {provider} health fair will include free consultations on managing {condition}."
+  sensitive: false
+  spans: []
+
+- id: MED141
+  text: "After reviewing {record_id}, {provider} updated {name}'s {condition} summary on {date}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{condition}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: MED142
+  text: "All {provider} staff should ensure {treatment} details are backed up daily."
+  sensitive: false
+  spans: []
+
+- id: MED143
+  text: "{provider} confirmed {symptom} was likely caused by a reaction to {medication}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{medication}"
+      reason: ["Medical:Treatment"]
+
+- id: MED144
+  text: "A {provider} report found that early {treatment} greatly reduces severe {condition} cases."
+  sensitive: false
+  spans: []
+
+- id: MED145
+  text: "The {record_id} for {name}'s {treatment} on {date} was reopened by {provider} for corrections."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+
+- id: MED146
+  text: "According to {provider}, {name}'s {symptom} improvement indicates positive response to {treatment}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+
+- id: MED147
+  text: "{provider} published findings on effective {medication} use in treating {condition}."
+  sensitive: false
+  spans: []
+
+- id: MED148
+  text: "{provider} contacted {name} to schedule follow-up {treatment} after detecting {symptom} recurrence."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{symptom}"
+      reason: ["Medical:Diagnosis"]
+
+- id: MED149
+  text: "The internal audit compared {treatment} results entered by {provider} with {record_id} consistency reports."
+  sensitive: true
+  spans:
+    - text: "{treatment}"
+      reason: ["Medical:Treatment"]
+    - text: "{provider}"
+      reason: ["Medical:Provider"]
+    - text: "{record_id}"
+      reason: ["Medical:Record"]
+
+- id: MED150
+  text: "The {provider} training session emphasized accurate {treatment} logging for all {condition} types."
+  sensitive: false
+  spans: []

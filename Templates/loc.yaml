@@ -1,0 +1,551 @@
+- id: LOC001
+  text: "{company} has scheduled a compliance inspection at {address} with representatives from {government_agency} on {date}."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date}"
+      reason: ["Government:Welfare / Social Benefits"]
+
+- id: LOC002
+  text: "The patient will meet {provider} at the clinic located at {address} for treatment on {date}."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Health Provider"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: LOC003
+  text: "A deposition has been arranged at {venue} in {city} involving {legal_team} and representatives from {company}."
+  sensitive: true
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+    - text: "{legal_team}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC004
+  text: "{organization} will host the annual diversity training at {venue} on {date}, coordinated through the {department} team."
+  sensitive: true
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{organization}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC005
+  text: "The shipment of medical supplies should be sent from {address} to {address2} for the {government_agency} distribution program."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{address2}"
+      reason: ["Location:Fixed"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare / Social Benefits"]
+
+- id: LOC006
+  text: "{school} has requested that all research materials be returned to the storage facility at {address} before {date}."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Research"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Education:Research"]
+
+- id: LOC007
+  text: "Court proceedings related to {case_number} will be held at {venue} in {city} on {date}."
+  sensitive: true
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+    - text: "{case_number}"
+      reason: ["Legal:Proceedings"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LOC008
+  text: "{company} has instructed maintenance staff to inspect the safety systems at {address} and report findings to {department}."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC009
+  text: "{provider} confirmed {name}'s follow-up appointment at {venue} on {date} to review treatment progress."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Health Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: LOC010
+  text: "The immigration interview for {name} has been scheduled at the {government_agency} office in {city} on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Government:Citizenship Status"]
+
+- id: LOC011
+  text: "{company} will announce the new branch address during {event} next week; staff should await the internal memo for directions."
+  sensitive: false
+  spans: []
+
+- id: LOC012
+  text: "The regional conference for {organization} will be hosted at a venue to be determined; {department} will handle the logistics."
+  sensitive: false
+  spans: []
+
+- id: LOC013
+  text: "Please confirm whether {government_agency} plans to hold the public hearing in-person or online for the upcoming {event}."
+  sensitive: false
+  spans: []
+
+- id: LOC014
+  text: "The academic field study for {course} will include several visits to off-site facilities; no specific addresses are being shared."
+  sensitive: false
+  spans: []
+
+- id: LOC015
+  text: "The corporate retreat has been approved for {event}, and {company} will circulate travel guidelines later this month."
+  sensitive: false
+  spans: []
+
+- id: LOC016
+  text: "Staff assigned to {department} will relocate during {event}, but the new workspace details remain confidential for now."
+  sensitive: false
+  spans: []
+
+- id: LOC017
+  text: "The upcoming {event} at headquarters will cover safety procedures, but no specific locations are mentioned in the agenda."
+  sensitive: false
+  spans: []
+
+- id: LOC018
+  text: "For {program} participants, the workshop schedule will be distributed once the venues have been finalized by {organization}."
+  sensitive: false
+  spans: []
+
+- id: LOC019
+  text: "The relocation briefing will take place after {event}; at that time, {department} will disclose the new site address."
+  sensitive: false
+  spans: []
+
+- id: LOC020
+  text: "Please refrain from including detailed address information in any {event} invitation drafts sent by {department}."
+  sensitive: false
+  spans: []
+
+- id: LOC021
+  text: "The safety audit for {company} will be conducted at {address} on {date}, and findings will be reviewed by {department}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC022
+  text: "{provider} scheduled {name}'s physical therapy session at {venue} for {date}, following up on the last treatment plan."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Health Provider"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: LOC023
+  text: "{government_agency} has arranged a benefits eligibility interview for {name} at {address} on {date}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare / Social Benefits"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Government:Welfare / Social Benefits"]
+
+- id: LOC024
+  text: "A settlement conference concerning {case_number} will be held at {venue} in {city} on {date}."
+  sensitive: true
+  spans:
+    - text: "{case_number}"
+      reason: ["Legal:Proceedings"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LOC025
+  text: "{school} will host its annual research symposium at {venue} on {date}, featuring projects submitted through {program}."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Research"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Education:Research"]
+
+- id: LOC026
+  text: "The equipment shipment will be transferred from {address} to {address2} under {company}'s supervision."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{address2}"
+      reason: ["Location:Fixed"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC027
+  text: "The defendant must appear at {venue} in {city} on {date} for a preliminary hearing."
+  sensitive: true
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LOC028
+  text: "An immigration review session has been scheduled at the {government_agency} building in {city} on {date}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Government:Citizenship Status"]
+
+- id: LOC029
+  text: "The inspection team from {department} will meet at {address} before proceeding to the project site."
+  sensitive: true
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: LOC030
+  text: "{name}'s sentencing hearing has been confirmed at {court} in {city} for {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LOC031
+  text: "{provider} will conduct a follow-up consultation at {venue} for {name2} on {date} regarding recent test results."
+  sensitive: true
+  spans:
+    - text: "{provider}"
+      reason: ["Medical:Health Provider"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Medical:Date of Service"]
+
+- id: LOC032
+  text: "The emergency response drill for {company} will take place at {venue} in {city} on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC033
+  text: "The annual compliance review meeting for {organization} is set for {date} at {venue}, hosted by {department}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC034
+  text: "A government inspection will take place at {address} involving both {company} and {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare / Social Benefits"]
+
+- id: LOC035
+  text: "The disciplinary hearing for {employee_id} has been scheduled at {venue} for {date}."
+  sensitive: true
+  spans:
+    - text: "{employee_id}"
+      reason: ["Employment:Employment Performance"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Employment:Employment Performance"]
+
+- id: LOC036
+  text: "{university} will host an ethics committee review at {venue} on {date}, attended by {department} representatives."
+  sensitive: true
+  spans:
+    - text: "{university}"
+      reason: ["Education:Research"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Education:Research"]
+    - text: "{department}"
+      reason: ["Education:Research"]
+
+- id: LOC037
+  text: "The corporate office relocation from {address} to {address2} will be finalized by {date}."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{address2}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LOC038
+  text: "A routine site inspection by {government_agency} will occur at {address} on {date}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare / Social Benefits"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{date}"
+      reason: ["Government:Welfare / Social Benefits"]
+
+- id: LOC039
+  text: "The campus housing committee will hold its review session at {venue} for returning students on {date}."
+  sensitive: true
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Education:Enrollment"]
+
+- id: LOC040
+  text: "The city zoning board has approved construction permits for {company}'s new facility at {address}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+# --- Nonsensitive ---
+
+- id: LOC041
+  text: "{organization} will finalize the conference schedule once the {venue} availability has been confirmed."
+  sensitive: false
+  spans: []
+
+- id: LOC042
+  text: "The internal newsletter will outline parking procedures for {event}, but no specific addresses will be mentioned."
+  sensitive: false
+  spans: []
+
+- id: LOC043
+  text: "A team from {department} will visit several regional offices next quarter; travel details are still under review."
+  sensitive: false
+  spans: []
+
+- id: LOC044
+  text: "{company} is planning to host {event} for employee engagement but has not yet announced the location."
+  sensitive: false
+  spans: []
+
+- id: LOC045
+  text: "Please confirm whether the next {event} will be held in-person or remain virtual for the {program} participants."
+  sensitive: false
+  spans: []
+
+- id: LOC046
+  text: "The public announcement for {event} will include a livestream option, so no venue disclosure is required."
+  sensitive: false
+  spans: []
+
+- id: LOC047
+  text: "The field survey for {project} will span multiple sites; specific addresses will not be shared for security reasons."
+  sensitive: false
+  spans: []
+
+- id: LOC048
+  text: "The orientation team will prepare route maps once {venue} assignments are finalized for {event}."
+  sensitive: false
+  spans: []
+
+- id: LOC049
+  text: "The HR policy briefing will discuss workspace relocation guidelines but will not identify particular addresses."
+  sensitive: false
+  spans: []
+
+- id: LOC050
+  text: "{department} will release a communication outlining how to request access to restricted areas during {event}."
+  sensitive: false
+  spans: []
+
+- id: LOC051
+  text: "The next research collaboration with {university} will occur in hybrid format; no on-site details are disclosed yet."
+  sensitive: false
+  spans: []
+
+- id: LOC052
+  text: "The project team from {organization} will attend {event} virtually, as the physical venue has limited capacity."
+  sensitive: false
+  spans: []
+
+- id: LOC053
+  text: "{company} confirmed that the next {event} will follow the same safety procedures as the previous on-site meeting."
+  sensitive: false
+  spans: []
+
+- id: LOC054
+  text: "The compliance division will issue reminders about facility inspections, but the addresses remain redacted."
+  sensitive: false
+  spans: []
+
+- id: LOC055
+  text: "{department} will collect suggestions for future {event} locations before finalizing next quarter’s schedule."
+  sensitive: false
+  spans: []
+
+- id: LOC056
+  text: "The logistics guide for {program} includes general travel information without any specific address data."
+  sensitive: false
+  spans: []
+
+- id: LOC057
+  text: "Meeting times for {event} will be posted on {platform}, but venue details will be restricted to confirmed attendees."
+  sensitive: false
+  spans: []
+
+- id: LOC058
+  text: "The annual leadership retreat will focus on training content rather than announcing physical locations."
+  sensitive: false
+  spans: []
+
+- id: LOC059
+  text: "Please review the attached itinerary for {event}; the addresses have been omitted from this version for privacy."
+  sensitive: false
+  spans: []
+
+- id: LOC060
+  text: "Before releasing the site report for {project}, ensure no address or venue data is visible in the appendix."
+  sensitive: false
+  spans: []
+
+- id: LOC061
+  text: "The HR department will provide relocation FAQs after {event}; office locations will be revealed later."
+  sensitive: false
+  spans: []
+
+- id: LOC062
+  text: "The facilities manager will post guidance on emergency exits during {event}, excluding specific floor details."
+  sensitive: false
+  spans: []
+
+- id: LOC063
+  text: "The advisory board meeting for {organization} will likely be virtual; physical venue is still undecided."
+  sensitive: false
+  spans: []
+
+- id: LOC064
+  text: "{college} plans to circulate updated campus maps next term, omitting residential address data for privacy."
+  sensitive: false
+  spans: []
+
+- id: LOC065
+  text: "All participants for {event} must confirm attendance via {platform}; directions will be emailed privately."
+  sensitive: false
+  spans: []
+
+- id: LOC066
+  text: "The relocation committee will propose new workspace layouts during {event}, avoiding disclosure of addresses."
+  sensitive: false
+  spans: []
+
+- id: LOC067
+  text: "The engineering division will audit branch offices after {event}; addresses will be shared on a need-to-know basis."
+  sensitive: false
+  spans: []
+
+- id: LOC068
+  text: "The student travel form for {program} will request only general regions, not specific addresses."
+  sensitive: false
+  spans: []
+
+- id: LOC069
+  text: "The operations group from {organization} is reviewing transportation routes for {event} without sharing exact destinations."
+  sensitive: false
+  spans: []
+
+- id: LOC070
+  text: "Please forward questions about seating charts for {event} to {department}; no location data should be included."
+  sensitive: false
+  spans: []

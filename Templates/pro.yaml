@@ -1,0 +1,1124 @@
+- id: PRO001
+  text: "The HR department recorded {name}'s {religion} affiliation for demographic tracking purposes."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO002
+  text: "Our diversity report compares employee satisfaction across different {ethnicity} groups."
+  sensitive: false
+  spans: []
+
+- id: PRO003
+  text: "{organization} requested confirmation of {name}'s membership for the upcoming policy summit."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: PRO004
+  text: "The survey will collect anonymous data on race, gender, and sexual orientation without identifying respondents."
+  sensitive: false
+  spans: []
+
+- id: PRO005
+  text: "{name} disclosed being part of the {ethnicity} community on the application form."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO006
+  text: "The campaign manager stated that volunteers from all political backgrounds, including {political_party}, are welcome."
+  sensitive: false
+  spans: []
+
+- id: PRO007
+  text: "{organization} verified that {name} renewed their membership fees for the year."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: PRO008
+  text: "The system flags any profile that explicitly lists a person's {orientation} identity for review under privacy protocols."
+  sensitive: false
+  spans: []
+
+- id: PRO009
+  text: "According to the complaint filed by {name}, bias was shown toward staff of {religion} faith."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO010
+  text: "Please provide documentation confirming your affiliation with {organization}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO011
+  text: "The company’s equality initiative encourages employees to voluntarily report their {ethnicity} and {orientation} identities."
+  sensitive: false
+  spans: []
+
+- id: PRO012
+  text: "In the recent employee census, {name} listed their political preference as {political_party}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO013
+  text: "We are analyzing recruitment trends by religion and race to improve inclusivity."
+  sensitive: false
+  spans: []
+
+- id: PRO014
+  text: "{organization} organized an interfaith charity event attended by members of multiple religions."
+  sensitive: false
+  spans: []
+
+- id: PRO015
+  text: "The student form includes optional fields for {orientation} and {ethnicity} to enhance campus diversity data."
+  sensitive: false
+  spans: []
+
+- id: PRO016
+  text: "During the audit, HR confirmed that {name} identifies as {orientation} and participates in the company’s inclusivity council."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO017
+  text: "No religious information is required when completing this internal survey."
+  sensitive: false
+  spans: []
+
+- id: PRO018
+  text: "{name} was recognized by {organization} for advocating equal rights in the workplace."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: PRO019
+  text: "The government census aims to record citizens’ {ethnicity} and language backgrounds accurately."
+  sensitive: false
+  spans: []
+
+- id: PRO020
+  text: "{name} indicated their religious belief as {religion} during onboarding."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO021
+  text: "Employees are encouraged to report discrimination related to political views or affiliations."
+  sensitive: false
+  spans: []
+
+- id: PRO022
+  text: "The application requests you to declare your affiliation with {organization}, if applicable."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO023
+  text: "{name} shared in their interview that they grew up practicing {religion} and still observe related traditions."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO024
+  text: "This department tracks diversity metrics based on voluntary race and gender data submissions."
+  sensitive: false
+  spans: []
+
+- id: PRO025
+  text: "Records show that {name} is an active member of {political_party} and participated in last month’s rally."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO026
+  text: "Our outreach program supports underrepresented {ethnicity} communities seeking employment."
+  sensitive: false
+  spans: []
+
+- id: PRO027
+  text: "Please verify {name}'s membership with {organization} before processing their application."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: PRO028
+  text: "The annual inclusion workshop will highlight stories from LGBTQ+ employees about workplace support."
+  sensitive: false
+  spans: []
+
+- id: PRO029
+  text: "According to HR records, {name} identified their ethnicity as {ethnicity} and orientation as {orientation}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO030
+  text: "Demographic analysis will not include personally identifiable information such as names or addresses."
+  sensitive: false
+  spans: []
+
+- id: PRO031
+  text: "{organization} has been added to the coalition supporting religious freedom policies."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO032
+  text: "Survey results revealed no significant bias between different {religion} groups within the workforce."
+  sensitive: false
+  spans: []
+
+- id: PRO033
+  text: "{name}'s disciplinary record references their participation in a protest led by {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO034
+  text: "The charity will provide grants for students of minority {ethnicity} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO035
+  text: "During the interview, {name} stated they are {orientation} and discussed the importance of representation."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO036
+  text: "The political survey includes a section about union membership and voting history."
+  sensitive: false
+  spans: []
+
+- id: PRO037
+  text: "{name} confirmed their long-term affiliation with {political_party} when asked about civic engagement."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO038
+  text: "Demographic filters on the dashboard allow users to view metrics by {ethnicity} and department."
+  sensitive: false
+  spans: []
+
+- id: PRO039
+  text: "The applicant declined to answer questions regarding {religion} or {orientation} preferences."
+  sensitive: false
+  spans: []
+
+- id: PRO040
+  text: "Records indicate that {name} transitioned their union membership from {organization} to another federation."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO041
+  text: "We invite speakers from various religious backgrounds, including {religion}, to share their perspectives."
+  sensitive: false
+  spans: []
+
+- id: PRO042
+  text: "{name} is listed under the minority {ethnicity} category in the company’s demographic database."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO043
+  text: "The HR system no longer collects or stores explicit religious or political data fields."
+  sensitive: false
+  spans: []
+
+- id: PRO044
+  text: "Please confirm whether {organization} is officially registered as a political or religious entity."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO045
+  text: "The onboarding guide advises new hires to omit references to religion or politics on public profiles."
+  sensitive: false
+  spans: []
+
+- id: PRO046
+  text: "{name} declared their orientation as {orientation} on the benefits enrollment form."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO047
+  text: "Our inclusion metrics track representation by {ethnicity} but exclude personal identifiers."
+  sensitive: false
+  spans: []
+
+- id: PRO048
+  text: "{name} was nominated by {organization} to receive recognition for promoting interfaith understanding."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO049
+  text: "The system prohibits filtering results based on religion, race, or sexual orientation."
+  sensitive: false
+  spans: []
+
+- id: PRO050
+  text: "Employee {name} reported experiencing discrimination after disclosing their {ethnicity} background."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO051
+  text: "{organization} hosted an {event} promoting equal opportunities for people of all {ethnicity} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO052
+  text: "{name} was selected by {organization} to represent the {ethnicity} community at the {event}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO053
+  text: "The new {organization} initiative aims to eliminate religious bias in {company}'s hiring process."
+  sensitive: false
+  spans: []
+
+- id: PRO054
+  text: "{name} shared during the {event} that they identify as {orientation} and have found acceptance within {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO055
+  text: "The committee meeting at {organization} discussed the impact of religious holidays on work schedules."
+  sensitive: false
+  spans: []
+
+- id: PRO056
+  text: "The diversity office confirmed that {name} identifies with the {ethnicity} group and practices {religion}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO057
+  text: "{organization} encourages staff to participate in community {event}s celebrating different {religion} traditions."
+  sensitive: false
+  spans: []
+
+- id: PRO058
+  text: "{name} filed a grievance with {organization} after experiencing discrimination based on their {orientation}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO059
+  text: "The annual {event} held by {organization} recognizes achievements of women and minority {ethnicity} groups."
+  sensitive: false
+  spans: []
+
+- id: PRO060
+  text: "{name} noted on their HR form that they are affiliated with {political_party} and volunteer with {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO061
+  text: "The employee directory includes voluntary demographic fields such as {ethnicity} and {religion}."
+  sensitive: false
+  spans: []
+
+- id: PRO062
+  text: "{name} confirmed participation in the {event} organized by {organization} representing the {religion} community."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO063
+  text: "The new workplace {program} aims to increase representation from diverse {ethnicity} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO064
+  text: "HR documented that {name} changed their recorded orientation from {orientation} to {orientation2}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{orientation2}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO065
+  text: "{organization} published a report summarizing survey data on {religion} affiliation and employee experience."
+  sensitive: false
+  spans: []
+
+- id: PRO066
+  text: "The complaint by {name} states that the {event} excluded participants of {ethnicity} heritage."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{event}"
+      reason: ["Protected:Affiliation"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO067
+  text: "Our internal systems no longer collect {religion} information as part of demographic tracking."
+  sensitive: false
+  spans: []
+
+- id: PRO068
+  text: "{organization} issued an apology after {name}'s speech at the {event} offended several {religion} communities."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO069
+  text: "The inclusion committee uses anonymized {ethnicity} data from surveys to evaluate fairness in promotions."
+  sensitive: false
+  spans: []
+
+- id: PRO070
+  text: "{name} is listed as a representative of {organization} at the {event} supporting equal rights for {orientation} communities."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO071
+  text: "The {event} registration form includes optional questions about {ethnicity} and {religion}."
+  sensitive: false
+  spans: []
+
+- id: PRO072
+  text: "The HR record shows that {name} identifies as {orientation} and belongs to the {ethnicity} minority group."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO073
+  text: "Participants of the {event} discussed political neutrality when representing {organization} publicly."
+  sensitive: false
+  spans: []
+
+- id: PRO074
+  text: "{name} volunteered for {organization}'s {event} advocating fair treatment for people of all {ethnicity}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO075
+  text: "Our analysis compares outcomes across various {religion} and {ethnicity} subgroups."
+  sensitive: false
+  spans: []
+
+- id: PRO076
+  text: "{organization} submitted a proposal to the government for funding {event}s promoting {orientation} inclusivity."
+  sensitive: false
+  spans: []
+
+- id: PRO077
+  text: "{name} was removed from {organization} after publicly supporting a rival {political_party}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO078
+  text: "The {event} at {organization} focused on addressing bias faced by employees of {religion} background."
+  sensitive: false
+  spans: []
+
+- id: PRO079
+  text: "{name} listed {religion} as their belief system and {ethnicity} as their cultural background on the form."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO080
+  text: "The newsletter from {organization} highlighted success stories from {orientation} professionals."
+  sensitive: false
+  spans: []
+
+- id: PRO081
+  text: "During the {event}, {name} spoke about their experience as a {orientation} individual working in {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO082
+  text: "The diversity portal allows filtering employee data by {ethnicity}, {orientation}, and {religion} fields."
+  sensitive: false
+  spans: []
+
+- id: PRO083
+  text: "The internal report noted that {name} switched political allegiance from {political_party} to another organization."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO084
+  text: "HR confirmed that {organization} complies with laws preventing discrimination by race or religion."
+  sensitive: false
+  spans: []
+
+- id: PRO085
+  text: "The research paper by {organization} explores disparities affecting {ethnicity} professionals in law firms."
+  sensitive: false
+  spans: []
+
+- id: PRO086
+  text: "{name} joined {organization} after attending an {event} promoting unity among {religion} youth groups."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO087
+  text: "{organization} launched a mentoring {program} for employees identifying as {orientation}."
+  sensitive: false
+  spans: []
+
+- id: PRO088
+  text: "The HR department updated {name}'s record to reflect a change in their {religion} identification."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO089
+  text: "The upcoming {event} hosted by {organization} celebrates contributions from the {ethnicity} community."
+  sensitive: false
+  spans: []
+
+- id: PRO090
+  text: "During the orientation session, {name} expressed support for {organization} and the policies of {political_party}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO091
+  text: "{organization} is collaborating with local {religion} leaders to coordinate the next {event}."
+  sensitive: false
+  spans: []
+
+- id: PRO092
+  text: "Employee {name} participates in {organization}'s committee supporting {orientation} awareness."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO093
+  text: "The {event} registration page now includes fields for {ethnicity} and {orientation} to monitor inclusion metrics."
+  sensitive: false
+  spans: []
+
+- id: PRO094
+  text: "The ethics board reviewed complaints alleging {organization} discriminated against {religion} members."
+  sensitive: false
+  spans: []
+
+- id: PRO095
+  text: "{name} disclosed being part of {organization}, a group advocating for {orientation} rights in workplaces."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO096
+  text: "{organization} shared anonymized statistics showing higher retention among {ethnicity} staff members."
+  sensitive: false
+  spans: []
+
+- id: PRO097
+  text: "According to HR notes, {name} changed their political registration from {political_party} to independent."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO098
+  text: "The employee orientation manual includes examples of respectful conduct toward all {religion} groups."
+  sensitive: false
+  spans: []
+
+- id: PRO099
+  text: "{organization} honored {name} at the {event} for promoting unity among diverse {ethnicity} groups."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO100
+  text: "Reports confirm that {name} faced harassment after revealing their {orientation} at {organization}'s {event}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+
+- id: PRO101
+  text: "The {event} hosted by {organization} focused on cross-party dialogue between members of {political_party} and others."
+  sensitive: false
+  spans: []
+
+- id: PRO102
+  text: "{name} reported being targeted after publicly supporting {organization}, which advocates for {orientation} rights."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO103
+  text: "The HR analytics tool allows filtering workforce data by {ethnicity} and {religion} for policy evaluation."
+  sensitive: false
+  spans: []
+
+- id: PRO104
+  text: "{organization} confirmed that {name} withdrew from the {event} following controversy over their {political_party} stance."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO105
+  text: "All attendees at the {event} must complete a voluntary survey about {ethnicity} and {orientation} demographics."
+  sensitive: false
+  spans: []
+
+- id: PRO106
+  text: "{name} identifies as {orientation} and is currently leading inclusion training at {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO107
+  text: "The new mentorship {program} connects professionals from different {ethnicity} and {orientation} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO108
+  text: "{organization} publicly apologized after {name} made offensive remarks about {religion} communities during the {event}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO109
+  text: "The {event} at {organization} focused on supporting employees with diverse {orientation} identities."
+  sensitive: false
+  spans: []
+
+- id: PRO110
+  text: "{name} filled out their demographic profile listing {religion} as their belief and {ethnicity} as their cultural group."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: PRO111
+  text: "During the annual {event}, {organization} announced a new grant for minority {ethnicity} scholars."
+  sensitive: false
+  spans: []
+
+- id: PRO112
+  text: "{name} registered as a member of {organization}, an advocacy group supporting {orientation} equality."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO113
+  text: "The survey conducted by {organization} examines representation across {religion}, {ethnicity}, and {orientation} demographics."
+  sensitive: false
+  spans: []
+
+- id: PRO114
+  text: "{name} was dismissed from {organization} after criticizing its alignment with {political_party} values."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO115
+  text: "The department requested updated statistics on {orientation} and {ethnicity} diversity among staff."
+  sensitive: false
+  spans: []
+
+- id: PRO116
+  text: "{organization} received an award at the {event} for advancing inclusion among {orientation} and {ethnicity} groups."
+  sensitive: false
+  spans: []
+
+- id: PRO117
+  text: "The HR system recorded that {name} changed their listed affiliation from {political_party} to independent status."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO118
+  text: "The {event} will feature workshops led by {organization} focusing on {religion} tolerance."
+  sensitive: false
+  spans: []
+
+- id: PRO119
+  text: "{name} joined {organization} after leaving a previous position linked to {political_party} activities."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO120
+  text: "The demographic report summarizes participation by {orientation} without revealing names or identifiers."
+  sensitive: false
+  spans: []
+
+- id: PRO121
+  text: "At the {event}, {name} publicly shared that they belong to the {ethnicity} community and follow {religion}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO122
+  text: "{organization} initiated a {program} encouraging open dialogue among employees of all {religion} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO123
+  text: "The HR department confirmed {name}'s membership in {organization}, which supports {orientation} advocacy."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO124
+  text: "All staff are invited to the {event} celebrating diversity across {ethnicity}, {religion}, and {orientation} groups."
+  sensitive: false
+  spans: []
+
+- id: PRO125
+  text: "{name} submitted a complaint against {organization} for unequal treatment based on their {orientation} identity."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO126
+  text: "The {program} at {organization} aims to build awareness of discrimination against {religion} minorities."
+  sensitive: false
+  spans: []
+
+- id: PRO127
+  text: "According to HR records, {name} changed their {religion} affiliation after joining {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO128
+  text: "{organization} hosted an internal forum for employees of {ethnicity} background to discuss inclusion."
+  sensitive: false
+  spans: []
+
+- id: PRO129
+  text: "{name} confirmed that they transitioned from {orientation} identity listed last year to {orientation2}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{orientation2}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO130
+  text: "The regional {event} focused on religious freedom, highlighting contributions from {organization} leaders."
+  sensitive: false
+  spans: []
+
+- id: PRO131
+  text: "In the internal newsletter, {name} shared their experience as {orientation} while leading {organization}'s outreach."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO132
+  text: "Data from the {program} shows improved representation of {ethnicity} and {religion} groups in leadership."
+  sensitive: false
+  spans: []
+
+- id: PRO133
+  text: "The HR system automatically redacts {religion} and {orientation} data from exported reports."
+  sensitive: false
+  spans: []
+
+- id: PRO134
+  text: "{organization} confirmed that {name} serves as a regional coordinator for {political_party} initiatives."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO135
+  text: "The audit revealed that certain {organization} policies unintentionally excluded {religion} participants from events."
+  sensitive: false
+  spans: []
+
+- id: PRO136
+  text: "{name} filed a claim alleging {organization} discriminated against employees identifying as {orientation}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{orientation}"
+      reason: ["Protected:Orientation"]
+
+- id: PRO137
+  text: "The {event} invitation included optional fields for {religion}, {orientation}, and {ethnicity} for survey purposes."
+  sensitive: false
+  spans: []
+
+- id: PRO138
+  text: "Reports indicate that {name} was suspended by {organization} for posting content critical of {religion} groups."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO139
+  text: "The HR analytics dashboard compares employee satisfaction scores by {ethnicity} and {orientation}."
+  sensitive: false
+  spans: []
+
+- id: PRO140
+  text: "{organization} honored {name} at the {event} for contributions to interfaith understanding among {religion} leaders."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO141
+  text: "The internal {program} promotes cultural exchange among employees from various {ethnicity} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO142
+  text: "{name} signed an agreement with {organization} to collaborate on projects endorsed by {political_party} leadership."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO143
+  text: "Data from the annual {event} shows increased participation by employees of diverse {orientation} backgrounds."
+  sensitive: false
+  spans: []
+
+- id: PRO144
+  text: "{organization} faced backlash after {name}'s comments about members of {religion} during a public {event}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{religion}"
+      reason: ["Protected:Religion"]
+
+- id: PRO145
+  text: "The updated policy prohibits tracking of {orientation} or {religion} in non-consensual data collection."
+  sensitive: false
+  spans: []
+
+- id: PRO146
+  text: "{name} reported that {organization}'s {event} excluded participants affiliated with {political_party}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO147
+  text: "The {event} will feature discussions about cross-cultural communication between different {ethnicity} groups."
+  sensitive: false
+  spans: []
+
+- id: PRO148
+  text: "{organization} terminated {name} after discovering their involvement in extremist {political_party} activities."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+
+- id: PRO149
+  text: "The new {program} encourages mentorship between employees from various {orientation} identities."
+  sensitive: false
+  spans: []
+
+- id: PRO150
+  text: "{name} resigned from {organization} following an internal dispute related to {political_party} representation."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]

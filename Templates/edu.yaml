@@ -1,0 +1,1202 @@
+- id: EDU001
+  text: "The registrar has verified that {name} achieved a final grade of {grade} in {course} during the {semester} term."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{grade}"
+      reason: ["Education:Academic Performance"]
+    - text: "{course}"
+      reason: ["Education:Academic Performance"]
+    - text: "{semester}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU002
+  text: "Please ensure that all grade submissions for the {semester} semester are finalized by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU003
+  text: "{school} will be hosting the annual {event} at {venue} to recognize outstanding achievements in {subject}."
+  sensitive: false
+  spans: []
+
+- id: EDU004
+  text: "The research proposal titled {thesis} was submitted by {name} to the {discipline} for review."
+  sensitive: true
+  spans:
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{discipline}"
+      reason: ["Education:Research"]
+
+- id: EDU005
+  text: "Grades for {subject} will be published next week through the online portal."
+  sensitive: false
+  spans: []
+
+- id: EDU006
+  text: "{college} has received payment of {amount} {currency} for the {semester} tuition invoice from {name}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{college}"
+      reason: ["Education:Payments"]
+
+- id: EDU007
+  text: "Students enrolled in {course} should complete their group project by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU008
+  text: "{name} has been awarded the Dean’s Excellence Award for maintaining an average grade of {grade} across all courses."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{grade}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU009
+  text: "The orientation event at {college} on {date} will introduce new students to campus resources."
+  sensitive: false
+  spans: []
+
+- id: EDU010
+  text: "{name}’s thesis titled {thesis} has been archived in the university’s research repository."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+
+- id: EDU011
+  text: "Please verify that the details on {application} are accurate before submitting it to the admissions office."
+  sensitive: false
+  spans: []
+
+- id: EDU012
+  text: "The registrar forwarded {name}’s academic transcript to {college2} for transfer evaluation."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{college2}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU013
+  text: "Faculty members are reminded to upload research summaries before {date} for departmental review."
+  sensitive: false
+  spans: []
+
+- id: EDU014
+  text: "The confidential grade report for {name} in {subject} has been stored under record ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{subject}"
+      reason: ["Education:Academic Performance"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: EDU015
+  text: "{name} attended {school} in the {semester} term before transferring to {college}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU016
+  text: "The report on {event} includes feedback from both students and faculty at {college}."
+  sensitive: false
+  spans: []
+
+- id: EDU017
+  text: "The diversity survey indicated that {ethnicity} students represented 12% of the {college} population."
+  sensitive: true
+  spans:
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU018
+  text: "All submissions for the {thesis} competition are due by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU019
+  text: "{name} was granted access to the secure research dataset under authorization code {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: EDU020
+  text: "Please bring your {document} to {venue} for the enrollment verification meeting."
+  sensitive: false
+  spans: []
+
+- id: EDU021
+  text: "The academic advisor confirmed that {name} will retake {course} next {semester}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{course}"
+      reason: ["Education:Academic Performance"]
+    - text: "{semester}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU022
+  text: "All new hires for the tutoring program at {college} must complete the background screening form."
+  sensitive: false
+  spans: []
+
+- id: EDU023
+  text: "The email from {name} regarding the {thesis} defense schedule has been archived."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+
+- id: EDU024
+  text: "The financial aid office processed a refund of {amount} {currency} for {name} due to overpayment."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU025
+  text: "The academic calendar for the upcoming {semester} has been published on the official portal."
+  sensitive: false
+  spans: []
+
+- id: EDU026
+  text: "{school} received a notice from {government_agency} requesting attendance records for {semester}."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare / Social Benefits"]
+    - text: "{semester}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU027
+  text: "{college} will conduct a workshop at {venue} on best practices for student data protection."
+  sensitive: false
+  spans: []
+
+- id: EDU028
+  text: "{name}’s attendance record from {school} has been stored under record {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: EDU029
+  text: "The student affairs office will email all recipients of the merit award this {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU030
+  text: "{name} submitted an {application} to {college} for admission to the {discipline}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{application}"
+      reason: ["Education:Enrollment"]
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU031
+  text: "A copy of {document} will be distributed to all faculty members before the {event}."
+  sensitive: false
+  spans: []
+
+- id: EDU033
+  text: "{college} transferred funds totaling {amount} {currency} to the {discipline} research account."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{discipline}"
+      reason: ["Education:Research"]
+
+- id: EDU034
+  text: "The committee’s findings on {thesis} were approved unanimously."
+  sensitive: false
+  spans: []
+
+- id: EDU035
+  text: "The report listing {name}’s disciplinary record at {school} has been sealed."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU036
+  text: "Faculty orientation at {college} begins on {date} at {venue}."
+  sensitive: false
+  spans: []
+
+- id: EDU037
+  text: "The evaluation report showed that {name} improved from {grade} to {grade2} in {subject}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{grade}"
+      reason: ["Education:Academic Performance"]
+    - text: "{grade2}"
+      reason: ["Education:Academic Performance"]
+    - text: "{subject}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU038
+  text: "{school} will host the inter-district {event} for science projects this {semester}."
+  sensitive: false
+  spans: []
+
+- id: EDU039
+  text: "The request from {name} to access archived examination materials has been approved by the registrar."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU040
+  text: "All research involving human participants must be reviewed by the ethics board before the start of {thesis}."
+  sensitive: false
+  spans: []
+
+- id: EDU041
+  text: "{college} is collaborating with {organization} to fund a new research initiative."
+  sensitive: false
+  spans: []
+
+- id: EDU042
+  text: "The anonymous survey on {subject} performance trends will close on {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU043
+  text: "{name} was invited to represent {school} at the national {event} held at {venue}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{event}"
+      reason: ["Location:Event"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: EDU044
+  text: "The alumni association updated contact information for {name} at {email}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU045
+  text: "The review of {document} will determine eligibility for next semester’s research grant."
+  sensitive: false
+  spans: []
+
+- id: EDU046
+  text: "{name} completed payment of {amount} {currency} for the {semester} lab fees at {college}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{college}"
+      reason: ["Education:Payments"]
+
+- id: EDU047
+  text: "Please upload your signed {document} by {date} to confirm participation in {event}."
+  sensitive: false
+  spans: []
+
+- id: EDU048
+  text: "The record showing {name}’s enrollment in {course} has been updated in the system."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{course}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU049
+  text: "The committee discussed performance metrics for {discipline} without referencing individual students."
+  sensitive: false
+  spans: []
+
+- id: EDU050
+  text: "{name}’s address {address} was updated in the student housing database for {semester}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+    - text: "{semester}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU051
+  text: "The registrar confirmed that {name} logged in with {account} to view the final {grade} for {course}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+    - text: "{grade}"
+      reason: ["Education:Academic Performance"]
+    - text: "{course}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU052
+  text: "All students must update their passwords every {semester} to maintain account security."
+  sensitive: false
+  spans: []
+
+- id: EDU053
+  text: "{name} submitted {thesis} to {college} with co-authorship from {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: EDU054
+  text: "Use the secure {login_link} to upload the signed {document} before {date}."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Token"]
+    - text: "{document}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU055
+  text: "The annual {event} at {school} will celebrate achievements across all {discipline}s."
+  sensitive: false
+  spans: []
+
+- id: EDU056
+  text: "The scholarship payment of {amount} {currency} was issued by {bank} to {name} on {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU057
+  text: "Students enrolled in {course} must complete their online orientation by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU058
+  text: "{college} collaborated with {company} to fund a new research initiative in {discipline}."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{company}"
+      reason: ["Financial:Transactions"]
+    - text: "{discipline}"
+      reason: ["Education:Research"]
+
+- id: EDU059
+  text: "To reset your portal access, please verify your registered {email}."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU060
+  text: "The final project for {subject} must include a signed integrity statement."
+  sensitive: false
+  spans: []
+
+- id: EDU061
+  text: "{name}’s exam results in {subject} have been reviewed by the {discipline}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{subject}"
+      reason: ["Education:Academic Performance"]
+    - text: "{discipline}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU062
+  text: "For security purposes, an {otp} has been sent to your {email} to confirm your exam login."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU063
+  text: "{name} changed their {password} after unauthorized access to their student {account}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU064
+  text: "The {college} library will close at {time} for the maintenance of the catalog system."
+  sensitive: false
+  spans: []
+
+- id: EDU065
+  text: "{school} filed a report with {government_agency} regarding unauthorized data access in the student portal."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare / Social Benefits"]
+
+- id: EDU066
+  text: "Please confirm your mailing {address} to ensure your transcript reaches you correctly."
+  sensitive: true
+  spans:
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU067
+  text: "The {discipline} issued new research guidelines that apply to all ongoing {thesis} projects."
+  sensitive: false
+  spans: []
+
+- id: EDU068
+  text: "An internal memo noted that {organization} influenced research topics within {college}’s {discipline}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{discipline}"
+      reason: ["Education:Research"]
+
+- id: EDU069
+  text: "{name}’s attendance record for {semester} has been verified under ID {id_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{semester}"
+      reason: ["Education:Enrollment"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: EDU070
+  text: "The new student information system will be deployed next {semester}."
+  sensitive: false
+  spans: []
+
+- id: EDU071
+  text: "A payment receipt for {amount} {currency} was sent to {email}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU072
+  text: "{college} has renewed its research contract with {company} for data-sharing initiatives."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{company}"
+      reason: ["Financial:Contracts"]
+
+- id: EDU073
+  text: "All grade appeal forms must be submitted as a single PDF {document} before {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU074
+  text: "The registrar discovered that {name} had duplicate {account}s within the enrollment system."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU075
+  text: "{name} participated in the campus debate hosted by {political_party} at {venue}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: EDU076
+  text: "The faculty email system will be upgraded over the weekend to improve delivery times."
+  sensitive: false
+  spans: []
+
+- id: EDU077
+  text: "To verify your submission, please provide your {id_number} and {password}."
+  sensitive: true
+  spans:
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU078
+  text: "{name} attended a {course} hosted by {organization} focusing on policy research."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{course}"
+      reason: ["Education:Enrollment"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: EDU079
+  text: "The annual funding report will summarize all partnerships with {company} and {college}."
+  sensitive: false
+  spans: []
+
+- id: EDU080
+  text: "All exams in {subject} must include a plagiarism report as part of the grading process."
+  sensitive: false
+  spans: []
+
+- id: EDU081
+  text: "An email from {name} included confidential login details for the grading platform."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU082
+  text: "The conference at {venue} brought together educators from {college} and {school} to share best practices."
+  sensitive: false
+  spans: []
+
+- id: EDU083
+  text: "{name} was awarded first place in the {event} representing {college}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{college}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU084
+  text: "Please contact the {discipline} if your {application} submission fails to process."
+  sensitive: false
+  spans: []
+
+- id: EDU085
+  text: "The disciplinary committee determined that {name} violated the academic integrity code."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU086
+  text: "{college}’s diversity report shows a 5% increase in {ethnicity} representation this {semester}."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+    - text: "{semester}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU087
+  text: "Students can view their {grade} for {course} starting {date} on the portal."
+  sensitive: false
+  spans: []
+
+- id: EDU088
+  text: "The research paper {thesis} was co-authored by {name} and funded by {company}."
+  sensitive: true
+  spans:
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Financial:Transactions"]
+
+- id: EDU089
+  text: "{name} requested an extension to submit the final {document} for {course}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{document}"
+      reason: ["Education:Academic Performance"]
+    - text: "{course}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU090
+  text: "All faculty members are required to encrypt documents before sending them via {email}."
+  sensitive: false
+  spans: []
+
+- id: EDU091
+  text: "The research committee flagged the study by {college} for including data from {organization} without consent."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: EDU092
+  text: "The login system at {school} temporarily disabled {account}s with suspicious activity."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU093
+  text: "{name} provided a written statement supporting the appeal submitted by {name2}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+
+- id: EDU094
+  text: "Please verify your access using the {otp} sent to your {email}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU095
+  text: "The board of trustees at {college} will review policies related to research funding."
+  sensitive: false
+  spans: []
+
+- id: EDU096
+  text: "{school} confirmed that {name}’s enrollment record was deleted from the system."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU097
+  text: "The registrar emailed {name} at {email} confirming successful registration for {semester}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{semester}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU098
+  text: "The presentation on {subject} will be held at {venue} this {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU099
+  text: "{college} partnered with {company} to provide internship opportunities to students with outstanding {grade}s."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{grade}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU100
+  text: "The alumni office at {college} updated contact records for {name} at {address}."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU101
+  text: "The registrar’s office verified that {name} accessed the grading system using {account} credentials."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU102
+  text: "All staff must complete the new data privacy training module by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU103
+  text: "{college}’s {discipline} partnered with {company} to launch a joint research lab for AI development."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{discipline}"
+      reason: ["Education:Research"]
+    - text: "{company}"
+      reason: ["Financial:Contracts"]
+
+- id: EDU104
+  text: "{name} requested an official transcript be sent to {college2} for graduate admissions."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{college2}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU105
+  text: "The faculty portal requires both {account} and {password} to submit {grade}s for {course}."
+  sensitive: true
+  spans:
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+    - text: "{grade}"
+      reason: ["Education:Academic Performance"]
+    - text: "{course}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU106
+  text: "The ethics committee will review {thesis} proposals submitted before {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU107
+  text: "{name}’s enrollment confirmation for {semester} has been issued by {college}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{semester}"
+      reason: ["Education:Enrollment"]
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU108
+  text: "A verification {otp} was sent to {email} to authorize access to your student dashboard."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU109
+  text: "The {discipline} of humanities published an annual report summarizing research outcomes."
+  sensitive: false
+  spans: []
+
+- id: EDU110
+  text: "Please return signed copies of {document} to the registrar at {college} by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU111
+  text: "The portal notified {name} that their {password} will expire on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU112
+  text: "All incoming students must attend an orientation at {venue} on {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU113
+  text: "{name} was recognized by {organization} for contributions to academic freedom initiatives."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: EDU114
+  text: "To finalize enrollment, upload a valid {document} and confirm payment of {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Education:Enrollment"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: EDU115
+  text: "The {discipline} will hold a faculty meeting next {date} to discuss grading policies."
+  sensitive: false
+  spans: []
+
+- id: EDU116
+  text: "{name}’s {thesis} received a research grant funded by {company}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+    - text: "{company}"
+      reason: ["Financial:Transactions"]
+
+- id: EDU117
+  text: "Faculty should remind students to safeguard their {password}s and never share {login_link}s."
+  sensitive: false
+  spans: []
+
+- id: EDU118
+  text: "{college} has begun collecting demographic data including {ethnicity} for diversity tracking."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Enrollment"]
+    - text: "{ethnicity}"
+      reason: ["Protected:Race"]
+
+- id: EDU119
+  text: "The student union at {school} hosted a workshop about joining {organization} networks."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: EDU120
+  text: "All participants in the {event} must register online by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU121
+  text: "{college} refunded {amount} {currency} to {name} after a duplicate tuition payment."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Payments"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU122
+  text: "The dean of the {discipline} will announce this year’s top {course} performances at {event}."
+  sensitive: false
+  spans: []
+
+- id: EDU123
+  text: "Access to the research portal requires both {account} credentials and a valid {otp}."
+  sensitive: true
+  spans:
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: EDU124
+  text: "The registrar emailed {name} at {email} to confirm diploma delivery to {address}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU125
+  text: "The security audit identified that several {account}s were accessed using outdated {password}s."
+  sensitive: true
+  spans:
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU126
+  text: "The data retention policy for {college} was revised to comply with new federal guidelines."
+  sensitive: false
+  spans: []
+
+- id: EDU127
+  text: "The advisor confirmed that {name} met all graduation requirements for {semester}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{semester}"
+      reason: ["Education:Academic Performance"]
+
+- id: EDU128
+  text: "All research assistants must complete ethics certification before submitting their {thesis} proposals."
+  sensitive: false
+  spans: []
+
+- id: EDU129
+  text: "{college} transferred {amount} {currency} to {bank} as part of an international research grant."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+
+- id: EDU130
+  text: "Students in {course} may view the grading rubric in the shared {document}."
+  sensitive: false
+  spans: []
+
+- id: EDU131
+  text: "The administrative assistant notified {name} that their attendance appeal was denied."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EDU132
+  text: "For technical issues accessing the system, email {college} IT support."
+  sensitive: false
+  spans: []
+
+- id: EDU133
+  text: "{name} joined the campus chapter of {political_party} after attending a student meeting at {school}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{political_party}"
+      reason: ["Protected:Affiliation"]
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+
+- id: EDU134
+  text: "The final {grade} in {subject} will be visible in the student portal on {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU135
+  text: "The joint research by {college} and {company} resulted in three peer-reviewed publications."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{company}"
+      reason: ["Financial:Contracts"]
+
+- id: EDU136
+  text: "The IT division detected failed login attempts to multiple {account}s."
+  sensitive: true
+  spans:
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU137
+  text: "{name} provided bank details for processing their research stipend of {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: EDU138
+  text: "The {discipline} is preparing the new syllabus for all core {course}s next {semester}."
+  sensitive: false
+  spans: []
+
+- id: EDU139
+  text: "{college} submitted a progress report on {thesis} outcomes to {organization}."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]
+
+- id: EDU140
+  text: "Please complete your {application} for the next academic year by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU141
+  text: "The registrar’s office updated {name}’s housing {address} following a transfer request."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: EDU142
+  text: "{school}’s database logs show multiple failed login attempts linked to {account}."
+  sensitive: true
+  spans:
+    - text: "{school}"
+      reason: ["Education:Enrollment"]
+    - text: "{account}"
+      reason: ["Authentication:Passwords"]
+
+- id: EDU143
+  text: "Students may access the {discipline}’s new study resources at {venue} starting next week."
+  sensitive: false
+  spans: []
+
+- id: EDU144
+  text: "{name} paid {amount} {currency} for the {semester} exam registration fee."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{semester}"
+      reason: ["Education:Payments"]
+
+- id: EDU145
+  text: "The faculty at {college} voted unanimously to approve new grading procedures."
+  sensitive: false
+  spans: []
+
+- id: EDU146
+  text: "An anonymous donor contributed {amount} {currency} to fund {college}’s {discipline} initiatives."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{discipline}"
+      reason: ["Education:Research"]
+
+- id: EDU147
+  text: "The dean sent a reminder email to {name} requesting submission of the revised {thesis}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{thesis}"
+      reason: ["Education:Research"]
+
+- id: EDU148
+  text: "Students in {course} should submit questions via {email} by {date}."
+  sensitive: false
+  spans: []
+
+- id: EDU149
+  text: "{college} disclosed a partnership with {company} to develop cybersecurity courses."
+  sensitive: true
+  spans:
+    - text: "{college}"
+      reason: ["Education:Research"]
+    - text: "{company}"
+      reason: ["Financial:Contracts"]
+
+- id: EDU150
+  text: "The attendance list included {name} and {name2} as representatives of {organization}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Protected:Affiliation"]

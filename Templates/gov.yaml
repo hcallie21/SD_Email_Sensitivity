@@ -1,0 +1,1077 @@
+- id: GOV001
+  text: "The {government_agency} has issued a new identification card to {name} under the number {id_number}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["Government:Government ID"]
+
+- id: GOV002
+  text: "Applicants must submit their completed {application} to the {government_agency} before {date} for processing."
+  sensitive: false
+  spans: []
+
+- id: GOV003
+  text: "The {benefit_type} payment from {government_agency} was deposited into account {bank_account} on {date}."
+  sensitive: true
+  spans:
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV004
+  text: "{name} confirmed that their passport with number {passport_number} was renewed at the {government_agency} office in {city}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+
+- id: GOV005
+  text: "The department circulated a memo outlining recent policy updates to the {program} eligibility requirements."
+  sensitive: false
+  spans: []
+
+- id: GOV006
+  text: "The {government_agency} reviewed the {application} for {visa_type} and requested additional verification of {address} before approval."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: GOV007
+  text: "A public seminar will be held at {venue} on {date} to discuss updates to the {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: GOV008
+  text: "After review by {government_agency}, the welfare case with record ID {record_id} has been approved for {amount} in {benefit_type} support."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV009
+  text: "{name} attended a scheduled interview at {government_agency} to discuss their pending {visa_type} extension."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV010
+  text: "The {policy_document} outlines procedures for reporting misuse of public resources across various {government_agency} offices."
+  sensitive: false
+  spans: []
+
+- id: GOV011
+  text: "The {government_agency} contacted {name} by email at {email} regarding missing documentation in their {application}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{application}"
+      reason: ["Government:Government ID"]
+
+- id: GOV012
+  text: "A scheduled update to the {system} portal will occur on {date}, temporarily affecting access to {program} records."
+  sensitive: false
+  spans: []
+
+- id: GOV013
+  text: "The welfare department approved a {benefit_type} request for {name} after verifying their employment at {company}."
+  sensitive: true
+  spans:
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Employment Status"]
+
+- id: GOV014
+  text: "Please bring your passport showing number {passport_number} and visa type {visa_type} to your appointment at {venue}."
+  sensitive: true
+  spans:
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: GOV015
+  text: "The {government_agency} is collaborating with {organization} to expand digital access to archived {document} collections."
+  sensitive: false
+  spans: []
+
+- id: GOV016
+  text: "{government_agency} has scheduled an interview for {name} concerning their pending citizenship application filed under {record_id}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{record_id}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV017
+  text: "Citizens are encouraged to check the {government_agency} portal for new updates on {program} funding opportunities."
+  sensitive: false
+  spans: []
+
+- id: GOV018
+  text: "An inspector from {government_agency} verified that the facility located at {address} complies with all safety and licensing requirements."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: GOV019
+  text: "As part of the {program}, participants must provide proof of income from {company} before {date} to remain eligible for benefits."
+  sensitive: true
+  spans:
+    - text: "{program}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{company}"
+      reason: ["Employment:Employment Status"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV020
+  text: "The advisory board at {government_agency} will host a public discussion about proposed amendments to the {policy_document} next quarter."
+  sensitive: false
+  spans: []
+
+- id: GOV021
+  text: "The {government_agency} issued a notice confirming that {name}'s driver’s license number {drivers_license} has been renewed successfully."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+
+- id: GOV022
+  text: "A draft amendment to the {policy_document} was presented during the committee session at {venue} last week."
+  sensitive: false
+  spans: []
+
+- id: GOV023
+  text: "The {government_agency} transferred {amount} to {bank_account} as part of the approved {benefit_type} assistance."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV024
+  text: "Citizens can apply for {visa_type} by submitting the {application} through the {government_agency} online portal."
+  sensitive: false
+  spans: []
+
+- id: GOV025
+  text: "{government_agency} confirmed the receipt of documents tied to record {record_id} for verification of {citizenship_status}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{record_id}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV026
+  text: "A press release from {government_agency} announced increased funding for the {program} to support local infrastructure projects."
+  sensitive: false
+  spans: []
+
+- id: GOV027
+  text: "The inspector from {government_agency} visited the property at {address} to verify compliance before releasing grant funds."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: GOV028
+  text: "The immigration officer reviewed passport number {passport_number} and visa type {visa_type} during the appointment at {venue}."
+  sensitive: true
+  spans:
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: GOV029
+  text: "The {policy_document} established stricter penalties for misuse of government-issued identification credentials."
+  sensitive: false
+  spans: []
+
+- id: GOV030
+  text: "The {government_agency} has mailed replacement identification cards to individuals whose records were affected by the recent data breach."
+  sensitive: false
+  spans: []
+
+- id: GOV031
+  text: "{name} presented their passport with number {passport_number} and driver’s license number {drivers_license} at the registration counter."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+
+- id: GOV032
+  text: "The {government_agency} confirmed that the tax rebate of {amount} was successfully processed for {name} on {date}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV033
+  text: "A regional summit at {venue} on {date} will bring together representatives from multiple {government_agency} offices to discuss policy reform."
+  sensitive: false
+  spans: []
+
+- id: GOV034
+  text: "The {government_agency} notified {name} at {email} that their {application} for permanent residency has been approved."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV035
+  text: "Residents are reminded to renew their vehicle registration through the {government_agency} website before {date}."
+  sensitive: false
+  spans: []
+
+- id: GOV036
+  text: "The welfare office verified {name}'s income documentation from {company} to determine eligibility for {benefit_type} support."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Employment Status"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV037
+  text: "A government auditor cross-checked contract {record_id} between {government_agency} and {company} for compliance violations."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{government_agency}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: GOV038
+  text: "The new {policy_document} requires that all benefit disbursements be tracked under the associated {record_id}."
+  sensitive: false
+  spans: []
+
+- id: GOV039
+  text: "At the border inspection, {name} presented passport number {passport_number} for entry under visa type {visa_type}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV040
+  text: "The {government_agency} has postponed the review of {program} applications due to administrative backlog."
+  sensitive: false
+  spans: []
+
+- id: GOV041
+  text: "The {government_agency} confirmed that {name}'s unemployment claim under record {record_id} has been processed and payment issued."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV042
+  text: "Representatives from {government_agency} and {organization} met at {venue} to finalize agreements on shared service delivery."
+  sensitive: false
+  spans: []
+
+- id: GOV043
+  text: "The citizenship office confirmed that applicant {name} provided the required identification, including license {drivers_license} and passport {passport_number}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+
+- id: GOV044
+  text: "The welfare audit revealed duplicate disbursements in {benefit_type} cases associated with {record_id}."
+  sensitive: true
+  spans:
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV045
+  text: "Public consultation on the {policy_document} will be open until {date}, allowing residents to submit written feedback."
+  sensitive: false
+  spans: []
+
+- id: GOV046
+  text: "The {government_agency} forwarded the contract details to {legal_team} after concerns were raised about compliance issues."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{legal_team}"
+      reason: ["Legal:Proceedings"]
+
+- id: GOV047
+  text: "Following the policy revision, all {government_agency} personnel must complete the updated training program by {date}."
+  sensitive: false
+  spans: []
+
+- id: GOV048
+  text: "The border agent verified passport number {passport_number} and driver’s license number {drivers_license} against the immigration system records."
+  sensitive: true
+  spans:
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+
+- id: GOV049
+  text: "Citizens may now download a digital copy of their {document} from the {government_agency} verification portal."
+  sensitive: false
+  spans: []
+
+- id: GOV050
+  text: "The audit by {government_agency} found irregular payments totaling {amount} under the {benefit_type} subsidy initiative."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV051
+  text: "{name} attended the disciplinary hearing at {government_agency} after being accused of violating internal ethics guidelines."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{government_agency}"
+      reason: ["Government:Internal Business Information"]
+
+- id: GOV052
+  text: "The {government_agency} verified that payments were correctly deposited into account {bank_account} associated with {program}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{program}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV053
+  text: "A town hall event at {venue} next week will feature officials discussing updates to the {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: GOV054
+  text: "The {government_agency} sent a verification email to {email} requesting confirmation of recent changes to {application} details."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{application}"
+      reason: ["Government:Government ID"]
+
+- id: GOV055
+  text: "After a background review, the licensing office suspended the driver’s license number {drivers_license} registered under {name}."
+  sensitive: true
+  spans:
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: GOV056
+  text: "The national portal for {government_agency} will undergo scheduled maintenance between {time} and {time2} tomorrow."
+  sensitive: false
+  spans: []
+
+- id: GOV057
+  text: "Records indicate that {name} received welfare disbursements totaling {amount} under {benefit_type} from {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV058
+  text: "The local office of {government_agency} hosted a seminar on the implications of the updated {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: GOV059
+  text: "{government_agency} confirmed that payment of {amount} for record {record_id} was transferred to account {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: GOV060
+  text: "A new web portal will allow citizens to download official {document} copies issued by {government_agency}."
+  sensitive: false
+  spans: []
+
+- id: GOV061
+  text: "The {government_agency} requested that {name} update their contact details at {email} to ensure timely delivery of notices."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: GOV062
+  text: "Verification records show that {name} was granted a visa of type {visa_type} following background checks by {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV063
+  text: "The {government_agency} provided an update to stakeholders regarding the revised guidelines of the {program}."
+  sensitive: false
+  spans: []
+
+- id: GOV064
+  text: "Officials reviewed passport number {passport_number} and license number {drivers_license} to validate identification during the audit."
+  sensitive: true
+  spans:
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+
+- id: GOV065
+  text: "The welfare division identified duplicate records under case {record_id}, delaying {benefit_type} distribution for several applicants."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV066
+  text: "Representatives from {government_agency} will attend the forum at {venue} to address questions about the {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: GOV067
+  text: "The {government_agency} processed a refund of {amount} to {bank_account} after an overpayment was detected in the subsidy system."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: GOV068
+  text: "{name} contacted the {government_agency} to update their address at {address} after moving to a new residence."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: GOV069
+  text: "The cabinet meeting on {date} will cover proposed revisions to {policy_document} and the expansion of {program} funding."
+  sensitive: false
+  spans: []
+
+- id: GOV070
+  text: "A compliance officer reviewed financial report {document} and identified irregularities involving {amount} in government disbursements."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV071
+  text: "The {government_agency} informed {name} that their driver’s license number {drivers_license} will expire on {date}. A renewal reminder will be sent by mail to {address}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+    - text: "{date}"
+      reason: ["Government:Government ID"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: GOV072
+  text: "A press statement released by {government_agency} detailed new measures for managing the {program}. Citizens can review full documentation at the agency’s website."
+  sensitive: false
+  spans: []
+
+- id: GOV073
+  text: "The welfare department verified that the {benefit_type} payments for record {record_id} were processed correctly. A confirmation notice was sent to {email}."
+  sensitive: true
+  spans:
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: GOV074
+  text: "During the citizenship interview, {name} presented their passport with number {passport_number} and visa type {visa_type}. The {government_agency} official confirmed the details matched the system records."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV075
+  text: "The annual report from {government_agency} outlined plans to modernize internal data systems and improve public transparency."
+  sensitive: false
+  spans: []
+
+- id: GOV076
+  text: "{government_agency} issued a corrective notice stating that {amount} in overpaid {benefit_type} funds must be reimbursed by {date}. Beneficiaries were advised to contact the helpline for repayment options."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV077
+  text: "Representatives from {government_agency} met with local officials at {venue} to discuss housing benefits under the {program}. Meeting minutes will be published later this month."
+  sensitive: false
+  spans: []
+
+- id: GOV078
+  text: "The {government_agency} reviewed {application} documents submitted by {name} for their {visa_type} renewal. Additional verification of address {address} was requested."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: GOV079
+  text: "The {policy_document} was updated to clarify new eligibility requirements for receiving {benefit_type}. These revisions will take effect at the start of the next fiscal year."
+  sensitive: false
+  spans: []
+
+- id: GOV080
+  text: "{government_agency} confirmed that passport number {passport_number} and driver’s license number {drivers_license} matched the identification provided by {name} during verification."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: GOV081
+  text: "The audit from {government_agency} identified inconsistencies in the disbursement of {benefit_type} payments across multiple regional offices."
+  sensitive: false
+  spans: []
+
+- id: GOV082
+  text: "The border control officer scanned passport number {passport_number} and verified visa type {visa_type} before granting entry. {government_agency} recorded the verification under case {record_id}."
+  sensitive: true
+  spans:
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{record_id}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV083
+  text: "The {government_agency} sent a message to {email} confirming that the welfare case under {record_id} was resolved. Payments will resume next month."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV084
+  text: "The joint initiative between {government_agency} and {organization} aims to streamline online access to government records."
+  sensitive: false
+  spans: []
+
+- id: GOV085
+  text: "Following a review, the {government_agency} determined that {name}'s income documentation from {company} did not meet eligibility criteria for {benefit_type} benefits."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Employment Status"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV086
+  text: "A community briefing at {venue} outlined new reporting obligations under {policy_document}. The event included Q&A with agency representatives."
+  sensitive: false
+  spans: []
+
+- id: GOV087
+  text: "{government_agency} confirmed that refugee application {application} submitted by {name} was approved. The applicant’s identification, including passport number {passport_number}, has been validated."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+
+- id: GOV088
+  text: "The annual training workshop at {venue} covered updates to {policy_document} and introduced new digital tools for local administrators."
+  sensitive: false
+  spans: []
+
+- id: GOV089
+  text: "The {government_agency} reported that social assistance payments totaling {amount} were distributed to {bank_account} under case {record_id}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV090
+  text: "Citizens are invited to review the proposed amendments to {policy_document} before the consultation period closes on {date}."
+  sensitive: false
+  spans: []
+
+- id: GOV091
+  text: "The {government_agency} processed a payment of {amount} to {name} for retroactive benefits under the {program}. The transaction was recorded on {date}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{program}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV092
+  text: "The audit report from {government_agency} highlighted missing receipts for several disbursements in the {benefit_type} category."
+  sensitive: false
+  spans: []
+
+- id: GOV093
+  text: "During the inspection, {government_agency} verified the building located at {address} as part of a compliance audit for {program} funds. No violations were found."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+    - text: "{program}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV094
+  text: "{name} was asked to confirm citizenship details and provide visa type {visa_type} to finalize their {application}. The request was made by {government_agency} earlier this week."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV095
+  text: "The {policy_document} introduces new reporting standards for all welfare-related programs. Departments must comply by {date}."
+  sensitive: false
+  spans: []
+
+- id: GOV096
+  text: "{government_agency} sent notification to {email} regarding errors in record {record_id}. The issue pertains to disbursement of {benefit_type} funds."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV097
+  text: "The department announced the expansion of {program} to include rural communities beginning next quarter."
+  sensitive: false
+  spans: []
+
+- id: GOV098
+  text: "The investigator from {government_agency} reviewed the contract file {record_id} and flagged possible irregularities involving {amount} in payments to {company}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{record_id}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: GOV099
+  text: "All applicants seeking to renew their driver’s license must provide proof of residence and complete the verification at {venue}."
+  sensitive: false
+  spans: []
+
+- id: GOV100
+  text: "{government_agency} verified that individual {name} holds active identification, including driver’s license {drivers_license} and passport {passport_number}, both registered in {country}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Government ID"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{drivers_license}"
+      reason: ["Government:Government ID"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{country}"
+      reason: ["Location:Fixed"]
+
+- id: GOV101
+  text: "The {government_agency} announced changes to the {policy_document} affecting benefit recipients. Officials expect the policy to improve efficiency."
+  sensitive: false
+  spans: []
+
+- id: GOV102
+  text: "{name} received confirmation from {government_agency} that their {benefit_type} application under case {record_id} has been approved. Payment will be transferred by {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+
+- id: GOV103
+  text: "A briefing session at {venue} reviewed upcoming reforms in {program}. Citizens are encouraged to submit feedback online."
+  sensitive: false
+  spans: []
+
+- id: GOV104
+  text: "The {government_agency} confirmed that passport number {passport_number} and visa type {visa_type} matched the information provided in the travel authorization form {application}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV105
+  text: "Officials from {government_agency} and {organization} signed a memorandum of understanding at {venue} to expand cooperation on digital identity services."
+  sensitive: false
+  spans: []
+
+- id: GOV106
+  text: "An internal audit at {government_agency} revealed improper allocation of {amount} from the {benefit_type} relief program. Disciplinary proceedings are pending."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV107
+  text: "{government_agency} instructed that all future applications for {visa_type} must include proof of address and valid passport number {passport_number}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{passport_number}"
+      reason: ["Government:Government ID"]
+
+- id: GOV108
+  text: "The new {policy_document} provides guidance on ethical conduct for employees within {government_agency}. Training will be mandatory for all staff."
+  sensitive: false
+  spans: []
+
+- id: GOV109
+  text: "The benefits office contacted {name} by phone at {phone} to confirm corrections to their welfare record {record_id}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{phone}"
+      reason: ["PII:Contact Info"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV110
+  text: "A community outreach program hosted by {government_agency} aims to improve awareness about available {benefit_type} support."
+  sensitive: false
+  spans: []
+
+- id: GOV111
+  text: "The {government_agency} processed a payment of {amount} to {bank_account} related to the emergency {benefit_type} fund. All transactions were recorded successfully."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV112
+  text: "Policy updates in {policy_document} will take effect after publication in the official register later this year."
+  sensitive: false
+  spans: []
+
+- id: GOV113
+  text: "The {government_agency} received notification from {organization} confirming the transfer of {amount} for joint project {program}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Internal Business Information"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{program}"
+      reason: ["Government:Internal Business Information"]
+
+- id: GOV114
+  text: "{name} attended the scheduled appointment at {venue} to renew their visa type {visa_type}. The application {application} is under review by {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{visa_type}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{application}"
+      reason: ["Government:Citizenship Status"]
+    - text: "{government_agency}"
+      reason: ["Government:Citizenship Status"]
+
+- id: GOV115
+  text: "The {government_agency} has updated its privacy guidelines to ensure compliance with new data protection standards."
+  sensitive: false
+  spans: []
+
+- id: GOV116
+  text: "Records show that {name} received a total of {amount} in {benefit_type} assistance between {date} and {date2}. The {government_agency} audit confirmed proper documentation."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{date}"
+      reason: ["Financial:Transaction"]
+    - text: "{date2}"
+      reason: ["Financial:Transaction"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: GOV117
+  text: "The joint committee will meet at {venue} next week to finalize the draft of the {policy_document} before submission."
+  sensitive: false
+  spans: []
+
+- id: GOV118
+  text: "{government_agency} confirmed that the welfare application {application} submitted by {name} has been denied due to income verification from {company}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{application}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Employment Status"]
+
+- id: GOV119
+  text: "The {government_agency} published a summary of proposed reforms to {policy_document} and invited public feedback until {date}."
+  sensitive: false
+  spans: []
+
+- id: GOV120
+  text: "Following an investigation, {government_agency} identified fraudulent welfare cases linked to record {record_id}. Authorities are recovering {amount} in improper {benefit_type} payments."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{record_id}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{amount}"
+      reason: ["Financial:Transaction"]
+    - text: "{benefit_type}"
+      reason: ["Government:Welfare/Social Benefits"]

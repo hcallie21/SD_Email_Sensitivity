@@ -1,0 +1,2355 @@
+- id: NON001
+  text: "Your order of {product} from {brand} has been shipped and will arrive by {date}."
+  sensitive: false
+  spans: []
+
+- id: NON002
+  text: "Visit {website} today to claim your exclusive offer on {product_type} from {store}."
+  sensitive: false
+  spans: []
+
+- id: NON003
+  text: "The {application} update improves performance on {platform} and adds new features for {project} management."
+  sensitive: false
+  spans: []
+
+
+- id: NON005
+  text: "Join us for the annual {event} hosted by the {department} team at {company}."
+  sensitive: false
+  spans: []
+
+- id: NON006
+  text: "The {brand} {product_type} collection now includes more colors and sizes at select {store} locations."
+  sensitive: false
+  spans: []
+
+- id: NON007
+  text: "A new episode of {show} premieres this Friday under the {genre} category on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON008
+  text: "{company} announced a partnership with {brand} to improve {application} integration across devices."
+  sensitive: false
+  spans: []
+
+- id: NON009
+  text: "The {department} has completed phase two of the {project} initiative ahead of {date}."
+  sensitive: false
+  spans: []
+
+- id: NON011
+  text: "Tickets for the {event} are available now, starting at {currency}{amount}."
+  sensitive: false
+  spans: []
+
+- id: NON012
+  text: "Thank you for choosing {brand}! Your {product_type} order has been confirmed at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON013
+  text: "{application} will be temporarily unavailable while maintenance is performed on {server}."
+  sensitive: false
+  spans: []
+
+- id: NON014
+  text: "The {project} dashboard has been moved to the new {application} interface."
+  sensitive: false
+  spans: []
+
+- id: NON015
+  text: "Watch {show} in the {genre} category, now streaming on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON016
+  text: "The {company} {department} team launched an internal survey to improve {project} workflows."
+  sensitive: false
+  spans: []
+
+- id: NON017
+  text: "Save {currency}{amount} on any {product_type} this weekend only at {store}!"
+  sensitive: false
+  spans: []
+
+- id: NON018
+  text: "The new {application} release enhances {server} synchronization and boosts overall performance."
+  sensitive: false
+  spans: []
+
+- id: NON019
+  text: "You’ve earned {count} reward points through {brand} loyalty purchases at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON020
+  text: "The {department} meeting for the {project} review has been moved to {date}."
+  sensitive: false
+  spans: []
+
+- id: NON021
+  text: "{platform} will host the live broadcast of the {event} featuring highlights from {show}."
+  sensitive: false
+  spans: []
+
+- id: NON022
+  text: "{company}’s {application} support line is available 24/7 for assistance with your {product}."
+  sensitive: false
+  spans: []
+
+- id: NON023
+  text: "Enjoy {currency}{amount} off select {product_type} during our {event} weekend sale."
+  sensitive: false
+  spans: []
+
+- id: NON024
+  text: "A new training module has been added to the {application} under the {department} section."
+  sensitive: false
+  spans: []
+
+- id: NON025
+  text: "The {server} migration completed successfully on {date}, improving system reliability."
+  sensitive: false
+  spans: []
+
+- id: NON026
+  text: "{company} has reached {count} installations of the {application} since launch."
+  sensitive: false
+  spans: []
+
+- id: NON027
+  text: "Review your {product} warranty and return policy at {website}."
+  sensitive: false
+  spans: []
+
+- id: NON028
+  text: "The latest {project} milestone was approved by the {department} on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON029
+  text: "The {event} drew record attendance thanks to sponsorship from {brand} and {company}."
+  sensitive: false
+  spans: []
+
+- id: NON030
+  text: "Watch {count} new episodes of {show} this week under the {genre} section of {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON032
+  text: "Join {brand}’s online {event} showcasing innovations in {product_type} design."
+  sensitive: false
+  spans: []
+
+- id: NON033
+  text: "The {department} team uploaded project reports to the {server} on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON034
+  text: "Read the latest article on {website} about {brand}’s expansion into new {product_type} markets."
+  sensitive: false
+  spans: []
+
+- id: NON035
+  text: "The {application} has reached version {count} with bug fixes and security improvements."
+  sensitive: false
+  spans: []
+
+- id: NON036
+  text: "Register for the upcoming {event} organized by the {department} at {company}."
+  sensitive: false
+  spans: []
+
+- id: NON037
+  text: "All {store} locations will be closed for inventory checks on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON038
+  text: "{company}’s quarterly {project} results were presented by the {department} leadership."
+  sensitive: false
+  spans: []
+
+- id: NON039
+  text: "Your {application} session expired automatically after {count} minutes of inactivity."
+  sensitive: false
+  spans: []
+
+- id: NON040
+  text: "The {show} received top ratings in the {genre} category according to {platform} data."
+  sensitive: false
+  spans: []
+
+- id: NON042
+  text: "{company} will demonstrate its latest {product_type} at the {event} next month."
+  sensitive: false
+  spans: []
+
+- id: NON043
+  text: "The {application} integrates with {server} clusters to support faster content delivery."
+  sensitive: false
+  spans: []
+
+- id: NON044
+  text: "{brand} introduced a new line of {product} available at select {store} outlets."
+  sensitive: false
+  spans: []
+
+- id: NON045
+  text: "View detailed {project} analytics via the {application} dashboard on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON046
+  text: "Tickets for the {event} are limited to {count} attendees per {company} registration."
+  sensitive: false
+  spans: []
+
+- id: NON047
+  text: "{department} is coordinating a {project} showcase in collaboration with {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON048
+  text: "The {store} app now supports purchases in multiple {currency} formats."
+  sensitive: false
+  spans: []
+
+- id: NON049
+  text: "{application} usage reports are automatically generated every {date} for {department} review."
+  sensitive: false
+  spans: []
+
+- id: NON050
+  text: "Stream the award-winning {show} exclusively on {platform} in the {genre} lineup."
+  sensitive: false
+  spans: []
+
+- id: NON051
+  text: "The {company} newsletter will highlight key updates from the {department} on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON052
+  text: "{brand} has extended the warranty for all {product_type} purchased through {store}."
+  sensitive: false
+  spans: []
+
+- id: NON053
+  text: "Your subscription renewal for {application} will be processed automatically on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON054
+  text: "Our {department} is reviewing the latest results from the {project} test cycle."
+  sensitive: false
+  spans: []
+
+- id: NON055
+  text: "Enjoy a bonus reward of {currency}{amount} when you refer friends to {application}."
+  sensitive: false
+  spans: []
+
+- id: NON056
+  text: "The {event} schedule has been posted on {website} for all attendees."
+  sensitive: false
+  spans: []
+
+
+- id: NON058
+  text: "The {server} reboot resolved previous connection issues reported by {department}."
+  sensitive: false
+  spans: []
+
+- id: NON059
+  text: "The {show} finale received over {count} million views on {platform} this weekend."
+  sensitive: false
+  spans: []
+
+- id: NON060
+  text: "{company} is offering free demos of its {product_type} during the {event}."
+  sensitive: false
+  spans: []
+
+- id: NON061
+  text: "A reminder that {store} will be closed for system maintenance on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON062
+  text: "The {project} deliverables were approved by the {department} leadership at {company}."
+  sensitive: false
+  spans: []
+
+- id: NON063
+  text: "Your {application} access code has been refreshed automatically by {server}."
+  sensitive: false
+  spans: []
+
+- id: NON064
+  text: "{brand} has restocked the popular {product} in all major {store} branches."
+  sensitive: false
+  spans: []
+
+- id: NON065
+  text: "The {event} was rescheduled due to technical upgrades on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON066
+  text: "Stay tuned for the next {show} season premiere under the {genre} lineup."
+  sensitive: false
+  spans: []
+
+- id: NON067
+  text: "All team reports for {project} must be uploaded to the {application} by {date}."
+  sensitive: false
+  spans: []
+
+- id: NON068
+  text: "The {server} outage affected {count} regional nodes but services have been restored."
+  sensitive: false
+  spans: []
+
+- id: NON069
+  text: "{company}’s {department} launched a new internal communication {application} this week."
+  sensitive: false
+  spans: []
+
+- id: NON070
+  text: "Get up to {currency}{amount} in savings on select {product_type} from {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON072
+  text: "{application} now supports multi-language access across {platform} accounts."
+  sensitive: false
+  spans: []
+
+- id: NON073
+  text: "The {department} plans to expand the {project} timeline by two weeks."
+  sensitive: false
+  spans: []
+
+- id: NON074
+  text: "Your purchase of {product} from {store} qualifies for free express delivery."
+  sensitive: false
+  spans: []
+
+- id: NON075
+  text: "{brand} will sponsor the upcoming {event} showcasing new {product_type} trends."
+  sensitive: false
+  spans: []
+
+- id: NON076
+  text: "Access the {company} {project} overview via the internal {application} portal."
+  sensitive: false
+  spans: []
+
+- id: NON077
+  text: "Your {server} connection was verified successfully on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON078
+  text: "{show} has been added to your {platform} watchlist under the {genre} section."
+  sensitive: false
+  spans: []
+
+- id: NON079
+  text: "All attendees of the {event} will receive a complimentary {product} courtesy of {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON080
+  text: "A software patch for {application} version {count} is now live on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON081
+  text: "{department} has been assigned additional resources for the {project} upgrade."
+  sensitive: false
+  spans: []
+
+
+
+- id: NON083
+  text: "{company}’s {application} team reported that {server} traffic peaked on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON084
+  text: "A reminder to log all completed {project} tasks before {date} in {application}."
+  sensitive: false
+  spans: []
+
+- id: NON085
+  text: "Enjoy a sneak peek of the new {show} trailer on {platform} this Thursday."
+  sensitive: false
+  spans: []
+
+- id: NON086
+  text: "The {event} planning team finalized logistics with {company} for next quarter."
+  sensitive: false
+  spans: []
+
+- id: NON088
+  text: "All {department} members will receive an update on the {project} launch today."
+  sensitive: false
+  spans: []
+
+- id: NON089
+  text: "Stream over {count} hours of {genre} entertainment on {platform} via {application}."
+  sensitive: false
+  spans: []
+
+- id: NON090
+  text: "The {company} catalog of {product_type} is now available at {website}."
+  sensitive: false
+  spans: []
+
+- id: NON091
+  text: "New guidelines for {project} reporting were shared by the {department} yesterday."
+  sensitive: false
+  spans: []
+
+- id: NON092
+  text: "Earn cashback of {currency}{amount} on any {brand} {product} purchased this week."
+  sensitive: false
+  spans: []
+
+- id: NON093
+  text: "{application} will undergo a system patch on {server} between {date} and the following morning."
+  sensitive: false
+  spans: []
+
+- id: NON094
+  text: "{store} has reached {count} online reviews for the {product} category."
+  sensitive: false
+  spans: []
+
+- id: NON095
+  text: "{event} invitations have been distributed to all {department} leads across {company}."
+  sensitive: false
+  spans: []
+
+- id: NON096
+  text: "The {brand} showcase event will introduce three new {product_type} models."
+  sensitive: false
+  spans: []
+
+- id: NON097
+  text: "The {server} diagnostic tool now supports integration with the {application} interface."
+  sensitive: false
+  spans: []
+
+- id: NON098
+  text: "Celebrate {brand}’s anniversary with discounts on every {product_type} sold at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON099
+  text: "Your content on {platform} has reached {count} total engagements."
+  sensitive: false
+  spans: []
+
+- id: NON100
+  text: "The {department} is hosting a {project} retrospective on {date} to review progress."
+  sensitive: false
+  spans: []
+
+- id: NON101
+  text: "{brand} just launched an upgraded version of the {product} featuring improved design and performance."
+  sensitive: false
+  spans: []
+
+- id: NON102
+  text: "Stay informed about {company} announcements by subscribing to our {website} newsletter."
+  sensitive: false
+  spans: []
+
+
+- id: NON104
+  text: "The {application} beta release will be available for download on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON105
+  text: "Our {department} is reviewing user feedback from the {project} pilot phase."
+  sensitive: false
+  spans: []
+
+- id: NON106
+  text: "Earn {currency}{amount} cashback when you shop {product_type} from {brand} this weekend."
+  sensitive: false
+  spans: []
+
+- id: NON107
+  text: "Tune in to {show} every Friday for new episodes in the {genre} section of {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON108
+  text: "{company} is seeking feedback from {department} on the current {project} rollout."
+  sensitive: false
+  spans: []
+
+- id: NON109
+  text: "Enjoy up to {currency}{amount} in savings when you pre-order {product} from {store}."
+  sensitive: false
+  spans: []
+
+- id: NON110
+  text: "The {server} will undergo maintenance at midnight on {date} to enhance {application} stability."
+  sensitive: false
+  spans: []
+
+
+
+- id: NON112
+  text: "{brand} has expanded its {product_type} range with eco-friendly materials."
+  sensitive: false
+  spans: []
+
+- id: NON113
+  text: "The {company} {department} shared updates about the {project} timeline earlier today."
+  sensitive: false
+  spans: []
+
+- id: NON114
+  text: "{platform} is featuring exclusive behind-the-scenes content from the hit {show}."
+  sensitive: false
+  spans: []
+
+- id: NON115
+  text: "A special {event} preview will be live on {website} starting {date}."
+  sensitive: false
+  spans: []
+
+- id: NON116
+  text: "The {application} update enhances {server} response time and improves user experience."
+  sensitive: false
+  spans: []
+
+- id: NON117
+  text: "{store} is hosting a flash sale on {brand} {product_type} all day Saturday."
+  sensitive: false
+  spans: []
+
+- id: NON118
+  text: "{department} is collaborating with {company} on the {project} innovation initiative."
+  sensitive: false
+  spans: []
+
+- id: NON119
+  text: "The {event} will feature live product demonstrations and interviews with {brand} experts."
+  sensitive: false
+  spans: []
+
+- id: NON120
+  text: "Your account on {application} has reached {count} completed actions this month."
+  sensitive: false
+  spans: []
+
+- id: NON121
+  text: "Visit {website} for details about {brand}’s upcoming {product_type} launch event."
+  sensitive: false
+  spans: []
+
+- id: NON122
+  text: "{company} confirmed that the {department} exceeded {project} objectives ahead of {date}."
+  sensitive: false
+  spans: []
+
+- id: NON123
+  text: "{platform} has rolled out a new playlist featuring {genre} favorites from {show}."
+  sensitive: false
+  spans: []
+
+- id: NON124
+  text: "A system alert was triggered on {server} and automatically resolved by {application}."
+  sensitive: false
+  spans: []
+
+- id: NON125
+  text: "{store} now accepts payments in multiple {currency} formats worldwide."
+  sensitive: false
+  spans: []
+
+- id: NON127
+  text: "Watch the {genre} award ceremony streamed live on {platform} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON128
+  text: "{application} users reported improved load times on {server} following the latest update."
+  sensitive: false
+  spans: []
+
+- id: NON129
+  text: "The {company} {department} will present results from the {project} at the next quarterly {event}."
+  sensitive: false
+  spans: []
+
+- id: NON130
+  text: "Check {website} for updated shipping details about your {product} order from {store}."
+  sensitive: false
+  spans: []
+
+- id: NON131
+  text: "Enjoy {currency}{amount} off your next {brand} purchase in the {product_type} category."
+  sensitive: false
+  spans: []
+
+- id: NON132
+  text: "The {event} reached {count} online participants from across the {platform} community."
+  sensitive: false
+  spans: []
+
+- id: NON133
+  text: "Your {project} proposal was officially approved by the {department} on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON134
+  text: "The {server} status report indicates zero downtime since the {application} upgrade."
+  sensitive: false
+  spans: []
+
+- id: NON135
+  text: "A new season of {show} has been announced, returning to {platform} next quarter."
+  sensitive: false
+  spans: []
+
+- id: NON136
+  text: "Join {brand} at the {event} to explore their latest {product_type} innovations."
+  sensitive: false
+  spans: []
+
+- id: NON137
+  text: "Your {application} activity summary for {date} shows {count} completed sessions."
+  sensitive: false
+  spans: []
+
+- id: NON138
+  text: "All {company} employees are invited to the {department} showcase of the {project} prototype."
+  sensitive: false
+  spans: []
+
+- id: NON139
+  text: "Enjoy a first look at the {show} teaser in the {genre} section of {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON140
+  text: "The {event} recap has been published on {website} with highlights from {company}’s presentation."
+  sensitive: false
+  spans: []
+
+
+- id: NON142
+  text: "The {server} will support additional {application} modules starting on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON143
+  text: "The {department} completed quality checks for all {project} deliverables this week."
+  sensitive: false
+  spans: []
+
+- id: NON144
+  text: "Watch exclusive coverage of the {event} live on {platform} courtesy of {company}."
+  sensitive: false
+  spans: []
+
+- id: NON145
+  text: "Redeem {currency}{amount} in store credit when you buy any {product_type} from {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON146
+  text: "{application} has reached {count} registered users since its release on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON147
+  text: "The {department} will conduct a {project} performance review after {date}."
+  sensitive: false
+  spans: []
+
+- id: NON148
+  text: "Find the latest episode of {show} categorized under {genre} now streaming on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON150
+  text: "{company} released a public statement summarizing the {department}’s progress on {project}."
+  sensitive: false
+  spans: []
+
+- id: NON151
+  text: "{company} has announced the official timeline for its upcoming {project} rollout."
+  sensitive: false
+  spans: []
+
+- id: NON152
+  text: "The {store} loyalty program now offers rewards on every {product_type} purchase."
+  sensitive: false
+  spans: []
+
+- id: NON153
+  text: "{application} has introduced a new feature allowing better integration with {server} systems."
+  sensitive: false
+  spans: []
+
+- id: NON154
+  text: "Join us for the virtual {event} hosted by {brand} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON155
+  text: "You’ve earned {currency}{amount} in store credits through the {store} rewards program."
+  sensitive: false
+  spans: []
+
+- id: NON156
+  text: "{platform} users can now filter {show} listings by {genre} for easier browsing."
+  sensitive: false
+  spans: []
+
+- id: NON157
+  text: "The {department} submitted the quarterly {project} review to {company} management."
+  sensitive: false
+  spans: []
+
+- id: NON158
+  text: "{brand} is offering free shipping on all {product_type} orders through {date}."
+  sensitive: false
+  spans: []
+
+- id: NON159
+  text: "Access your account summary on {website} for details about your {store} purchases."
+  sensitive: false
+  spans: []
+
+- id: NON160
+  text: "{server} maintenance is scheduled for {date} to upgrade performance for {application}."
+  sensitive: false
+  spans: []
+
+- id: NON161
+  text: "Watch {show} live on {platform} and explore related {genre} content immediately after."
+  sensitive: false
+  spans: []
+
+- id: NON162
+  text: "{department} will host a workshop to discuss progress on the {project} objectives."
+  sensitive: false
+  spans: []
+
+
+- id: NON164
+  text: "{brand} announced record-breaking sales in its {product_type} division this quarter."
+  sensitive: false
+  spans: []
+
+- id: NON165
+  text: "The {application} dashboard now supports real-time tracking of {project} milestones."
+  sensitive: false
+  spans: []
+
+- id: NON166
+  text: "{company}’s partnership with {store} expands global access to its {product_type} line."
+  sensitive: false
+  spans: []
+
+- id: NON167
+  text: "Don’t miss the {event} highlights uploaded to {website} by {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON168
+  text: "Your {application} subscription will renew automatically on {date} at the standard rate."
+  sensitive: false
+  spans: []
+
+- id: NON169
+  text: "The {server} report indicates zero downtime for all {company} services this week."
+  sensitive: false
+  spans: []
+
+- id: NON170
+  text: "Explore {genre} playlists curated by {platform} for fans of {show} and similar titles."
+  sensitive: false
+  spans: []
+
+- id: NON171
+  text: "The {department} at {company} completed the {project} handoff ahead of schedule."
+  sensitive: false
+  spans: []
+
+- id: NON172
+  text: "{store} will issue a discount of {currency}{amount} for select {brand} {product_type}."
+  sensitive: false
+  spans: []
+
+- id: NON173
+  text: "The {event} hosted by {company} drew over {count} registered participants globally."
+  sensitive: false
+  spans: []
+
+- id: NON174
+  text: "{application} version {count} introduces bug fixes and performance improvements."
+  sensitive: false
+  spans: []
+
+- id: NON176
+  text: "The {brand} {product} won best design at the annual {event} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON177
+  text: "{company} has launched a sustainability campaign in its {department} to reduce waste."
+  sensitive: false
+  spans: []
+
+- id: NON178
+  text: "{platform} now offers enhanced recommendations for {genre} based on your watch history."
+  sensitive: false
+  spans: []
+
+- id: NON179
+  text: "The {server} upgrade will improve {application} response time by up to {count}%."
+  sensitive: false
+  spans: []
+
+- id: NON180
+  text: "{website} now features a blog dedicated to upcoming {brand} {product_type} releases."
+  sensitive: false
+  spans: []
+
+- id: NON181
+  text: "{department} is organizing a {project} review session open to all {company} staff."
+  sensitive: false
+  spans: []
+
+- id: NON182
+  text: "Redeem your {currency}{amount} voucher before {date} at any {store} outlet."
+  sensitive: false
+  spans: []
+
+- id: NON183
+  text: "The {application} outage on {server} was resolved within {count} minutes."
+  sensitive: false
+  spans: []
+
+- id: NON184
+  text: "Fans of {show} can vote for their favorite moments in the {genre} awards on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON185
+  text: "The {project} deliverables were reviewed and approved by {department} leadership."
+  sensitive: false
+  spans: []
+
+
+- id: NON187
+  text: "Get exclusive access to {brand}’s latest {product_type} catalog at {website}."
+  sensitive: false
+  spans: []
+
+- id: NON188
+  text: "{application} will undergo scheduled downtime for updates on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON189
+  text: "{platform} announced a {genre} marathon featuring back-to-back episodes of {show}."
+  sensitive: false
+  spans: []
+
+- id: NON190
+  text: "{company} has expanded its {department} operations to include new {project} initiatives."
+  sensitive: false
+  spans: []
+
+- id: NON191
+  text: "All {store} employees are invited to attend the upcoming {event} hosted by {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON192
+  text: "The {server} diagnostics show {application} uptime of {count}% since last {date}."
+  sensitive: false
+  spans: []
+
+
+- id: NON194
+  text: "The {company} website now features live chat support for all {product_type} inquiries."
+  sensitive: false
+  spans: []
+
+- id: NON195
+  text: "Celebrate the release of {show} with themed {genre} playlists on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON196
+  text: "The {department} is finalizing the {project} documentation for executive review."
+  sensitive: false
+  spans: []
+
+- id: NON197
+  text: "{brand} has issued new quality certifications for its {product_type} range."
+  sensitive: false
+  spans: []
+
+- id: NON198
+  text: "{application} analytics show {count} daily active users across the {platform} network."
+  sensitive: false
+  spans: []
+
+- id: NON200
+  text: "The {server} successfully deployed the latest {application} patch on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON201
+  text: "Thank you for purchasing {product} from {store}! Please leave a review on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON202
+  text: "{brand} released a press statement announcing the expansion of its {product_type} division."
+  sensitive: false
+  spans: []
+
+- id: NON203
+  text: "The {department} at {company} is collecting feedback on the recent {project} rollout."
+  sensitive: false
+  spans: []
+
+- id: NON204
+  text: "{application} support has resolved all outstanding {server} issues reported this week."
+  sensitive: false
+  spans: []
+
+
+- id: NON206
+  text: "{platform} is premiering a new {genre} special featuring clips from {show} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON207
+  text: "The {company} newsletter highlights the {department} achievements for the {project} milestone."
+  sensitive: false
+  spans: []
+
+- id: NON208
+  text: "{brand} has announced a joint {event} with {company} to showcase {product_type} innovations."
+  sensitive: false
+  spans: []
+
+- id: NON209
+  text: "System logs indicate {server} handled {count} concurrent {application} sessions on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON210
+  text: "All {store} locations will close early on {date} for inventory maintenance."
+  sensitive: false
+  spans: []
+
+- id: NON211
+  text: "Check {website} for coverage of the {event} hosted by {company} and {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON212
+  text: "Your {application} usage summary shows {count} successful actions since {date}."
+  sensitive: false
+  spans: []
+
+- id: NON213
+  text: "{department} will distribute a satisfaction survey about the {project} launch results."
+  sensitive: false
+  spans: []
+
+- id: NON214
+  text: "The {brand} {product} is now available in new colors at participating {store} outlets."
+  sensitive: false
+  spans: []
+
+- id: NON215
+  text: "A special feature on {show} is available under the {genre} section of {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON217
+  text: "The {server} migration completed successfully, improving {application} reliability."
+  sensitive: false
+  spans: []
+
+- id: NON218
+  text: "Enjoy {currency}{amount} off your favorite {brand} {product_type} at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON219
+  text: "The {company} {department} hosted an internal {event} celebrating {project} completion."
+  sensitive: false
+  spans: []
+
+- id: NON220
+  text: "{website} now features product tutorials and user guides for {application} setup."
+  sensitive: false
+  spans: []
+
+- id: NON221
+  text: "A new episode of {show} will air on {platform} next week under the {genre} lineup."
+  sensitive: false
+  spans: []
+
+- id: NON222
+  text: "{brand} is hosting a {date} webinar focused on emerging {product_type} technologies."
+  sensitive: false
+  spans: []
+
+- id: NON223
+  text: "The {department} is analyzing metrics from the {project} pilot run."
+  sensitive: false
+  spans: []
+
+- id: NON224
+  text: "{application} will perform scheduled maintenance on {server} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON225
+  text: "The {event} reached {count} participants across multiple {platform} channels."
+  sensitive: false
+  spans: []
+
+
+- id: NON227
+  text: "The {company} annual report details the {department}’s contributions to the {project}."
+  sensitive: false
+  spans: []
+
+- id: NON228
+  text: "{brand} announced a limited-time offer of {currency}{amount} off all {product_type} items."
+  sensitive: false
+  spans: []
+
+- id: NON229
+  text: "{application} has achieved {count} total downloads since its release on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON230
+  text: "The {server} monitoring system reported full uptime throughout the {date} period."
+  sensitive: false
+  spans: []
+
+
+- id: NON232
+  text: "The {company} {department} recognized outstanding contributions to the {project} team."
+  sensitive: false
+  spans: []
+
+- id: NON233
+  text: "Watch the {genre} festival recap featuring scenes from {show} exclusively on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON234
+  text: "The {event} will showcase the latest {brand} {product_type} innovations to industry experts."
+  sensitive: false
+  spans: []
+
+- id: NON235
+  text: "{application} version {count} introduces improved {server} communication protocols."
+  sensitive: false
+  spans: []
+
+
+- id: NON237
+  text: "Visit {website} for the latest press releases from {company} and partner {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON238
+  text: "The {department} organized a follow-up {event} for feedback on the {project} success."
+  sensitive: false
+  spans: []
+
+- id: NON239
+  text: "{server} logs indicate stable {application} performance over {count} consecutive days."
+  sensitive: false
+  spans: []
+
+- id: NON240
+  text: "Stream the behind-the-scenes footage of {show} now live under {genre} on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON241
+  text: "{brand} is launching an eco-friendly {product_type} line available at all {store} outlets."
+  sensitive: false
+  spans: []
+
+- id: NON242
+  text: "The {company} {department} announced next quarter’s {project} roadmap on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON243
+  text: "All {server} updates were completed successfully for {application} deployment."
+  sensitive: false
+  spans: []
+
+
+- id: NON245
+  text: "The {event} recap is available now on {website}, courtesy of {company}."
+  sensitive: false
+  spans: []
+
+- id: NON246
+  text: "{application} recorded {count} completed sessions on {platform} since {date}."
+  sensitive: false
+  spans: []
+
+- id: NON247
+  text: "Save {currency}{amount} on your favorite {brand} {product_type} while supplies last."
+  sensitive: false
+  spans: []
+
+- id: NON248
+  text: "The {server} will undergo a firmware update coordinated by {department} engineers."
+  sensitive: false
+  spans: []
+
+- id: NON249
+  text: "Catch the premiere of {show} under the {genre} section this week on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON250
+  text: "The {company} has expanded its {department} to include a new {project} development team."
+  sensitive: false
+  spans: []
+
+- id: NON251
+  text: "The {company} {department} launched a newsletter highlighting progress on the {project}."
+  sensitive: false
+  spans: []
+
+- id: NON252
+  text: "{application} update logs confirm successful deployment across {server} clusters."
+  sensitive: false
+  spans: []
+
+
+- id: NON254
+  text: "{brand} is offering complimentary samples of its latest {product_type} collection."
+  sensitive: false
+  spans: []
+
+- id: NON255
+  text: "Check {website} for a detailed recap of the {event} organized by {company}."
+  sensitive: false
+  spans: []
+
+- id: NON256
+  text: "{platform} announced a lineup of {genre} premieres, including the return of {show}."
+  sensitive: false
+  spans: []
+
+- id: NON257
+  text: "The {department} conducted final evaluations for the {project} report submission."
+  sensitive: false
+  spans: []
+
+- id: NON258
+  text: "Redeem {currency}{amount} in discounts at any participating {store} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON259
+  text: "The {server} recorded {count} consecutive uptime days for {application}."
+  sensitive: false
+  spans: []
+
+- id: NON260
+  text: "{brand} is partnering with {company} to promote its {product_type} at the {event}."
+  sensitive: false
+  spans: []
+
+- id: NON261
+  text: "{application} users will receive a reminder notification before the scheduled {event}."
+  sensitive: false
+  spans: []
+
+
+- id: NON263
+  text: "The {department} will publish the {project} findings internally by {date}."
+  sensitive: false
+  spans: []
+
+- id: NON264
+  text: "{platform} is releasing a new {genre} feature to personalize {show} recommendations."
+  sensitive: false
+  spans: []
+
+- id: NON265
+  text: "Visit {website} to learn more about {brand}’s latest sustainability {project}."
+  sensitive: false
+  spans: []
+
+- id: NON266
+  text: "The {company} {department} scheduled a meeting to finalize {project} deliverables."
+  sensitive: false
+  spans: []
+
+- id: NON267
+  text: "Save {currency}{amount} on select {brand} {product_type} available through {store}."
+  sensitive: false
+  spans: []
+
+- id: NON268
+  text: "{application} patch notes for version {count} are now live on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON269
+  text: "The {server} will reboot automatically following the maintenance window on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON270
+  text: "{event} highlights will be posted by {company} on {platform} later this week."
+  sensitive: false
+  spans: []
+
+
+- id: NON272
+  text: "{brand} is hosting a product showcase event featuring new {product_type} launches."
+  sensitive: false
+  spans: []
+
+- id: NON273
+  text: "{department} members will review the {project} budget proposal on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON274
+  text: "The {application} analytics dashboard now supports real-time {server} performance metrics."
+  sensitive: false
+  spans: []
+
+- id: NON275
+  text: "Check the {website} homepage for coverage of the {event} hosted by {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON276
+  text: "All {store} orders confirmed before {date} will qualify for free delivery."
+  sensitive: false
+  spans: []
+
+- id: NON277
+  text: "{show} ranked first in the {genre} chart according to {platform} analytics."
+  sensitive: false
+  spans: []
+
+- id: NON278
+  text: "The {department} is drafting final documentation for the {project} submission."
+  sensitive: false
+  spans: []
+
+- id: NON279
+  text: "{company} released a public roadmap detailing {project} objectives for {date}."
+  sensitive: false
+  spans: []
+
+- id: NON280
+  text: "The {server} successfully handled {count} login attempts for {application} users."
+  sensitive: false
+  spans: []
+
+- id: NON281
+  text: "{brand} introduced an updated {product} model available at all major {store} chains."
+  sensitive: false
+  spans: []
+
+- id: NON282
+  text: "Read the {department} announcement about the {project} milestone on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON283
+  text: "The {application} update now supports {server} synchronization across devices."
+  sensitive: false
+  spans: []
+
+- id: NON284
+  text: "{platform} will stream exclusive interviews with the creators of {show} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON285
+  text: "Earn bonus points when purchasing {brand} {product_type} during the {event} promotion."
+  sensitive: false
+  spans: []
+
+- id: NON286
+  text: "The {company} {department} will host its first hybrid {event} combining online and in-person sessions."
+  sensitive: false
+  spans: []
+
+- id: NON287
+  text: "{application} has logged {count} concurrent users since the last {server} update."
+  sensitive: false
+  spans: []
+
+
+- id: NON289
+  text: "{company} has published its quarterly {department} performance summary for the {project}."
+  sensitive: false
+  spans: []
+
+- id: NON290
+  text: "The {brand} collection features limited-edition {product_type} available exclusively at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON291
+  text: "{server} performance exceeded expectations after the {application} version {count} update."
+  sensitive: false
+  spans: []
+
+- id: NON292
+  text: "Catch the live Q&A during the {event} hosted by {company} and {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON293
+  text: "The {department} will roll out the new {project} framework by {date}."
+  sensitive: false
+  spans: []
+
+- id: NON294
+  text: "{application} update notifications will be sent to all registered {platform} accounts."
+  sensitive: false
+  spans: []
+
+- id: NON295
+  text: "A full summary of {event} activities is now available for download on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON296
+  text: "{store} reached {count} total transactions during the {event} campaign."
+  sensitive: false
+  spans: []
+
+- id: NON297
+  text: "{company} is collaborating with {department} to enhance {project} workflows."
+  sensitive: false
+  spans: []
+
+- id: NON298
+  text: "The {server} migration to a new region will begin on {date} for {application}."
+  sensitive: false
+  spans: []
+
+- id: NON299
+  text: "Stream every episode of {show} in the {genre} lineup now on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON300
+  text: "{brand} announced a {currency}{amount} donation to support the annual {event} hosted by {company}."
+  sensitive: false
+  spans: []
+
+- id: NON301
+  text: "The {company} {department} hosted a quarterly review discussing progress on the {project}."
+  sensitive: false
+  spans: []
+
+- id: NON302
+  text: "Save {currency}{amount} on select {brand} {product_type} when you shop at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON303
+  text: "{application} released a stability patch to improve {server} response time."
+  sensitive: false
+  spans: []
+
+- id: NON304
+  text: "Watch the {show} marathon on {platform} this weekend under the {genre} category."
+  sensitive: false
+  spans: []
+
+- id: NON305
+  text: "Visit {website} for insights into {company}’s latest {project} initiatives."
+  sensitive: false
+  spans: []
+
+- id: NON306
+  text: "The {department} announced a collaboration with {brand} to support upcoming {event} planning."
+  sensitive: false
+  spans: []
+
+- id: NON307
+  text: "{application} analytics show {count} daily users across all {server} regions."
+  sensitive: false
+  spans: []
+
+- id: NON308
+  text: "The {store} clearance event offers discounts of up to {currency}{amount} on {product_type}."
+  sensitive: false
+  spans: []
+
+- id: NON309
+  text: "{company} has added a new {department} team to oversee {project} development."
+  sensitive: false
+  spans: []
+
+- id: NON310
+  text: "{platform} confirmed that the new {genre} collection featuring {show} will premiere soon."
+  sensitive: false
+  spans: []
+
+- id: NON311
+  text: "{server} will undergo maintenance on {date} to install security updates for {application}."
+  sensitive: false
+  spans: []
+
+- id: NON312
+  text: "The {department} completed testing for the {project} ahead of {date}."
+  sensitive: false
+  spans: []
+
+- id: NON313
+  text: "{brand} expanded its {product_type} offerings across all major {store} chains."
+  sensitive: false
+  spans: []
+
+- id: NON314
+  text: "Stream the season finale of {show} exclusively on {platform} under the {genre} lineup."
+  sensitive: false
+  spans: []
+
+- id: NON315
+  text: "The {company} newsletter features updates from the {department} and {project} highlights."
+  sensitive: false
+  spans: []
+
+- id: NON316
+  text: "{application} version {count} introduces an upgraded interface and improved {server} sync."
+  sensitive: false
+  spans: []
+
+- id: NON317
+  text: "Earn {currency}{amount} off your next {product_type} purchase at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON318
+  text: "The {event} recap video will be available on {website} starting {date}."
+  sensitive: false
+  spans: []
+
+- id: NON319
+  text: "{department} leadership shared a progress summary for the {project} rollout."
+  sensitive: false
+  spans: []
+
+- id: NON320
+  text: "Check {website} for information on the upcoming {brand} {event} showcase."
+  sensitive: false
+  spans: []
+
+- id: NON321
+  text: "The {application} downtime window has been scheduled for {date} due to {server} upgrades."
+  sensitive: false
+  spans: []
+
+- id: NON322
+  text: "{platform} unveiled a new {genre} playlist inspired by popular titles like {show}."
+  sensitive: false
+  spans: []
+
+- id: NON323
+  text: "The {company} {department} concluded internal testing for the {project} release candidate."
+  sensitive: false
+  spans: []
+
+- id: NON324
+  text: "Shop {brand}’s newest {product_type} arrivals exclusively at {store} this weekend."
+  sensitive: false
+  spans: []
+
+- id: NON326
+  text: "The {event} will feature {company} executives discussing their latest {project} goals."
+  sensitive: false
+  spans: []
+
+- id: NON327
+  text: "Save up to {currency}{amount} on select {product_type} with the {brand} spring offer."
+  sensitive: false
+  spans: []
+
+- id: NON328
+  text: "The {server} logs show peak {application} activity on {date} with {count} concurrent users."
+  sensitive: false
+  spans: []
+
+- id: NON329
+  text: "Visit {website} to explore case studies about {company}’s {department} innovations."
+  sensitive: false
+  spans: []
+
+- id: NON330
+  text: "Catch all episodes of {show} now streaming under {genre} exclusives on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON331
+  text: "{brand} introduced a {currency}{amount} discount for pre-orders of upcoming {product_type}."
+  sensitive: false
+  spans: []
+
+- id: NON332
+  text: "The {company} {department} will hold a {project} progress review on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON333
+  text: "{server} diagnostics confirmed normal performance after {application} version {count} deployment."
+  sensitive: false
+  spans: []
+
+- id: NON334
+  text: "Stream highlights from the {event} presented by {brand} exclusively on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON335
+  text: "The {department} submitted the final report for {project} to {company} management."
+  sensitive: false
+  spans: []
+
+- id: NON336
+  text: "New arrivals in {brand}’s {product_type} series are available at select {store} outlets."
+  sensitive: false
+  spans: []
+
+- id: NON337
+  text: "The {application} status report shows {count} completed sync operations across {server} nodes."
+  sensitive: false
+  spans: []
+
+- id: NON338
+  text: "The {event} organized by {company} highlighted key outcomes from the {project}."
+  sensitive: false
+  spans: []
+
+- id: NON339
+  text: "{platform} will broadcast the {genre} awards featuring scenes from {show}."
+  sensitive: false
+  spans: []
+
+- id: NON340
+  text: "The {server} update was verified successfully, ensuring stable {application} uptime."
+  sensitive: false
+  spans: []
+
+- id: NON341
+  text: "Enjoy {currency}{amount} off all {product_type} at {store} during this week’s {event}."
+  sensitive: false
+  spans: []
+
+- id: NON342
+  text: "Visit {website} for announcements about {brand}’s next {project} collaboration."
+  sensitive: false
+  spans: []
+
+- id: NON343
+  text: "The {company} {department} launched a {project} aimed at improving sustainability goals."
+  sensitive: false
+  spans: []
+
+- id: NON344
+  text: "{application} was recognized for innovation at the {event} hosted by {company}."
+  sensitive: false
+  spans: []
+
+- id: NON345
+  text: "Stream the full {show} soundtrack in the {genre} category available now on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON346
+  text: "The {department} shared updates on the {project} during the company-wide {event}."
+  sensitive: false
+  spans: []
+
+- id: NON347
+  text: "{brand} unveiled its next-generation {product_type} at the global {event} this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON348
+  text: "The {server} performance monitor detected no downtime for {application} since {date}."
+  sensitive: false
+  spans: []
+
+- id: NON349
+  text: "Watch exclusive interviews with {show} creators now live on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON350
+  text: "The {company} {department} announced new funding for the {project} starting {date}."
+  sensitive: false
+  spans: []
+
+- id: NON351
+  text: "{company} shared a behind-the-scenes blog about the {department}’s progress on {project}."
+  sensitive: false
+  spans: []
+
+- id: NON352
+  text: "Join the discussion on {platform} about your favorite {brand} {product_type} releases."
+  sensitive: false
+  spans: []
+
+- id: NON353
+  text: "The {application} forum reached {count} active contributors this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON354
+  text: "Fans of {show} are posting reviews under the {genre} tag on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON355
+  text: "Visit {website} to read customer stories about their {brand} shopping experiences."
+  sensitive: false
+  spans: []
+
+- id: NON356
+  text: "The {department} posted an internal memo summarizing outcomes of the {project} demo."
+  sensitive: false
+  spans: []
+
+- id: NON357
+  text: "Share feedback about {application} updates through the survey link on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON358
+  text: "{company} announced that the {event} recordings will be available for replay by {date}."
+  sensitive: false
+  spans: []
+
+- id: NON359
+  text: "The {brand} newsletter features trending {product_type} now available at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON360
+  text: "{server} maintenance notes were published by the {department} engineering team."
+  sensitive: false
+  spans: []
+
+- id: NON361
+  text: "The community poll on {platform} selected {show} as top {genre} title of the year."
+  sensitive: false
+  spans: []
+
+- id: NON362
+  text: "Customers praised {brand}’s new {product_type} for its design and affordability."
+  sensitive: false
+  spans: []
+
+- id: NON363
+  text: "{company}’s {department} is hosting an open Q&A about the {project} roadmap."
+  sensitive: false
+  spans: []
+
+- id: NON364
+  text: "Watch clips from the {event} on {website}, courtesy of {brand} and {company}."
+  sensitive: false
+  spans: []
+
+- id: NON365
+  text: "The {application} changelog now includes user-requested improvements to {server} features."
+  sensitive: false
+  spans: []
+
+- id: NON366
+  text: "Enjoy {currency}{amount} off select {brand} {product_type} in celebration of the {event}."
+  sensitive: false
+  spans: []
+
+- id: NON367
+  text: "{department} invited feedback from employees on the new {project} communication plan."
+  sensitive: false
+  spans: []
+
+- id: NON368
+  text: "{platform} released a highlight reel summarizing key {genre} shows including {show}."
+  sensitive: false
+  spans: []
+
+- id: NON369
+  text: "Read about {company}’s sustainability {project} updates on the official {website} blog."
+  sensitive: false
+  spans: []
+
+- id: NON370
+  text: "The {store} social media page reached {count} followers after the {brand} campaign."
+  sensitive: false
+  spans: []
+
+- id: NON371
+  text: "The {application} community forum moderators posted a guide to recent {server} upgrades."
+  sensitive: false
+  spans: []
+
+- id: NON372
+  text: "{company} thanked attendees for participating in the {event} and supporting {project} goals."
+  sensitive: false
+  spans: []
+
+- id: NON373
+  text: "A tutorial for managing {application} settings is now live on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON374
+  text: "The {department} newsletter shared insights on improving workflow for {project} teams."
+  sensitive: false
+  spans: []
+
+- id: NON375
+  text: "{brand} fans can vote for their favorite {product_type} on the {store} homepage."
+  sensitive: false
+  spans: []
+
+- id: NON376
+  text: "Watch behind-the-scenes coverage of {show} in the {genre} lineup on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON377
+  text: "The {server} upgrade improved average {application} response time by {count}%."
+  sensitive: false
+  spans: []
+
+- id: NON378
+  text: "{company} invited community members to the next virtual {event} scheduled for {date}."
+  sensitive: false
+  spans: []
+
+- id: NON379
+  text: "The {department} is creating an employee spotlight article featuring {project} achievements."
+  sensitive: false
+  spans: []
+
+- id: NON380
+  text: "Get the latest news on {brand} promotions and {product_type} releases at {website}."
+  sensitive: false
+  spans: []
+
+- id: NON381
+  text: "The {application} help desk published FAQs addressing common {server} configuration issues."
+  sensitive: false
+  spans: []
+
+- id: NON382
+  text: "{platform} reported {count} daily active viewers tuning in to the {genre} section."
+  sensitive: false
+  spans: []
+
+- id: NON383
+  text: "The {company} blog covered highlights from the {event} featuring updates on {project}."
+  sensitive: false
+  spans: []
+
+- id: NON384
+  text: "{department} launched an internal challenge encouraging creative {project} ideas."
+  sensitive: false
+  spans: []
+
+- id: NON385
+  text: "The {store} weekend sale includes limited-time offers from {brand}."
+  sensitive: false
+  spans: []
+
+- id: NON386
+  text: "{application} metrics show stable {server} uptime following the latest maintenance."
+  sensitive: false
+  spans: []
+
+- id: NON387
+  text: "{platform} published a community spotlight featuring creators of {show} and other {genre} titles."
+  sensitive: false
+  spans: []
+
+- id: NON388
+  text: "The {company} {department} posted photos from the {event} on the internal portal."
+  sensitive: false
+  spans: []
+
+
+- id: NON390
+  text: "{server} optimization led to a {count}% speed increase for {application} processes."
+  sensitive: false
+  spans: []
+
+- id: NON391
+  text: "Share your thoughts about {brand}’s latest {product_type} on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON392
+  text: "The {department} outlined new {project} milestones to be achieved by {date}."
+  sensitive: false
+  spans: []
+
+- id: NON393
+  text: "{platform} streaming stats show {count} viewers tuned in to the {genre} category last night."
+  sensitive: false
+  spans: []
+
+- id: NON394
+  text: "{company} posted a thank-you message following the successful {event}."
+  sensitive: false
+  spans: []
+
+- id: NON395
+  text: "The {application} changelog now highlights bug fixes identified by {server} monitoring."
+  sensitive: false
+  spans: []
+
+- id: NON396
+  text: "Shop exclusive {brand} {product_type} online at {store} before the {event} ends."
+  sensitive: false
+  spans: []
+
+- id: NON397
+  text: "The {company} {department} shared lessons learned from the {project} implementation phase."
+  sensitive: false
+  spans: []
+
+- id: NON398
+  text: "Stream {show} and explore similar titles in the {genre} section of {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON399
+  text: "The {server} team confirmed {application} performance remained stable since {date}."
+  sensitive: false
+  spans: []
+
+- id: NON400
+  text: "Read the {company} newsletter for upcoming {event} announcements and {department} updates."
+  sensitive: false
+  spans: []
+
+- id: NON401
+  text: "{company} announced that the {department} will begin planning for the next {project} cycle."
+  sensitive: false
+  spans: []
+
+- id: NON402
+  text: "Share your favorite {brand} {product_type} moments on {platform} this weekend."
+  sensitive: false
+  spans: []
+
+- id: NON403
+  text: "The {application} team resolved minor {server} latency issues detected on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON404
+  text: "Watch the extended cut of {show} available exclusively in the {genre} section of {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON405
+  text: "Customers can now browse {brand}’s {product_type} collection directly on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON406
+  text: "The {department} held an open forum to discuss lessons learned from the {project} rollout."
+  sensitive: false
+  spans: []
+
+- id: NON407
+  text: "{application} reached {count} installations after the latest {server} upgrade."
+  sensitive: false
+  spans: []
+
+- id: NON408
+  text: "{brand} will showcase new {product_type} prototypes during the {event} hosted by {company}."
+  sensitive: false
+  spans: []
+
+- id: NON409
+  text: "Visit {website} to subscribe to {company}’s newsletter for updates on the {project}."
+  sensitive: false
+  spans: []
+
+- id: NON410
+  text: "The {server} update completed successfully, improving {application} response time by {count}%."
+  sensitive: false
+  spans: []
+
+- id: NON411
+  text: "Fans voted {show} as their favorite {genre} release of the year on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON412
+  text: "{department} recognized outstanding contributions to the {project} during the annual {event}."
+  sensitive: false
+  spans: []
+
+- id: NON414
+  text: "The {company} {department} posted a summary of {project} milestones on the intranet."
+  sensitive: false
+  spans: []
+
+- id: NON415
+  text: "{application} has been updated to version {count}, featuring improved {server} communication."
+  sensitive: false
+  spans: []
+
+- id: NON416
+  text: "Stream all episodes of {show} categorized under {genre} on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON417
+  text: "Visit {website} for {brand}’s latest announcements and {product_type} highlights."
+  sensitive: false
+  spans: []
+
+- id: NON418
+  text: "The {event} reached record participation from {company} employees across {department}s."
+  sensitive: false
+  spans: []
+
+- id: NON419
+  text: "The {server} analytics show {application} uptime of {count}% throughout {date}."
+  sensitive: false
+  spans: []
+
+- id: NON420
+  text: "{brand} introduced new packaging for its {product_type} available at {store} nationwide."
+  sensitive: false
+  spans: []
+
+- id: NON421
+  text: "The {company} {department} shared future goals for the ongoing {project} phase."
+  sensitive: false
+  spans: []
+
+- id: NON422
+  text: "{application} performance improved significantly following the {server} reboot on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON423
+  text: "Read {company}’s blog on {website} featuring insights from the recent {event}."
+  sensitive: false
+  spans: []
+
+- id: NON424
+  text: "{brand} thanked customers for supporting their {product_type} during the {event} sale."
+  sensitive: false
+  spans: []
+
+- id: NON425
+  text: "The {department} announced a collaborative {project} with external partners."
+  sensitive: false
+  spans: []
+
+- id: NON426
+  text: "Watch {show} highlights under the {genre} tab now trending on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON427
+  text: "The {server} operations team logged consistent {application} stability metrics this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON428
+  text: "{company} shared upcoming {event} details via newsletter and internal channels."
+  sensitive: false
+  spans: []
+
+- id: NON429
+  text: "{application} version {count} supports enhanced data caching for faster {server} sync."
+  sensitive: false
+  spans: []
+
+- id: NON432
+  text: "Read the recap of {company}’s {event} hosted earlier this {date} on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON433
+  text: "Stream {show} in high definition under the {genre} section on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON434
+  text: "The {application} patch deployed successfully to all {server} clusters overnight."
+  sensitive: false
+  spans: []
+
+- id: NON435
+  text: "{brand} announced plans to expand its {product_type} production at partner {store}s."
+  sensitive: false
+  spans: []
+
+- id: NON436
+  text: "The {company} {department} thanked staff for supporting the {project} completion."
+  sensitive: false
+  spans: []
+
+- id: NON437
+  text: "{platform} has reached {count} registered viewers across all {genre} categories."
+  sensitive: false
+  spans: []
+
+- id: NON438
+  text: "{application} released new documentation detailing {server} upgrade procedures."
+  sensitive: false
+  spans: []
+
+- id: NON439
+  text: "Visit {website} to explore case studies about {company}’s {project} outcomes."
+  sensitive: false
+  spans: []
+
+- id: NON440
+  text: "Shop the {brand} collection of {product_type} at any participating {store} this weekend."
+  sensitive: false
+  spans: []
+
+- id: NON441
+  text: "The {department} hosted a feedback session on {project} results and next steps."
+  sensitive: false
+  spans: []
+
+- id: NON442
+  text: "The {server} performance dashboard recorded {count} successful {application} tasks on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON443
+  text: "{platform} released the trailer for {show}, adding it to the {genre} spotlight lineup."
+  sensitive: false
+  spans: []
+
+- id: NON444
+  text: "The {company} blog on {website} features employee stories from the {event}."
+  sensitive: false
+  spans: []
+
+- id: NON445
+  text: "{brand} announced its partnership with {company} for upcoming {product_type} campaigns."
+  sensitive: false
+  spans: []
+
+- id: NON446
+  text: "The {application} report confirms {count} stable {server} operations since {date}."
+  sensitive: false
+  spans: []
+
+- id: NON447
+  text: "{department} set the next milestone review for the {project} at the end of {date}."
+  sensitive: false
+  spans: []
+
+- id: NON448
+  text: "The {store} event weekend continues with exclusive {brand} {product_type} deals."
+  sensitive: false
+  spans: []
+
+- id: NON449
+  text: "{company} shared {event} photos featuring key updates from the {department}."
+  sensitive: false
+  spans: []
+
+- id: NON450
+  text: "Stream the award-winning {show} and explore similar {genre} titles available on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON451
+  text: "{company} invited followers on {platform} to share feedback about its latest {project}."
+  sensitive: false
+  spans: []
+
+- id: NON452
+  text: "A new {brand} {product_type} just dropped at {store}—check it out before {date}."
+  sensitive: false
+  spans: []
+
+- id: NON453
+  text: "The {application} user forum reached {count} helpful posts about recent {server} updates."
+  sensitive: false
+  spans: []
+
+- id: NON454
+  text: "Watch exclusive interviews from {event} uploaded to {website} by {company}."
+  sensitive: false
+  spans: []
+
+- id: NON455
+  text: "{brand} thanked customers for helping them reach {count} sold units of the {product} line."
+  sensitive: false
+  spans: []
+
+- id: NON456
+  text: "{department} staff celebrated completion of the {project} during the internal {event}."
+  sensitive: false
+  spans: []
+
+- id: NON457
+  text: "The {server} monitoring dashboard confirmed {application} stability throughout {date}."
+  sensitive: false
+  spans: []
+
+- id: NON458
+  text: "{platform} launched a curated list of trending {genre} shows including {show}."
+  sensitive: false
+  spans: []
+
+- id: NON459
+  text: "Subscribe to {website} for {brand} news, {product_type} reviews, and upcoming {event}s."
+  sensitive: false
+  spans: []
+
+- id: NON460
+  text: "The {company} {department} shared a quick recap of {project} outcomes via newsletter."
+  sensitive: false
+  spans: []
+
+- id: NON461
+  text: "Save {currency}{amount} on featured {product_type} only at participating {store}s."
+  sensitive: false
+  spans: []
+
+- id: NON462
+  text: "Fans of {show} can join the live chat during the {genre} marathon on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON463
+  text: "{brand} announced a holiday giveaway including top {product_type} from its catalog."
+  sensitive: false
+  spans: []
+
+- id: NON464
+  text: "The {server} upgrade improved average {application} processing time by {count}%."
+  sensitive: false
+  spans: []
+
+- id: NON465
+  text: "Read {company}’s {department} blog for insights into the new {project} phase."
+  sensitive: false
+  spans: []
+
+- id: NON466
+  text: "The {event} livestream replay is now available for viewing on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON467
+  text: "{application} patch notes include optimizations for {server} load balancing."
+  sensitive: false
+  spans: []
+
+- id: NON468
+  text: "Join the {brand} fan community on {platform} for updates about upcoming {product_type}."
+  sensitive: false
+  spans: []
+
+- id: NON469
+  text: "The {department} published a short video showcasing {project} results achieved this quarter."
+  sensitive: false
+  spans: []
+
+- id: NON470
+  text: "Shop the {store} weekend event and earn {currency}{amount} in store credit."
+  sensitive: false
+  spans: []
+
+- id: NON471
+  text: "{company} posted a highlight reel from the {event} featuring {department} innovations."
+  sensitive: false
+  spans: []
+
+- id: NON472
+  text: "{application} reached {count} downloads following its launch announcement on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON473
+  text: "{platform} introduced a new {genre} category spotlighting hit titles like {show}."
+  sensitive: false
+  spans: []
+
+- id: NON474
+  text: "The {server} health report indicated all {application} nodes were operational on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON475
+  text: "The {company} {department} announced a contest to generate creative {project} ideas."
+  sensitive: false
+  spans: []
+
+- id: NON476
+  text: "Explore {brand}’s seasonal {product_type} releases now available at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON477
+  text: "Highlights from {event} have been summarized in a post on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON478
+  text: "{application} usage reports show {count} sessions completed after recent {server} tuning."
+  sensitive: false
+  spans: []
+
+- id: NON479
+  text: "{platform} added subtitles to {genre} shows including the award-winning {show}."
+  sensitive: false
+  spans: []
+
+- id: NON480
+  text: "Read customer experiences with {brand} {product_type} featured on {website}."
+  sensitive: false
+  spans: []
+
+- id: NON481
+  text: "The {company} {department} began onboarding new members for the {project} initiative."
+  sensitive: false
+  spans: []
+
+- id: NON482
+  text: "Enjoy {currency}{amount} discounts at {store} during the annual {brand} {event}."
+  sensitive: false
+  spans: []
+
+- id: NON483
+  text: "The {server} logs show {application} achieved {count}% efficiency after updates."
+  sensitive: false
+  spans: []
+
+- id: NON484
+  text: "Watch exclusive interviews with {show} producers available now in the {genre} section on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON485
+  text: "Follow {brand} on {platform} for product news, events, and {product_type} previews."
+  sensitive: false
+  spans: []
+
+- id: NON486
+  text: "{company} thanked all participants for attending the {department} {event} earlier this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON487
+  text: "The {application} changelog highlights improvements to {server} synchronization efficiency."
+  sensitive: false
+  spans: []
+
+- id: NON488
+  text: "{store} extended its clearance sale, offering up to {currency}{amount} off {brand} {product_type}."
+  sensitive: false
+  spans: []
+
+- id: NON489
+  text: "The {department} published a new internal newsletter covering {project} milestones."
+  sensitive: false
+  spans: []
+
+- id: NON490
+  text: "Check {website} for live coverage of the {event} hosted by {company}."
+  sensitive: false
+  spans: []
+
+- id: NON491
+  text: "{application} registered {count} active users across {server} environments this {date}."
+  sensitive: false
+  spans: []
+
+- id: NON492
+  text: "Stream fan-favorite {genre} series including {show} now trending on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON493
+  text: "The {company} {department} hosted a casual discussion about the future of {project}."
+  sensitive: false
+  spans: []
+
+- id: NON494
+  text: "{brand} revealed its eco-friendly {product_type} campaign launching at {store}."
+  sensitive: false
+  spans: []
+
+- id: NON495
+  text: "{application} release notes detail performance fixes from the recent {server} patch."
+  sensitive: false
+  spans: []
+
+- id: NON496
+  text: "The {department} will share an end-of-quarter {project} review summary on {date}."
+  sensitive: false
+  spans: []
+
+- id: NON497
+  text: "Watch the teaser trailer for {show} under the {genre} spotlight on {platform}."
+  sensitive: false
+  spans: []
+
+- id: NON498
+  text: "{store} launched a loyalty promotion with {currency}{amount} savings on {brand} {product_type}."
+  sensitive: false
+  spans: []
+
+- id: NON499
+  text: "Read the {company} {department} update about improvements to the {project} workflow."
+  sensitive: false
+  spans: []
+
+- id: NON500
+  text: "{server} diagnostics confirm that {application} maintained {count}% uptime since {date}."
+  sensitive: false
+  spans: []

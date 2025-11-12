@@ -1,0 +1,1145 @@
+- id: EMP001
+  text: "{name} signed an employment agreement with {company} for the {position} role on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{position}"
+      reason: ["Employment:Contracts"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP002
+  text: "The onboarding coordinator from {company} sent a welcome message to {email} before {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{date}"
+      reason: ["Employment:Status"]
+
+- id: EMP003
+  text: "HR at {company} reviewed {name}'s annual performance for the {project} initiative."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{project}"
+      reason: ["Employment:Performance"]
+
+- id: EMP004
+  text: "Employees should confirm their registered email {email} and current address {address} before payroll processing."
+  sensitive: true
+  spans:
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: EMP005
+  text: "A new contract for {position} was drafted by {company} and shared with {name} on {date}."
+  sensitive: true
+  spans:
+    - text: "{position}"
+      reason: ["Employment:Contracts"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP006
+  text: "The HR assistant updated the {system} records for {name2} after the promotion."
+  sensitive: true
+  spans:
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+
+- id: EMP007
+  text: "{company} transferred {amount} {currency} as a signing bonus to {name}'s account on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP008
+  text: "Access credentials for {system} will be distributed to staff on {date2} by {department}."
+  sensitive: true
+  spans:
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date2}"
+      reason: ["Employment:Status"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP009
+  text: "The HR director invited {name} to the performance review session at {venue}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: EMP010
+  text: "All employees participating in the {program} must submit confirmation before {date}."
+  sensitive: false
+  spans:
+    - text: "{program}"
+      reason: ["Employment:Performance"]
+    - text: "{date}"
+      reason: ["Employment:Performance"]
+
+- id: EMP011
+  text: "{name2} updated their employee ID record {id_number} after transfer to {department}."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+    - text: "{department}"
+      reason: ["Employment:Status"]
+
+- id: EMP012
+  text: "{company} issued a relocation allowance of {amount} {currency} for {name}'s move to {city}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+
+- id: EMP013
+  text: "Employees can log into the {platform} portal to upload signed documents and verify {tax_form} status."
+  sensitive: true
+  spans:
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+
+- id: EMP014
+  text: "{company} will notify {name2} of the final decision on the {position} by {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{position}"
+      reason: ["Employment:Contracts"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP015
+  text: "To improve transparency, {department} will post updates about {project} milestones on {platform}."
+  sensitive: false
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP016
+  text: "The reimbursement for {event} was credited to {bank_account} belonging to {name}."
+  sensitive: true
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{bank_account}"
+      reason: ["Financial:Transactions"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EMP017
+  text: "The HR database recorded access attempt using {access_code} assigned to {id_number}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Passwords"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+
+- id: EMP018
+  text: "{company} scheduled a compliance meeting with {name} at {venue} on {date2}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date2}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP019
+  text: "All training certificates from {program} will be distributed via {email2} after review."
+  sensitive: true
+  spans:
+    - text: "{program}"
+      reason: ["Employment:Performance"]
+    - text: "{email2}"
+      reason: ["PII:Contact Info"]
+
+- id: EMP020
+  text: "{company} processed {name}'s payroll adjustment of {amount} {currency} on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{date}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP021
+  text: "The {department} submitted project updates to {company} for quarterly review."
+  sensitive: false
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP022
+  text: "{name2} confirmed completion of the {program} required by {organization}."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{program}"
+      reason: ["Employment:Performance"]
+    - text: "{organization}"
+      reason: ["Employment:Performance"]
+
+- id: EMP023
+  text: "{company} filed the disciplinary report {record_id} concerning {name} on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{record_id}"
+      reason: ["Employment:Performance"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Performance"]
+
+- id: EMP024
+  text: "HR will deliver feedback reports through {system} before {date2} for the {project} cycle."
+  sensitive: false
+  spans:
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date2}"
+      reason: ["Employment:Performance"]
+    - text: "{project}"
+      reason: ["Employment:Performance"]
+
+- id: EMP025
+  text: "The contract between {company} and {name} was renewed under updated compensation terms."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EMP026
+  text: "System access for {id_number} will expire on {date2} unless extended by {department}."
+  sensitive: true
+  spans:
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+    - text: "{date2}"
+      reason: ["Employment:Status"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP027
+  text: "{name2} received a one-time bonus of {amount} {currency} approved by {company}."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP028
+  text: "{company} sent a confirmation letter to {address2} regarding {name}'s employment verification."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{address2}"
+      reason: ["PII:Contact Info"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EMP029
+  text: "Employees should report travel details for {event} through {system} by {date}."
+  sensitive: false
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP030
+  text: "{company} placed {name} on administrative leave pending results of the internal investigation."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: EMP031
+  text: "The manager requested access logs for {system} involving {id_number} activity last week."
+  sensitive: true
+  spans:
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+
+- id: EMP032
+  text: "Please submit the updated {tax_form} to the payroll department by {date}."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+    - text: "{date}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP033
+  text: "Access to the new HR {platform} will be available to employees in {department} starting {date2}."
+  sensitive: false
+  spans:
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date2}"
+      reason: ["Employment:Status"]
+
+- id: EMP034
+  text: "{name2} will lead {project} under the {department} initiative effective {date}."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date}"
+      reason: ["Employment:Status"]
+
+- id: EMP035
+  text: "{company} suspended {id_number} credentials after detecting repeated failed logins on {system}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP036
+  text: "An internal meeting at {venue} will address compliance updates for {project}."
+  sensitive: false
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP037
+  text: "{company} completed {name}'s termination paperwork on {date} after HR approval."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Status"]
+
+- id: EMP038
+  text: "IT reset the corporate account password to {password} for {name2} after verifying identity."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+
+- id: EMP039
+  text: "{company} confirmed merger progress with {organization} and will integrate {department} teams."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP040
+  text: "The login token {token} was regenerated for {id_number} due to session timeout."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Tokens"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+
+- id: EMP041
+  text: "The HR department verified {name}'s reference from {company2} before extending an offer."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP042
+  text: "Employees in {department} will be briefed about updated health benefits at {venue}."
+  sensitive: false
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: EMP043
+  text: "{company} awarded {name2} an excellence certificate for achievements in {project}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{project}"
+      reason: ["Employment:Performance"]
+
+- id: EMP044
+  text: "Payroll processed direct deposit to {bank_account} for {name} on {date2}."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Transactions"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date2}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP045
+  text: "{company} transferred the entire {project} team to a new building at {address}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: EMP046
+  text: "{name} received final clearance to start on {date} as a {position} with {company}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+    - text: "{position}"
+      reason: ["Employment:Status"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP047
+  text: "Following review, {company} offered {name2} a retention bonus of {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+
+- id: EMP048
+  text: "The HR director will share updates about {program} and compensation policies through {platform}."
+  sensitive: false
+  spans:
+    - text: "{program}"
+      reason: ["Employment:Performance"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP049
+  text: "A settlement agreement was signed by {company} concerning {name}'s dismissal on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: EMP050
+  text: "IT assigned new authentication credentials {token} and {password} for {id_number} in {department}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Tokens"]
+    - text: "{password}"
+      reason: ["Authentication:Passwords"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP101
+  text: "The HR manager at {company} finalized {name}'s new contract for the {position} role. The offer letter was signed on {date} and archived in {system}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{position}"
+      reason: ["Employment:Contracts"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP102
+  text: "Hey team, remember to update your emergency contact {document} before the end of the month. You can upload it directly through the {platform} portal."
+  sensitive: false
+  spans:
+    - text: "{document}"
+      reason: ["Employment:Status"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP103
+  text: "{company} processed a reimbursement of {amount} {currency} for {name}'s conference expenses. The funds will appear in {bank_account} within three business days."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{bank_account}"
+      reason: ["Financial:Transactions"]
+
+- id: EMP104
+  text: "Good morning {name2}, your access credentials for {system} have been reset. Please use the new {token} to log in and update your password immediately."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{token}"
+      reason: ["Authentication:Tokens"]
+
+- id: EMP105
+  text: "The disciplinary {document} for {id_number} was submitted to HR and will be reviewed on {date2}. The outcome will determine employment status moving forward."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Employment:Performance"]
+    - text: "{id_number}"
+      reason: ["Employment:Performance"]
+    - text: "{date2}"
+      reason: ["Employment:Status"]
+
+- id: EMP106
+  text: "All staff are invited to the annual wellness {event} at {venue} on {date}. Lunch will be provided, and participation counts toward the {program} incentive."
+  sensitive: false
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{date}"
+      reason: ["Employment:Performance"]
+    - text: "{program}"
+      reason: ["Employment:Performance"]
+
+- id: EMP107
+  text: "{name} filed a harassment complaint against a supervisor at {company}. Legal counsel has been notified, and an internal investigation {document} has been opened."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+
+- id: EMP108
+  text: "HR completed a background check for {name2} and verified employment history using {id_number}. The results were attached in the onboarding {document}."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+    - text: "{document}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP109
+  text: "Our diversity committee met yesterday to review applications for the {program}. Selected employees will receive mentorship and funding for training courses."
+  sensitive: false
+  spans:
+    - text: "{program}"
+      reason: ["Protected:Affiliation"]
+
+- id: EMP110
+  text: "{company} notified {name} that their termination will be effective on {date}. The final paycheck of {amount} {currency} will be processed this week."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Status"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+
+- id: EMP111
+  text: "Following an anonymous complaint, {company} initiated an audit of internal emails stored in {system}. All relevant messages will be reviewed by compliance."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP112
+  text: "Reminder: The {event} at {venue} begins promptly at {time}. Bring your employee ID {id_number} for check-in."
+  sensitive: true
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{time}"
+      reason: ["Employment:Performance"]
+    - text: "{id_number}"
+      reason: ["Employment:Status"]
+
+- id: EMP113
+  text: "{company} deposited a retention bonus of {amount} {currency} into {name}'s account. The HR team will issue a summary {document} to confirm payment."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{document}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP114
+  text: "{name2} requested extended medical leave under the {program}. Supporting {document}s were submitted to {department} for review."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{program}"
+      reason: ["Medical:Treatment"]
+    - text: "{document}"
+      reason: ["Employment:Status"]
+    - text: "{department}"
+      reason: ["Employment:Status"]
+
+- id: EMP115
+  text: "During the training {event}, attendees discussed safety procedures and future development goals. The minutes {document} will be posted on {platform}."
+  sensitive: false
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+    - text: "{document}"
+      reason: ["Employment:Performance"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP116
+  text: "Following the merger, {company} reassigned {name} to a new {department}. Updated details were reflected in {document} issued on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{department}"
+      reason: ["Employment:Status"]
+    - text: "{document}"
+      reason: ["Employment:Contracts"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP117
+  text: "The HR portal {platform} will be offline for maintenance from {time} to {time2}. Please save any {document}s before that time."
+  sensitive: false
+  spans:
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{time}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{time2}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP118
+  text: "{name} submitted a grievance {document} citing discrimination under {program}. Legal has opened a case file and will contact both parties soon."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{program}"
+      reason: ["Protected:Affiliation"]
+
+- id: EMP119
+  text: "The quarterly HR meeting at {venue} covered training, bonuses, and new {policy_document}. A recording will be uploaded to {system} by {date2}."
+  sensitive: false
+  spans:
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date2}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP120
+  text: "{company} awarded {name2} a certificate of achievement for outstanding work on {project}. The recognition will be announced at {event} next week."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{project}"
+      reason: ["Employment:Performance"]
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+
+- id: EMP121
+  text: "A new union {document} was distributed to employees under {program}. HR confirmed receipt from {department} heads."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Protected:Affiliation"]
+    - text: "{program}"
+      reason: ["Protected:Affiliation"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP122
+  text: "{company} forwarded {name}'s employment verification {document} to {organization} upon request. The file included role history and dates of service."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{document}"
+      reason: ["Employment:Status"]
+    - text: "{organization}"
+      reason: ["Employment:Status"]
+
+- id: EMP123
+  text: "An internal audit {document} revealed discrepancies in payroll for {project}. The finance {department} will address the issue immediately."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Financial:Transactions"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP124
+  text: "The mental health initiative under {program} provides employees with free counseling sessions. To enroll, contact HR at {email}."
+  sensitive: true
+  spans:
+    - text: "{program}"
+      reason: ["Medical:Treatment"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: EMP125
+  text: "{company} submitted its compliance {document} to {government_agency} for annual certification. Approval is expected by {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{government_agency}"
+      reason: ["Government:Agency"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: EMP126
+  text: "The HR team drafted a reorganization {document} detailing department mergers. Copies will be shared with managers next week."
+  sensitive: false
+  spans:
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP127
+  text: "Following approval, {company} offered {name} the {position} with a starting salary of {amount} {currency}. The signed {document} will be added to their personnel file."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{position}"
+      reason: ["Employment:Contracts"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{document}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP128
+  text: "Friendly reminder — the remote work policy {document} has been updated. Check {platform} for the latest version."
+  sensitive: false
+  spans:
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP129
+  text: "{name2} was reprimanded for violating company security protocols. A formal notice {document} was signed by {company} legal and stored in {system}."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{document}"
+      reason: ["Employment:Performance"]
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP130
+  text: "HR verified {name}'s participation in the training {event}. Attendance has been logged in {system}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP131
+  text: "Due to severe weather, the {event} scheduled for {date} at {venue} has been postponed. Participants will receive updates at {email2}."
+  sensitive: false
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+    - text: "{date}"
+      reason: ["Employment:Performance"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{email2}"
+      reason: ["PII:Contact Info"]
+
+- id: EMP132
+  text: "{company} initiated a settlement {document} after an employment dispute with {name2}. The agreement includes a confidentiality clause enforceable by law."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Legal:Proceedings"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+
+- id: EMP133
+  text: "The finance {department} created a cost-analysis {document} for {project}. It will be presented during the {event} next week."
+  sensitive: false
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{event}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP134
+  text: "Following complaints of overwork, HR referred {name} to counseling services under {program}. {document}s related to the case will remain confidential."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{program}"
+      reason: ["Medical:Treatment"]
+    - text: "{document}"
+      reason: ["Medical:Treatment"]
+
+- id: EMP135
+  text: "{company} confirmed {name2}’s relocation to the {city} branch effective {date2}. The transfer agreement {document} was signed and recorded in {system}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{city}"
+      reason: ["Location:Fixed"]
+    - text: "{date2}"
+      reason: ["Employment:Status"]
+    - text: "{document}"
+      reason: ["Employment:Contracts"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP136
+  text: "Managers must submit quarterly feedback {document}s to HR for each team member. These will be reviewed during performance discussions."
+  sensitive: false
+  spans:
+    - text: "{document}"
+      reason: ["Employment:Performance"]
+
+- id: EMP137
+  text: "{company} issued a written warning {document} to {id_number} after multiple compliance violations. The case may proceed to arbitration."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Performance"]
+    - text: "{document}"
+      reason: ["Employment:Performance"]
+    - text: "{id_number}"
+      reason: ["Employment:Performance"]
+
+- id: EMP138
+  text: "The HR dashboard on {platform} will show your remaining leave days after {date}. Please export your personal summary {document} if needed."
+  sensitive: false
+  spans:
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP139
+  text: "Following {event}, {company} released the project summary {document} to all employees via {email2}. The file contains detailed metrics and recommendations."
+  sensitive: true
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{email2}"
+      reason: ["PII:Contact Info"]
+
+- id: EMP140
+  text: "An anonymous tip alleged misuse of funds within {department}. The resulting investigation {document} has been classified by {organization} legal."
+  sensitive: true
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Performance"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP141
+  text: "The compliance {event} next quarter will feature guest speakers from {government_agency}. Details will be shared via {platform}."
+  sensitive: false
+  spans:
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+    - text: "{government_agency}"
+      reason: ["Government:Agency"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP142
+  text: "{name2} submitted a payroll correction request to {company} citing an error in {amount} {currency}. Documentation {document} was attached."
+  sensitive: true
+  spans:
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Salary/Payroll"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{document}"
+      reason: ["Employment:Salary/Payroll"]
+
+- id: EMP143
+  text: "Following a union vote under {program}, {company} agreed to extend leave benefits for all staff. The agreement {document} was signed yesterday."
+  sensitive: true
+  spans:
+    - text: "{program}"
+      reason: ["Protected:Affiliation"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{document}"
+      reason: ["Employment:Contracts"]
+
+- id: EMP144
+  text: "The finance {department} reconciled {document}s showing expense discrepancies from {project}. A final report will be published by {date}."
+  sensitive: false
+  spans:
+    - text: "{department}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{project}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{date}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP145
+  text: "{company} canceled {name}'s contract effective {date}. The termination {document} was approved by {organization}'s legal team."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{date}"
+      reason: ["Employment:Contracts"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP146
+  text: "Employees may submit suggestions through {platform} for improving {program}. The best ideas will be reviewed during the upcoming {event}."
+  sensitive: false
+  spans:
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{program}"
+      reason: ["Employment:Performance"]
+    - text: "{event}"
+      reason: ["Employment:Performance"]
+
+- id: EMP147
+  text: "{company} confirmed {name2}'s probationary status has ended successfully. The official confirmation {document} will be uploaded to {system}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{name2}"
+      reason: ["PII:Name"]
+    - text: "{document}"
+      reason: ["Employment:Status"]
+    - text: "{system}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: EMP148
+  text: "Please join us in congratulating {name} on promotion to {position}! A celebration {event} will be held at {venue} this Friday."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{position}"
+      reason: ["Employment:Status"]
+    - text: "{event}"
+      reason: ["Employment:Status"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: EMP149
+  text: "The HR analyst compared retention {document}s between departments. Results will guide future hiring decisions."
+  sensitive: false
+  spans:
+    - text: "{document}"
+      reason: ["Employment:Performance"]
+
+- id: EMP150
+  text: "{company} reached a settlement {document} with {name} following the wage dispute. Payment of {amount} {currency} was authorized on {date2}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Legal:Proceedings"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{date2}"
+      reason: ["Legal:Proceedings"]

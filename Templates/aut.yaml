@@ -1,0 +1,973 @@
+- id: AUT001
+  text: "Your temporary password is {password}. Please reset it after your first login to {system}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT002
+  text: "Never share your password with anyone, even if they claim to be from {company} support."
+  sensitive: false
+  spans: []
+
+- id: AUT003
+  text: "Use the OTP {otp} sent to your registered {email} to verify your {account}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT004
+  text: "Your API key {api_key} grants access to the {application}. Keep it confidential."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT005
+  text: "We recommend enabling two-factor authentication on your {account}."
+  sensitive: false
+  spans: []
+
+- id: AUT006
+  text: "The access code {access_code} can be used to unlock your {platform} dashboard."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT007
+  text: "Do not store passwords or tokens in plain text on your {server}."
+  sensitive: false
+  spans: []
+
+- id: AUT008
+  text: "A new API key {api_key} has been generated for your {application}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT009
+  text: "The OTP {otp} will expire in five minutes. Enter it on the {platform} login page."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT010
+  text: "For better security, change your password every 90 days."
+  sensitive: false
+  spans: []
+
+- id: AUT011
+  text: "Here is your secure login link: {login_link}. It will expire in 30 minutes."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT012
+  text: "Passwords should be at least twelve characters long and include symbols."
+  sensitive: false
+  spans: []
+
+- id: AUT013
+  text: "Your recovery PIN is {pin}. Use it to regain access to your {account}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT014
+  text: "The token {token} was issued by {system} for authentication purposes."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT015
+  text: "Avoid sending API keys or passwords over unencrypted email."
+  sensitive: false
+  spans: []
+
+- id: AUT016
+  text: "Your password {password} has been successfully updated for {application}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT017
+  text: "The login token {token} has expired. Please request a new one from {company}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT018
+  text: "Please enter the six-digit OTP sent to your {phone}."
+  sensitive: false
+  spans: []
+
+- id: AUT019
+  text: "Your access code {access_code} was used to log into the {system} at {date}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT020
+  text: "If you forget your password, use the password reset option on {platform}."
+  sensitive: false
+  spans: []
+
+- id: AUT021
+  text: "Your new API key is {api_key}. Replace the old key in your {application} settings."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT022
+  text: "We’ve sent an OTP to your {email}. Please check your inbox."
+  sensitive: false
+  spans: []
+
+- id: AUT023
+  text: "The system generated token {token} to authenticate your session."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT024
+  text: "Passwords are hashed before being stored on our {server}."
+  sensitive: false
+  spans: []
+
+- id: AUT025
+  text: "The temporary password {password} grants you access to your {account}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT026
+  text: "The API key {api_key} is valid for one week and tied to your {company} account."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT027
+  text: "Never enter your password on third-party websites pretending to be {company}."
+  sensitive: false
+  spans: []
+
+- id: AUT028
+  text: "Use the login link {login_link} to access your {account} on {platform}."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT029
+  text: "Your PIN {pin} has been reset successfully. Please store it securely."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT030
+  text: "The OTP {otp} was entered incorrectly three times and has been invalidated."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT031
+  text: "Keep your API keys private and rotate them periodically for better security."
+  sensitive: false
+  spans: []
+
+- id: AUT032
+  text: "Your password {password} is set to expire soon on {system}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT033
+  text: "The access code you entered has expired. Request a new one."
+  sensitive: false
+  spans: []
+
+- id: AUT034
+  text: "A new token {token} was generated to maintain your session on {application}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT035
+  text: "Your one-time PIN for {company} is {pin}. It expires in five minutes."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT036
+  text: "Do not forward login links to other users, even inside {department}."
+  sensitive: false
+  spans: []
+
+- id: AUT037
+  text: "The OTP {otp} has been verified successfully for your {account}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT038
+  text: "Your access code {access_code} was revoked due to a failed login attempt."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT039
+  text: "Passwords should never be transmitted in chat messages or logs."
+  sensitive: false
+  spans: []
+
+- id: AUT040
+  text: "The API key {api_key} was used to connect {application} to {system}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT041
+  text: "The login link {login_link} has already been used and is no longer valid."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT042
+  text: "Always confirm that the URL in your login link starts with the {company} domain."
+  sensitive: false
+  spans: []
+
+- id: AUT043
+  text: "The token {token} was invalidated by the {system} after session timeout."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT044
+  text: "The temporary password {password} allows you to log in until {date}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT045
+  text: "Your OTP was sent successfully to {phone}. Enter it to proceed."
+  sensitive: false
+  spans: []
+
+- id: AUT046
+  text: "Access code {access_code} was issued for administrative login on {server}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT047
+  text: "Never send your password or PIN through unencrypted channels."
+  sensitive: false
+  spans: []
+
+- id: AUT048
+  text: "The API key {api_key} was created by {department} for internal testing."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT049
+  text: "Your password {password} was entered incorrectly three times."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT050
+  text: "For security, OTPs and access codes expire quickly to prevent misuse."
+  sensitive: false
+  spans: []
+
+- id: AUT051
+  text: "Your new access code {access_code} has been activated for {application}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT052
+  text: "We’ve updated your password policy to require both letters and numbers."
+  sensitive: false
+  spans: []
+
+- id: AUT053
+  text: "Use the OTP {otp} to verify your {account} before {date}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT054
+  text: "Do not post API keys or tokens in screenshots shared with {department}."
+  sensitive: false
+  spans: []
+
+- id: AUT055
+  text: "A new password {password} was created for your {system} login."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT056
+  text: "Never share your OTP or access code with anyone claiming to be from {company}."
+  sensitive: false
+  spans: []
+
+- id: AUT057
+  text: "The login link {login_link} will give you temporary access to {platform}."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT058
+  text: "Your PIN {pin} has been generated for use with {application}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT059
+  text: "Developers should regenerate their API keys after project migration."
+  sensitive: false
+  spans: []
+
+- id: AUT060
+  text: "Token {token} was used to authenticate {account} at {date}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT061
+  text: "You can reset your password anytime from your {platform} security page."
+  sensitive: false
+  spans: []
+
+- id: AUT062
+  text: "The API key {api_key} was assigned to {department} for the {system} integration."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT063
+  text: "Your access code {access_code} was successfully verified."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT064
+  text: "Your OTP has been sent to {phone}. Please enter it within two minutes."
+  sensitive: false
+  spans: []
+
+- id: AUT065
+  text: "The password {password} for {account} was last changed on {date}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT066
+  text: "Never share screenshots containing API keys or access tokens."
+  sensitive: false
+  spans: []
+
+- id: AUT067
+  text: "A temporary login token {token} was issued for {application} maintenance."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT068
+  text: "Your PIN {pin} has expired and must be reset before accessing {system}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT069
+  text: "If you can’t access your account, click the password reset option on {platform}."
+  sensitive: false
+  spans: []
+
+- id: AUT070
+  text: "The access code {access_code} is tied to your {company} email {email}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT071
+  text: "Your password was updated successfully for your {application}."
+  sensitive: false
+  spans: []
+
+- id: AUT072
+  text: "The API key {api_key} grants write permissions to the {server} endpoint."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT073
+  text: "Your OTP {otp} was verified successfully for {account}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT074
+  text: "Avoid storing plaintext passwords or tokens in configuration files."
+  sensitive: false
+  spans: []
+
+- id: AUT075
+  text: "Your temporary password {password} was created for emergency login."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT076
+  text: "A new API key {api_key} was generated by {company} for the {system} interface."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT077
+  text: "You will receive an OTP via {email} shortly."
+  sensitive: false
+  spans: []
+
+- id: AUT078
+  text: "Your token {token} has been refreshed for continued access to {platform}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT079
+  text: "Passwords must never be stored in plain text within {department} systems."
+  sensitive: false
+  spans: []
+
+- id: AUT080
+  text: "The login link {login_link} is valid until {date}."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT081
+  text: "Never share your PIN or password through chat tools like internal messengers."
+  sensitive: false
+  spans: []
+
+- id: AUT082
+  text: "Access code {access_code} has been deactivated after repeated failed logins."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT083
+  text: "Your API key {api_key} was used from an unknown location at {date}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT084
+  text: "The OTP {otp} you entered has already been used."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT085
+  text: "To reset your password, visit the official {company} website."
+  sensitive: false
+  spans: []
+
+- id: AUT086
+  text: "Your temporary password {password} was emailed to {email} for activation."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT087
+  text: "The token {token} is no longer valid. Please request a new one."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT088
+  text: "Do not include authentication details in support emails or forms."
+  sensitive: false
+  spans: []
+
+- id: AUT089
+  text: "The API key {api_key} was found in public code repositories."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT090
+  text: "Your PIN {pin} was entered incorrectly multiple times."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT091
+  text: "Passwords should not be reused across different {company} systems."
+  sensitive: false
+  spans: []
+
+- id: AUT092
+  text: "A new access code {access_code} was created for administrator {name}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT093
+  text: "Your OTP has expired. Please request a new one to access your {account}."
+  sensitive: false
+  spans: []
+
+- id: AUT094
+  text: "The login link {login_link} can only be used once for your {platform} login."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT095
+  text: "Token {token} was used to perform an action on {server} by {department}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT096
+  text: "Please update your password on {system} every 60 days to maintain compliance."
+  sensitive: false
+  spans: []
+
+- id: AUT097
+  text: "Your one-time PIN {pin} will allow temporary access to {application}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT098
+  text: "The API key {api_key} has been regenerated for the {platform} connector."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT099
+  text: "Your password {password} has expired and must be reset before accessing {account}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT100
+  text: "Never reveal OTPs, access codes, or tokens to anyone, even within {department}."
+  sensitive: false
+  spans: []
+
+- id: AUT101
+  text: "Your temporary password {password} was generated for your {application}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT102
+  text: "Use the OTP {otp} to authorize this transaction on {platform}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT103
+  text: "Access code {access_code} was created to enable administrative login on {system}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT104
+  text: "The token {token} has been issued for your current {application} session."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT105
+  text: "API key {api_key} has been provisioned for {department} to integrate with {server}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT106
+  text: "Your new password is {password}. Change it immediately after login."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT107
+  text: "The OTP {otp} was sent to {email} and will expire in 10 minutes."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT108
+  text: "The access code {access_code} is required to unlock your {account} dashboard."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT109
+  text: "A new API key {api_key} has been generated for {company}'s internal analytics service."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT110
+  text: "Your PIN {pin} must be entered to confirm this payment on {platform}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT111
+  text: "The login link {login_link} grants one-time access to your {account}."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT112
+  text: "Token {token} was automatically generated by {system} for session verification."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT113
+  text: "Your one-time PIN {pin} has been created for access to {application}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT114
+  text: "The API key {api_key} allows authorized uploads to the {server}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT115
+  text: "Password {password} was reset successfully on {date} for {account}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT116
+  text: "The OTP {otp} you entered was invalid. Please request a new one."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT117
+  text: "Access code {access_code} was redeemed by {name} at {date}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT118
+  text: "Your API key {api_key} was used from an unrecognized IP address."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT119
+  text: "Password {password} failed policy requirements and must be updated."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT120
+  text: "The login link {login_link} was accessed from an unknown device."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT121
+  text: "Temporary token {token} has been assigned for your {application} session."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT122
+  text: "The access code {access_code} grants secure entry to {system} for {department}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT123
+  text: "Your OTP {otp} was verified successfully for {platform}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT124
+  text: "Password {password} will expire tomorrow for {account}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT125
+  text: "API key {api_key} has been rotated automatically for security compliance."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT126
+  text: "Your access code {access_code} was disabled after multiple failed logins."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT127
+  text: "Token {token} has expired and a new one was issued to your {application}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT128
+  text: "Your PIN {pin} was last updated on {date}."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT129
+  text: "The OTP {otp} has already been used and is no longer valid."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT130
+  text: "The API key {api_key} provided by {company} is limited to read-only operations."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT131
+  text: "A password {password} was created for temporary login to {platform}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT132
+  text: "Access code {access_code} will be required again after system restart."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT133
+  text: "Your login link {login_link} has expired and cannot be reused."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT134
+  text: "Token {token} has been validated by {system} and stored for session tracking."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT135
+  text: "Your new password {password} is active and ready to use."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT136
+  text: "The OTP {otp} has been successfully delivered to {phone}."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT137
+  text: "PIN {pin} was entered incorrectly three times. Account locked."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT138
+  text: "Your API key {api_key} was leaked publicly and has been revoked."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT139
+  text: "The temporary password {password} grants you access to {system} until {date}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT140
+  text: "Access code {access_code} was distributed to {department} for remote testing."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT141
+  text: "Login link {login_link} was clicked from an unauthorized IP address."
+  sensitive: true
+  spans:
+    - text: "{login_link}"
+      reason: ["Authentication:Access Link"]
+
+- id: AUT142
+  text: "A new token {token} has been assigned to the {application} instance."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT143
+  text: "Your PIN {pin} must be updated to meet new security standards."
+  sensitive: true
+  spans:
+    - text: "{pin}"
+      reason: ["Authentication:PIN"]
+
+- id: AUT144
+  text: "API key {api_key} was requested by {name} from {department}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]
+
+- id: AUT145
+  text: "The password {password} was used to log in from {address} at {date}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT146
+  text: "OTP {otp} verified at {date} for {account} activation."
+  sensitive: true
+  spans:
+    - text: "{otp}"
+      reason: ["Authentication:OTP"]
+
+- id: AUT147
+  text: "Token {token} will expire in 15 minutes for {application}."
+  sensitive: true
+  spans:
+    - text: "{token}"
+      reason: ["Authentication:Token"]
+
+- id: AUT148
+  text: "Your password {password} was recently changed by {name}."
+  sensitive: true
+  spans:
+    - text: "{password}"
+      reason: ["Authentication:Password"]
+
+- id: AUT149
+  text: "Access code {access_code} was regenerated and shared securely with {department}."
+  sensitive: true
+  spans:
+    - text: "{access_code}"
+      reason: ["Authentication:Access Code"]
+
+- id: AUT150
+  text: "The API key {api_key} was automatically rotated for {platform}."
+  sensitive: true
+  spans:
+    - text: "{api_key}"
+      reason: ["Authentication:API Key"]

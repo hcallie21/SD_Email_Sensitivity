@@ -1,0 +1,1391 @@
+- id: LEG001
+  text: "A hearing at {court} on {date} will address alleged breaches of the {contract} between {company} and {company2}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG002
+  text: "Please review {policy_document} for compliance; do not reference the {contract} until counsel confirms."
+  sensitive: false
+  spans: []
+
+- id: LEG003
+  text: "The {judge} ruled that {name} was guilty of {crime} and imposed a sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG004
+  text: "An internal briefing was circulated by {legal_team} regarding the {contract} agreement executed by {company}."
+  sensitive: true
+  spans:
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG005
+  text: "Under the {contract}, {company} must deliver the assets by {date} or face stipulated penalties."
+  sensitive: true
+  spans:
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG006
+  text: "The claim filed by {name} against {organization} was docketed at {court} for preliminary review."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG007
+  text: "{document} will summarize the decision issued by {court} concerning the {contract}."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG008
+  text: "We will meet with {government_agency} to clarify compliance steps before referencing the {contract} in filings."
+  sensitive: false
+  spans: []
+
+- id: LEG009
+  text: "{legal_team} confirmed that {document} satisfies disclosure requirements under the revised statute."
+  sensitive: false
+  spans: []
+
+- id: LEG010
+  text: "{name} was charged with {crime} following an inquiry initiated by {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: LEG011
+  text: "On {date}, {court} found {company} liable for breach of the {contract} agreement."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG012
+  text: "Our practice focuses on {crime} defense and licensing matters involving the {contract} framework."
+  sensitive: false
+  spans: []
+
+- id: LEG013
+  text: "As part of settlement terms, {organization} will transfer {asset_type} to {company2} by {date2}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{asset_type}"
+      reason: ["Financial:Transactions"]
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+    - text: "{date2}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG014
+  text: "{name} completed obligations arising from the sentence of {sentence} related to {crime}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG015
+  text: "The bankruptcy matter involving {company} is set at {court} on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Financial:Transactions"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG016
+  text: "{broker} received the {contract} for legal verification prior to submission."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Transactions"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG017
+  text: "The audit found no violations related to the {contract}; {legal_team} will keep monitoring."
+  sensitive: false
+  spans: []
+
+- id: LEG018
+  text: "The {judge} vacated {name}'s sentence of {sentence} following newly discovered evidence."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG019
+  text: "{organization} filed a patent infringement complaint with {court} for initial assignment."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG020
+  text: "The panel will convene at {venue} on {date} to discuss proposed amendments to the {contract}."
+  sensitive: false
+  spans: []
+
+- id: LEG021
+  text: "Our audit identified inconsistencies between {document} and the {contract} executed by {company}."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG022
+  text: "{government_agency} requested documentation confirming adherence to the updated legal framework."
+  sensitive: false
+  spans: []
+
+- id: LEG023
+  text: "{name} testified at {court} in the investigation involving {company}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LEG024
+  text: "{legal_team} issued updated guidance for managing renewals of the {contract}."
+  sensitive: false
+  spans: []
+
+- id: LEG025
+  text: "{judge} granted parole, modifying {name}'s sentence to {sentence}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG026
+  text: "The IP group is preparing a new template addendum to the {contract} covering {asset_type} usage rights."
+  sensitive: false
+  spans: []
+
+- id: LEG027
+  text: "An injunction from {court} froze {bank_account} due to ongoing proceedings related to {crime}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{crime}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG028
+  text: "{name} filed a wrongful termination claim against {company}, citing breaches of the {contract}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{company}"
+      reason: ["Employment:Status"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG029
+  text: "{court} postponed the next hearing to {date} pending additional disclosures."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG030
+  text: "Counsel represents {organization} in multiple matters before {court} concerning licensing tied to the {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG031
+  text: "The {judge} reviewed {document} submitted by {company} and granted the requested relief."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG032
+  text: "A public notice summarized legal updates affecting obligations under the {contract} and related {policy_document} provisions."
+  sensitive: false
+  spans: []
+
+- id: LEG033
+  text: "{name} executed the {contract} in the presence of {judge} and registered it under {record_id}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG034
+  text: "A settlement proposal was sent to {company2} for review by {legal_team} ahead of amendments to the {contract}."
+  sensitive: true
+  spans:
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG035
+  text: "{name} will appear before {court} to appeal the sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG036
+  text: "{court} denied {organization}'s request to renew the {contract} under the existing clause."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG037
+  text: "Submit revisions to {document} before attaching it to the {contract} for final execution."
+  sensitive: false
+  spans: []
+
+- id: LEG038
+  text: "According to the report, {name} was charged with {crime} at {venue}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+
+- id: LEG039
+  text: "An appeal was filed at {court} challenging the suspension order affecting {organization}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG040
+  text: "The justice department revised guidance in {policy_document} and withdrew references to the {contract}."
+  sensitive: false
+  spans: []
+
+- id: LEG041
+  text: "Counsel retained {document} as evidence in the {crime} matter involving {company}."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LEG042
+  text: "{name} reached a plea agreement after serving part of the sentence of {sentence} related to {crime}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG043
+  text: "All employees must execute the {contract} and return it to {department} by {date2}."
+  sensitive: false
+  spans: []
+
+- id: LEG044
+  text: "A subpoena from {court} requests access to {document} and {email} communications."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{email}"
+      reason: ["PII:Contact Info"]
+
+- id: LEG045
+  text: "The attorney general’s office is reviewing {organization}'s use of the {contract} for compliance."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG046
+  text: "{government_agency} reported that {name} was cleared of all {crime} charges."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG047
+  text: "A class action was filed against {company} alleging breaches of the {contract}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG048
+  text: "Upload {document} before the hearing at {court}; late submissions may be excluded."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG049
+  text: "{judge} deferred sentencing for {name} pending additional evidence in the {crime} matter."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG050
+  text: "The witness protection program was initiated for {name} after proceedings concluded at {court}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG051
+  text: "The arbitration panel at {court} reviewed the {contract} and determined that {company} had fulfilled its obligations."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG052
+  text: "Please submit {document} to {legal_team} for verification before attaching it to the {contract} draft."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG053
+  text: "{name} entered a plea deal after being charged with {crime} and received a sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG054
+  text: "The {court} has issued a temporary injunction preventing disclosure of {document} related to the {contract}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG055
+  text: "The compliance audit confirmed that the {company} operates under the {contract} and follows all required clauses."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG056
+  text: "The {legal_team} requested clarification from {government_agency} regarding updates to {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: LEG057
+  text: "{judge} presided over the trial at {court}, where {organization} was found in breach of the {contract}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG058
+  text: "An internal review showed no outstanding disputes connected to the {contract} between {company} and {company2}."
+  sensitive: false
+  spans: []
+
+- id: LEG059
+  text: "A public statement issued by {court} outlined the appeal ruling associated with {record_id}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG060
+  text: "{name} was acquitted of {crime} by {court} after serving part of a sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG061
+  text: "Please verify whether {organization} has fulfilled its payment schedule under {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG062
+  text: "The {court} has scheduled a pre-trial conference on {date} to review evidence tied to {crime} charges."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG063
+  text: "The firm will finalize {document} once the {contract} addendum is approved by {legal_team}."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LEG064
+  text: "{name} appealed the sentence of {sentence}, citing procedural errors during the initial {court} hearing."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG065
+  text: "The report confirmed that all sections of {policy_document} align with clauses outlined in {contract}."
+  sensitive: false
+  spans: []
+
+- id: LEG066
+  text: "The {judge} granted a motion to dismiss {crime} charges against {name}, closing the case at {court}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG067
+  text: "The {contract} has expired, and {company} must reapply for renewal under the updated policy terms."
+  sensitive: true
+  spans:
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG068
+  text: "A summary of rulings from {court} will be distributed to {department} for internal review."
+  sensitive: false
+  spans: []
+
+- id: LEG069
+  text: "{organization} filed a new appeal at {court} regarding intellectual property covered under {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG070
+  text: "{government_agency} announced updates to the dispute resolution process applicable to {contract} cases."
+  sensitive: false
+  spans: []
+
+- id: LEG071
+  text: "The prosecutor presented {document} at {court} linking {company} to fraudulent {contract} activity."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG072
+  text: "{judge} sentenced {name} to serve {sentence} for repeated violations of {crime} statutes."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG073
+  text: "An administrative order from {court} requires all references to {contract} to be redacted before publication."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG074
+  text: "{organization} confirmed termination of the {contract} following an audit by {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: LEG075
+  text: "The {legal_team} will meet with {company} to finalize language for the {contract} addendum."
+  sensitive: true
+  spans:
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG076
+  text: "The internal policy update references the {contract} only for illustrative purposes and not enforcement."
+  sensitive: false
+  spans: []
+
+- id: LEG077
+  text: "{name} was detained for {crime} but later released after {court} ruled the evidence insufficient."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG078
+  text: "The compliance board requested {document} detailing the clauses defined within the {contract}."
+  sensitive: true
+  spans:
+    - text: "{document}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG079
+  text: "{organization} entered mediation with {company2} to resolve disputes under the {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG080
+  text: "The {judge} postponed ruling on {name}'s appeal until records from {court} were verified."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG081
+  text: "Please ensure {document} references the correct clause number within {contract} before submission."
+  sensitive: false
+  spans: []
+
+- id: LEG082
+  text: "{court} ordered the suspension of {organization}'s operations due to breaches in {contract} compliance."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG083
+  text: "The revised {policy_document} is now consistent with obligations in {contract} for all partner entities."
+  sensitive: false
+  spans: []
+
+- id: LEG084
+  text: "The {court} dismissed the charges of {crime} against {name} after determining lack of intent."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: LEG085
+  text: "A memorandum was shared with {department} summarizing updates to {policy_document} and related {contract}s."
+  sensitive: false
+  spans: []
+
+- id: LEG086
+  text: "{name} agreed to settle the dispute by paying {amount} under terms defined in {contract}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG087
+  text: "An internal audit revealed {company} failed to adhere to confidentiality clauses in {contract}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG088
+  text: "{government_agency} confirmed receipt of {document} referencing pending amendments to {contract}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{document}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG089
+  text: "The disciplinary board determined that {organization} violated obligations set out in {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG090
+  text: "The {legal_team} discussed confidentiality risks associated with {contract} clauses."
+  sensitive: false
+  spans: []
+
+- id: LEG091
+  text: "{judge} deferred judgment on {name}'s motion, requesting clarification from {court} records."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG092
+  text: "A legal opinion from {organization} supported extending the validity of {contract} through next fiscal year."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG093
+  text: "The compliance division confirmed all data handling within {contract} meets current privacy standards."
+  sensitive: false
+  spans: []
+
+- id: LEG094
+  text: "A new ruling at {court} invalidated {company}'s prior {contract} with a government contractor."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG095
+  text: "{name} received a suspended sentence of {sentence} after pleading guilty to {crime}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG096
+  text: "{organization} submitted an appeal through {court} to challenge the terms of {contract} renewal."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG097
+  text: "The public registry has been updated to reflect expiration of {contract} effective {date}."
+  sensitive: true
+  spans:
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG098
+  text: "The {legal_team} found inconsistencies between {document} and the updated clauses in {contract}."
+  sensitive: true
+  spans:
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{document}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG099
+  text: "A briefing was sent to {department} detailing the arbitration outcomes related to {contract} compliance."
+  sensitive: false
+  spans: []
+
+- id: LEG100
+  text: "{judge} finalized sentencing for {name} and ordered enforcement of the sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG101
+  text: "The arbitration award recorded under {record_id} confirms {company}'s full compliance with {contract}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG102
+  text: "{judge} presided over the closing arguments at {court} concerning ownership disputes tied to {contract}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG103
+  text: "A report was sent to {department} outlining compliance improvements in the new {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: LEG104
+  text: "{name} was granted probation after serving part of the sentence of {sentence} for {crime}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG105
+  text: "All legal filings under {record_id} have been consolidated by {legal_team} for presentation at {court}."
+  sensitive: true
+  spans:
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG106
+  text: "Please confirm with {organization} whether the {contract} was executed before {date}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{date}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG107
+  text: "The {court} hearing will determine if {company} violated confidentiality obligations under {contract}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG108
+  text: "A memorandum of understanding was signed under {contract} to extend the partnership between {organization} and {company2}."
+  sensitive: true
+  spans:
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG109
+  text: "{government_agency} released an updated list of arbitration guidelines related to {contract} cases."
+  sensitive: false
+  spans: []
+
+- id: LEG110
+  text: "{name} was convicted of {crime} and sentenced to serve {sentence} after the verdict at {court}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG111
+  text: "{organization} completed review of {document} in preparation for upcoming amendments to {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{document}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG112
+  text: "The {judge} issued a new order requiring {company} to comply with environmental provisions in {contract}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG113
+  text: "The department will summarize findings from the last quarter's legal audit of {organization}."
+  sensitive: false
+  spans: []
+
+- id: LEG114
+  text: "Counsel confirmed {court} has jurisdiction over matters arising from {contract} execution disputes."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG115
+  text: "{legal_team} coordinated with {government_agency} to confirm procedural updates for future appeals."
+  sensitive: false
+  spans: []
+
+- id: LEG116
+  text: "{name} received a suspended sentence of {sentence} for the misdemeanor charge of {crime}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+
+- id: LEG117
+  text: "The {court} postponed proceedings on {record_id} until next month pending evidence review."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG118
+  text: "{company} is preparing the renewal terms for {contract} with assistance from {legal_team}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LEG119
+  text: "The review panel concluded that {organization} adhered to all statutory conditions defined in {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG120
+  text: "The policy team will update {policy_document} following amendments to {contract} approved last week."
+  sensitive: false
+  spans: []
+
+- id: LEG121
+  text: "{judge} approved consolidation of multiple cases filed under {record_id} at {court}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG122
+  text: "{name} filed an appeal against the sentence of {sentence}, citing procedural violations."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG123
+  text: "{organization} entered into {contract} to provide advisory services to {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: LEG124
+  text: "An internal compliance review showed that {document} is properly referenced in {contract} documentation."
+  sensitive: false
+  spans: []
+
+- id: LEG125
+  text: "A ruling from {court} invalidated several provisions of {contract} executed by {company2}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+
+- id: LEG126
+  text: "{name} was found guilty of {crime} but released early after serving half the sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{crime}"
+      reason: ["Legal:History"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG127
+  text: "The {court} will hear testimony on {date2} related to {organization}'s violation of {contract} terms."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{date2}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG128
+  text: "The internal memo distributed by {legal_team} outlines key deadlines associated with {contract} renewals."
+  sensitive: false
+  spans: []
+
+- id: LEG129
+  text: "{government_agency} confirmed closure of the case associated with {record_id}."
+  sensitive: true
+  spans:
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG130
+  text: "The settlement letter references the {contract} and includes payment details processed by {bank}."
+  sensitive: true
+  spans:
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+
+- id: LEG131
+  text: "{organization} submitted an internal report to {department} summarizing findings related to {contract}."
+  sensitive: false
+  spans: []
+
+- id: LEG132
+  text: "The {judge} extended sentencing deliberations after {court} received new evidence from {document}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{document}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG133
+  text: "{company} was fined {amount} for non-compliance with {contract} environmental clauses."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG134
+  text: "The policy revision aligns {policy_document} with all obligations under {contract} for clarity."
+  sensitive: false
+  spans: []
+
+- id: LEG135
+  text: "The {court} deferred decision on {record_id} until counsel submits supporting evidence."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{record_id}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG136
+  text: "{organization} requested confirmation from {government_agency} before signing {contract} renewal papers."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG137
+  text: "All required signatures for {contract} have been verified by {legal_team}."
+  sensitive: true
+  spans:
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: LEG138
+  text: "{judge} finalized the sentencing order for {name} and issued the official sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+
+- id: LEG139
+  text: "The audit confirmed that {company2} met all legal obligations described in {contract}."
+  sensitive: true
+  spans:
+    - text: "{company2}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG140
+  text: "The training session scheduled at {venue} will cover major changes in {policy_document}."
+  sensitive: false
+  spans: []
+
+- id: LEG141
+  text: "{organization} notified {court} of its intention to withdraw the appeal related to {contract}."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG142
+  text: "{company} has been directed to cease activities under {contract} pending investigation by {government_agency}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+    - text: "{government_agency}"
+      reason: ["Government:Welfare/Social Benefits"]
+
+- id: LEG143
+  text: "The {legal_team} circulated a notice reminding all staff to follow document retention policies."
+  sensitive: false
+  spans: []
+
+- id: LEG144
+  text: "A summary judgment was entered at {court} in favor of {organization} enforcing the {contract}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG145
+  text: "{judge} issued a probationary order modifying the sentence of {sentence} for {name}."
+  sensitive: true
+  spans:
+    - text: "{judge}"
+      reason: ["Legal:Proceedings"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: LEG146
+  text: "A new policy brief is being prepared to explain procedural reforms across civil and criminal divisions."
+  sensitive: false
+  spans: []
+
+- id: LEG147
+  text: "{organization} confirmed all project deliverables required by {contract} have been submitted."
+  sensitive: true
+  spans:
+    - text: "{organization}"
+      reason: ["Employment:Contracts"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG148
+  text: "The final audit was conducted jointly by {company} and {legal_team} to ensure full adherence to {contract}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["Employment:Contracts"]
+    - text: "{legal_team}"
+      reason: ["Employment:Internal Business Information"]
+    - text: "{contract}"
+      reason: ["Legal:Contracts/IP"]
+
+- id: LEG149
+  text: "The bar association’s annual conference at {venue} will discuss emerging trends in arbitration law."
+  sensitive: false
+  spans: []
+
+- id: LEG150
+  text: "{court} has confirmed sentencing for {name}, imposing a final sentence of {sentence}."
+  sensitive: true
+  spans:
+    - text: "{court}"
+      reason: ["Legal:Proceedings"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{sentence}"
+      reason: ["Legal:Proceedings"]

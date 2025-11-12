@@ -1,0 +1,1169 @@
+- id: FIN001
+  text: "{company} processed a transfer of {amount} {currency} from {bank_account} on {date}."
+  sensitive: true
+  spans:
+    - text: "{company}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN002
+  text: "Please confirm that your payroll for {date} was deposited correctly into {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN003
+  text: "{company} announced updates to its employee reimbursement process effective {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN004
+  text: "A transaction alert shows {amount} {currency} spent at {venue} using {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{venue}"
+      reason: ["Location:Event"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN005
+  text: "Your {tax_form} for fiscal year ending {date} is available for download from {platform}."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+    - text: "{date}"
+      reason: ["Financial:Tax Records"]
+    - text: "{platform}"
+      reason: ["Employment:Internal Business Information"]
+
+- id: FIN006
+  text: "We will review your loan application submitted on {date} through {system}."
+  sensitive: false
+  spans: []
+
+- id: FIN007
+  text: "The audit report notes discrepancies in payments recorded by {department} between {date} and {date2}."
+  sensitive: false
+  spans: []
+
+- id: FIN008
+  text: "Payment of {amount} {currency} was issued to {name} for consulting services on {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: FIN009
+  text: "Please attach receipts for expenses claimed during the {date} business trip to {city}."
+  sensitive: false
+  spans: []
+
+- id: FIN010
+  text: "{company} refunded {amount} {currency} to {bank_account} after processing error on {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN011
+  text: "We received your payment request but require confirmation from {department} before proceeding."
+  sensitive: false
+  spans: []
+
+- id: FIN012
+  text: "{company} confirmed that {amount} {currency} was deducted from {bank_account} for subscription renewal."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN013
+  text: "To complete payroll setup, please submit your {bank_account} and {tax_form} details securely via {platform}."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+
+- id: FIN014
+  text: "The {department} team will review the new tax filing procedure during tomorrow’s meeting."
+  sensitive: false
+  spans: []
+
+- id: FIN015
+  text: "{company} is offering tax-preparation assistance for employees with {tax_form} discrepancies."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+
+- id: FIN016
+  text: "We noticed unusual activity in your {bank_account} ending in {id_number}. Please verify transactions."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{id_number}"
+      reason: ["PII:Unique Identifiers"]
+
+- id: FIN017
+  text: "The internal report compared projected versus actual expenditures between {date} and {date2}."
+  sensitive: false
+  spans: []
+
+- id: FIN018
+  text: "Direct deposit of {amount} {currency} for {name} has been scheduled for {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: FIN019
+  text: "Your {bank_account} will be credited once the invoice from {company} is approved."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{company}"
+      reason: ["PII:Name"]
+
+- id: FIN020
+  text: "Please ensure all {tax_form} submissions for {date} are uploaded before the filing deadline."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+    - text: "{date}"
+      reason: ["Financial:Tax Records"]
+
+- id: FIN021
+  text: "The procurement system automatically flags transactions above {amount} {currency} for review."
+  sensitive: false
+  spans: []
+
+- id: FIN022
+  text: "Reimbursement for {venue} conference expenses totaling {amount} {currency} will be issued next week."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN023
+  text: "Quarterly statements for {bank_account} have been uploaded to your {platform} account."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN024
+  text: "Your loan repayment of {amount} {currency} was received by {company} on {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN025
+  text: "Please submit invoices through {system} instead of direct email to {department}."
+  sensitive: false
+  spans: []
+
+- id: FIN026
+  text: "Your payroll summary for {date} is now available at {platform}."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN027
+  text: "Please note: changes to your direct deposit information ({bank_account}) may take one pay cycle to update."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN028
+  text: "{company} recorded late tax payments for {country} due to reporting system delays."
+  sensitive: false
+  spans: []
+
+- id: FIN029
+  text: "We cannot process your refund until confirmation from {bank_account} owner {name} is received."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{name}"
+      reason: ["PII:Name"]
+
+- id: FIN030
+  text: "Your expense claim for {amount} {currency} has been approved and will be transferred by {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{date}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN031
+  text: "The credit card payment system was down on {date} but has been fully restored."
+  sensitive: false
+  spans: []
+
+- id: FIN032
+  text: "A total of {amount} {currency} was deducted from {bank_account} for tax withholding under {tax_form}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Tax Records"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+
+- id: FIN033
+  text: "The new reimbursement tool will launch on {date} and link to {system} for automatic updates."
+  sensitive: false
+  spans: []
+
+- id: FIN034
+  text: "{company} issued a correction to the reported {amount} {currency} transaction error from {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN035
+  text: "An unauthorized charge was detected from {bank_account}. Please verify with {company} support."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN036
+  text: "Your salary payment for {date} has been delayed due to {system} maintenance."
+  sensitive: true
+  spans:
+    - text: "{date}"
+      reason: ["Financial:Salary/Payroll"]
+
+- id: FIN037
+  text: "Monthly reconciliation shows mismatched entries between {department} and {system} records."
+  sensitive: false
+  spans: []
+
+- id: FIN038
+  text: "The refund to {bank_account} will be processed after {date} once {company} completes verification."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN039
+  text: "Your {tax_form} requires amendment to include updated address {address}."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: FIN040
+  text: "Please check whether all supplier invoices are entered correctly in {system} before {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN041
+  text: "Credit report for {name} indicates an outstanding balance of {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Credit Reports"]
+    - text: "{currency}"
+      reason: ["Financial:Credit Reports"]
+
+- id: FIN042
+  text: "Your request to increase the spending limit on {bank_account} is under review."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN043
+  text: "{department} will finalize the budget forecast presentation at {venue} tomorrow."
+  sensitive: false
+  spans: []
+
+- id: FIN044
+  text: "The updated {tax_form} has been submitted to {government_agency} for confirmation."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+
+- id: FIN045
+  text: "Expense audit identified duplicate claims filed by {name} through {platform}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN046
+  text: "Employees can review their annual compensation breakdown at {platform} starting {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN047
+  text: "Your refund of {amount} {currency} has been deposited into {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN048
+  text: "Tax filing reminders will be sent automatically via {system} every {time}."
+  sensitive: false
+  spans: []
+
+- id: FIN049
+  text: "Your wage adjustment of {amount} {currency} for {date} has been approved."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Salary/Payroll"]
+    - text: "{currency}"
+      reason: ["Financial:Salary/Payroll"]
+
+- id: FIN050
+  text: "The reimbursement for {venue} expenses is pending manager approval through {system}."
+  sensitive: false
+  spans: []
+
+- id: FIN051
+  text: "Your credit card ending in {card_number} was charged {amount} {currency} at {venue} on {date}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN052
+  text: "{bank} declined your loan request submitted on {date} due to incomplete verification documents."
+  sensitive: false
+  spans: []
+
+- id: FIN053
+  text: "Please verify that the transaction from {card_number} for {amount} {currency} at {company} is legitimate."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{currency}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN054
+  text: "Your mortgage account {bank_account} has a remaining balance of {amount} {currency} as of {date}."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN055
+  text: "The {bank} interest rate adjustment policy will take effect on {date} for all active loans."
+  sensitive: false
+  spans: []
+
+- id: FIN056
+  text: "{name} applied for a loan of {amount} {currency} through {bank}’s online platform on {date}."
+  sensitive: true
+  spans:
+    - text: "{name}"
+      reason: ["PII:Name"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN057
+  text: "The new credit limit for your {card_number} has been updated. You may check details in {platform}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN058
+  text: "Your automatic payment to {bank} failed on {date}. Please verify your {bank_account} details."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN059
+  text: "{company} reminded all employees to submit expense reimbursements by {date} for timely payroll processing."
+  sensitive: false
+  spans: []
+
+- id: FIN060
+  text: "The charge of {amount} {currency} on {card_number} was reversed successfully on {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN061
+  text: "To activate your new debit card, please enter the {cvv} on the back of your card at {platform}."
+  sensitive: true
+  spans:
+    - text: "{cvv}"
+      reason: ["Financial:Cards"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN062
+  text: "Mortgage pre-approval letters will be issued within 5 days after document verification."
+  sensitive: false
+  spans: []
+
+- id: FIN063
+  text: "Your mortgage from {bank} for property at {address} was approved on {date}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{address}"
+      reason: ["Location:Fixed"]
+
+- id: FIN064
+  text: "A temporary hold has been placed on {card_number} following suspicious charges near {city}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{city}"
+      reason: ["Location:Event"]
+
+- id: FIN065
+  text: "The finance department has released updated credit policy documents for internal review."
+  sensitive: false
+  spans: []
+
+- id: FIN066
+  text: "Please review your credit score report from {bank} uploaded to {platform}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Credit Reports"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN067
+  text: "The mortgage payment of {amount} {currency} due on {date} was not received by {bank}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN068
+  text: "A system maintenance notice from {bank} advises clients not to submit transfers between {time} and {time2}."
+  sensitive: false
+  spans: []
+
+- id: FIN069
+  text: "Your {card_number} was used for an online purchase requiring CVV verification. Please confirm if authorized."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN070
+  text: "The finance committee will review loan default trends from {date} to {date2} during the next meeting."
+  sensitive: false
+  spans: []
+
+- id: FIN071
+  text: "Loan repayment confirmation for {amount} {currency} has been received for {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN072
+  text: "Your {bank} account {bank_account} is linked to multiple cards, including one ending in {card_number}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN073
+  text: "{company} sent a payment reminder to all clients with overdue balances exceeding {amount} {currency}."
+  sensitive: false
+  spans: []
+
+- id: FIN074
+  text: "The mortgage interest deduction on your {tax_form} was updated based on data from {bank}."
+  sensitive: true
+  spans:
+    - text: "{tax_form}"
+      reason: ["Financial:Tax Records"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN075
+  text: "Your {card_number} expires on {date}. A replacement card will be mailed to {address}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{address}"
+      reason: ["PII:Contact Info"]
+
+- id: FIN076
+  text: "Debt collection proceedings initiated by {company} are pending legal verification."
+  sensitive: false
+  spans: []
+
+- id: FIN077
+  text: "{bank} confirmed that {amount} {currency} was withdrawn using {card_number} at {venue}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN078
+  text: "The credit card statement for {card_number} is available at {platform} for {date}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN079
+  text: "Loan officers at {bank} will meet at {venue} to review applications for {city} residents."
+  sensitive: false
+  spans: []
+
+- id: FIN080
+  text: "Please confirm that you received the loan agreement from {bank} for {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN081
+  text: "The mortgage payment schedule uploaded to {platform} contains corrected due dates."
+  sensitive: false
+  spans: []
+
+- id: FIN082
+  text: "A new credit card issued by {bank} ending in {card_number} has been activated successfully."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Cards"]
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN083
+  text: "To verify your {bank} account ownership, please provide the last four digits of {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN084
+  text: "Credit utilization metrics show that average balances increased {amount} {currency} over last quarter."
+  sensitive: false
+  spans: []
+
+- id: FIN085
+  text: "Your {bank} mortgage refinancing application was approved on {date} for {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN086
+  text: "{company} reported a chargeback dispute on {card_number} for {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN087
+  text: "Your new {bank} debit card with number ending in {card_number} requires PIN setup at {platform}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Cards"]
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN088
+  text: "Loan officers are encouraged to review delinquency reports issued by {system} every {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN089
+  text: "The CVV associated with {card_number} should never be shared with anyone outside {bank}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{cvv}"
+      reason: ["Financial:Cards"]
+
+- id: FIN090
+  text: "A pre-approval notice for mortgage loans has been distributed to all employees via {email}."
+  sensitive: false
+  spans: []
+
+- id: FIN091
+  text: "Your monthly loan payment of {amount} {currency} was credited to {bank_account} on {date}."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN092
+  text: "Your credit score report was generated by {bank} on {date} and sent to {email}."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Credit Reports"]
+
+- id: FIN093
+  text: "A new mortgage calculator feature has been added to {platform} for internal testing."
+  sensitive: false
+  spans: []
+
+- id: FIN094
+  text: "Fraud alert: An attempt to use {card_number} for {amount} {currency} at {venue} was blocked by {bank}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{bank}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN095
+  text: "The debt collection notice from {company} regarding your {bank_account} has been withdrawn."
+  sensitive: true
+  spans:
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN096
+  text: "Interest accrued on {bank} savings accounts will be recalculated quarterly starting {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN097
+  text: "To verify ownership, please provide the last 4 digits of your {card_number} and the corresponding {cvv}."
+  sensitive: true
+  spans:
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+    - text: "{cvv}"
+      reason: ["Financial:Cards"]
+
+- id: FIN098
+  text: "Loan deferment requests submitted via {platform} are currently under review by {bank}."
+  sensitive: false
+  spans: []
+
+- id: FIN099
+  text: "{bank} confirmed payment of {amount} {currency} toward your outstanding credit balance."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Credit Reports"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN100
+  text: "The {bank} compliance team has issued new cardholder security guidelines for {card_number} protection."
+  sensitive: true
+  spans:
+    - text: "{bank}"
+      reason: ["Financial:Cards"]
+    - text: "{card_number}"
+      reason: ["Financial:Cards"]
+
+- id: FIN101
+  text: "Your transfer of {amount} {currency} to {crypto_wallet} on {date} has been confirmed on the blockchain."
+  sensitive: true
+  spans:
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN102
+  text: "{broker} announced a temporary suspension of trading for symbol {stock_symbol} due to market volatility."
+  sensitive: false
+  spans: []
+
+- id: FIN103
+  text: "The withdrawal request from {crypto_wallet} involving {amount} {token_symbol} is under review by {platform}."
+  sensitive: true
+  spans:
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN104
+  text: "{investment_fund} distributed a dividend of {amount} {currency} to portfolio {portfolio_id}."
+  sensitive: true
+  spans:
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+
+- id: FIN105
+  text: "Your {broker} account performance summary for {date} is available at {platform}."
+  sensitive: false
+  spans: []
+
+- id: FIN106
+  text: "{company} completed a stock buyback of {amount} {currency} for {stock_symbol} at {date} close."
+  sensitive: true
+  spans:
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+    - text: "{amount}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN107
+  text: "To verify your digital asset ownership, please confirm the receiving address {crypto_wallet}."
+  sensitive: true
+  spans:
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN108
+  text: "The finance committee will meet at {venue} to discuss quarterly performance across all {asset_type} classes."
+  sensitive: false
+  spans: []
+
+- id: FIN109
+  text: "An unauthorized login attempt was detected on {crypto_wallet} via {platform} at {time}."
+  sensitive: true
+  spans:
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+    - text: "{platform}"
+      reason: ["Authentication:Platform"]
+
+- id: FIN110
+  text: "Tax reporting for {token_symbol} trades executed on {date} must include the relevant {transaction_hash}."
+  sensitive: true
+  spans:
+    - text: "{token_symbol}"
+      reason: ["Financial:Tax Records"]
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN111
+  text: "Your investment in {stock_symbol} exceeded the maximum allocation allowed under {investment_fund} guidelines."
+  sensitive: true
+  spans:
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+
+- id: FIN112
+  text: "The audit summary reviewed discrepancies in cryptocurrency valuations across multiple {crypto_wallet} addresses."
+  sensitive: true
+  spans:
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN113
+  text: "Portfolio {portfolio_id} returned {amount} {currency} in Q4 primarily from {asset_type} holdings."
+  sensitive: true
+  spans:
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+    - text: "{asset_type}"
+      reason: ["Financial:Assets"]
+
+- id: FIN114
+  text: "{broker} announced that futures trading for {stock_symbol} will resume at {time} on {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN115
+  text: "The {investment_fund} has rebalanced assets into {asset_type} following poor {stock_symbol} performance."
+  sensitive: true
+  spans:
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+    - text: "{asset_type}"
+      reason: ["Financial:Assets"]
+
+- id: FIN116
+  text: "Your {token_symbol} purchase from {crypto_wallet} has been recorded with transaction hash {transaction_hash}."
+  sensitive: true
+  spans:
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN117
+  text: "{company} released its Q2 asset performance report, comparing equity vs. fixed-income results."
+  sensitive: false
+  spans: []
+
+- id: FIN118
+  text: "A transfer of {amount} {token_symbol} between {crypto_wallet} and {crypto_wallet2} was flagged for manual review."
+  sensitive: true
+  spans:
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN119
+  text: "Please include {transaction_hash} in all future correspondence regarding your {token_symbol} trade."
+  sensitive: true
+  spans:
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN120
+  text: "The {broker} compliance division will audit margin accounts starting {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN121
+  text: "{broker} reported capital gains of {amount} {currency} for client {portfolio_id} across {investment_fund} positions."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+
+- id: FIN122
+  text: "An asset transfer from {portfolio_id} to {portfolio_id2} was initiated through {broker}."
+  sensitive: true
+  spans:
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+
+- id: FIN123
+  text: "Your {investment_fund} dividend for {date} has been credited to {bank_account}."
+  sensitive: true
+  spans:
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+    - text: "{bank_account}"
+      reason: ["Financial:Bank Account"]
+
+- id: FIN124
+  text: "{company} will introduce a new digital asset management system next quarter for internal tracking."
+  sensitive: false
+  spans: []
+
+- id: FIN125
+  text: "Your token {token_symbol} was delisted from {platform} effective {date}. Please withdraw funds to {crypto_wallet}."
+  sensitive: true
+  spans:
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN126
+  text: "The board will review proposed acquisitions of {asset_type} firms during next month’s meeting."
+  sensitive: false
+  spans: []
+
+- id: FIN127
+  text: "To verify your holdings, please provide your {portfolio_id} or linked {crypto_wallet} identifier."
+  sensitive: true
+  spans:
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN128
+  text: "Your investment in {stock_symbol} via {broker} has exceeded portfolio risk limits."
+  sensitive: true
+  spans:
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+
+- id: FIN129
+  text: "Your {crypto_wallet} received a deposit of {amount} {token_symbol} from {company} on {date}."
+  sensitive: true
+  spans:
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN130
+  text: "{broker} suspended withdrawals of {token_symbol} pending network maintenance at {platform}."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Transactions"]
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN131
+  text: "The internal audit flagged duplicate {transaction_hash} entries across {portfolio_id} transactions."
+  sensitive: true
+  spans:
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN132
+  text: "Your equity stake in {company} has been adjusted following the {stock_symbol} stock split."
+  sensitive: true
+  spans:
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+    - text: "{company}"
+      reason: ["PII:Name"]
+
+- id: FIN133
+  text: "The {investment_fund} reclassified several {asset_type} categories under its 2025 asset strategy."
+  sensitive: true
+  spans:
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+    - text: "{asset_type}"
+      reason: ["Financial:Assets"]
+
+- id: FIN134
+  text: "Quarterly market reports from {broker} will now include detailed {stock_symbol} trend analysis."
+  sensitive: false
+  spans: []
+
+- id: FIN135
+  text: "The trade involving {amount} {token_symbol} was executed successfully under hash {transaction_hash}."
+  sensitive: true
+  spans:
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN136
+  text: "Your {broker} has filed tax documents for profits generated from {investment_fund} holdings."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Tax Records"]
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+
+- id: FIN137
+  text: "Asset management updates were published by {company} covering emerging {asset_type} trends."
+  sensitive: false
+  spans: []
+
+- id: FIN138
+  text: "The {broker} risk department will monitor leveraged positions in {stock_symbol} and {token_symbol} pairs."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN139
+  text: "All {portfolio_id} records must include {transaction_hash} references for compliance with reporting rules."
+  sensitive: true
+  spans:
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN140
+  text: "The annual {investment_fund} meeting at {venue} will cover fund performance and reallocation plans."
+  sensitive: false
+  spans: []
+
+- id: FIN141
+  text: "An internal error at {broker} caused duplicate postings to {portfolio_id} totaling {amount} {currency}."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Transactions"]
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
+
+- id: FIN142
+  text: "Your {stock_symbol} shares have been transferred from {broker} to new custodian {bank}."
+  sensitive: true
+  spans:
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+
+- id: FIN143
+  text: "The digital asset tax guidance for {token_symbol} holdings will be updated on {date}."
+  sensitive: false
+  spans: []
+
+- id: FIN144
+  text: "A trade dispute involving {transaction_hash} has been escalated to the compliance office at {broker}."
+  sensitive: true
+  spans:
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+
+- id: FIN145
+  text: "The {investment_fund} confirmed participation in a new {asset_type} index backed by {company}."
+  sensitive: true
+  spans:
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+    - text: "{asset_type}"
+      reason: ["Financial:Assets"]
+
+- id: FIN146
+  text: "Please review {portfolio_id} allocation targets before submitting next quarter’s investment plan."
+  sensitive: false
+  spans: []
+
+- id: FIN147
+  text: "The {broker} portal experienced downtime affecting {stock_symbol} and {token_symbol} order entries."
+  sensitive: false
+  spans: []
+
+- id: FIN148
+  text: "Your {crypto_wallet} initiated an outgoing transaction of {amount} {token_symbol} confirmed by {transaction_hash}."
+  sensitive: true
+  spans:
+    - text: "{crypto_wallet}"
+      reason: ["Financial:Transactions"]
+    - text: "{token_symbol}"
+      reason: ["Financial:Transactions"]
+    - text: "{transaction_hash}"
+      reason: ["Financial:Transactions"]
+
+- id: FIN149
+  text: "{broker} notified investors about a margin call related to declining {stock_symbol} prices."
+  sensitive: true
+  spans:
+    - text: "{broker}"
+      reason: ["Financial:Assets"]
+    - text: "{stock_symbol}"
+      reason: ["Financial:Assets"]
+
+- id: FIN150
+  text: "Your {investment_fund} annual report, including asset performance and {portfolio_id} returns, is now available."
+  sensitive: true
+  spans:
+    - text: "{investment_fund}"
+      reason: ["Financial:Assets"]
+    - text: "{portfolio_id}"
+      reason: ["Financial:Assets"]
