@@ -7,3 +7,66 @@ TODO
 https://www.datacamp.com/tutorial/fine-tuning-large-language-models
 
 Model from hugging face: https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D
+
+                                                                                                   
+{'train_runtime': 1275.2602, 'train_samples_per_second': 28.622, 'train_steps_per_second': 1.79, 'train_loss': 0.07728059283588033, 'epoch': 3.0}                                                            
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2283/2283 [21:15<00:00,  1.79it/s] 
+C:\Users\Owner\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\utils\data\dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:46<00:00,  8.06it/s]
+TinyBERT Metrics:
+eval_loss: 0.016624456271529198
+eval_0_precision: 0.9956521739130435
+eval_0_recall: 0.9993765586034913
+eval_0_f1-score: 0.9975108898568762
+eval_0_support: 3208.0
+eval_1_precision: 0.999278759466282
+eval_1_recall: 0.9949730700179533
+eval_1_f1-score: 0.9971212666426772
+eval_1_support: 2785.0
+eval_accuracy: 0.997330218588353
+eval_macro avg_precision: 0.9974654666896627
+eval_macro avg_recall: 0.9971748143107223
+eval_macro avg_f1-score: 0.9973160782497767
+eval_macro avg_support: 5993.0
+eval_weighted avg_precision: 0.9973374802313765
+eval_weighted avg_recall: 0.997330218588353
+eval_weighted avg_f1-score: 0.9973298285100475
+eval_weighted avg_support: 5993.0
+eval_runtime: 46.5917
+eval_samples_per_second: 128.628
+eval_steps_per_second: 8.049
+epoch: 3.0
+C:\Users\Owner\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\utils\data\dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:30<00:00, 12.33it/s]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      3208
+           1       1.00      0.99      1.00      2785
+
+    accuracy                           1.00      5993
+   macro avg       1.00      1.00      1.00      5993
+weighted avg       1.00      1.00      1.00      5993
+
+KNN Results:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      3208
+           1       1.00      1.00      1.00      2785
+
+    accuracy                           1.00      5993
+   macro avg       1.00      1.00      1.00      5993
+weighted avg       1.00      1.00      1.00      5993
+
+SVM Results:
+              precision    recall  f1-score   support
+
+           0       0.95      0.95      0.95      3208
+           1       0.95      0.95      0.95      2785
+
+    accuracy                           0.95      5993
+   macro avg       0.95      0.95      0.95      5993
+weighted avg       0.95      0.95      0.95      5993
