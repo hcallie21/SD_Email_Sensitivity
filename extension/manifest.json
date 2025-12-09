@@ -1,0 +1,53 @@
+{
+    "manifest_version": 3,
+    "name": "Email Sensitivity Checker",
+    "version": "1.6",
+    "description": "Checks if the email content is sensitive using a local TinyBERT model.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:5000/*",
+        "http://localhost:5000/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "icon16.png",
+                "icon48.png",
+                "icon128.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

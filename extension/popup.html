@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Sensitivity</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #3b82f6;
+      --success: #10b981;
+      --danger: #ef4444;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #334155;
+      --text-light: #64748b;
+    }
+    body {
+      width: 320px;
+      margin: 0;
+      padding: 16px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+    .header {
+      margin-bottom: 16px;
+    }
+    .header svg {
+      color: var(--accent);
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    p {
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: var(--text-light);
+    }
+    .status-box {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 12px;
+      margin: 16px 0;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .status-box.active {
+      background: #ecfdf5;
+      color: var(--success);
+      border: 1px solid #a7f3d0;
+    }
+    .status-box.inactive {
+      background: #fef2f2;
+      color: var(--danger);
+      border: 1px solid #fecaca;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background-color: #1e293b;
+      transform: translateY(-1px);
+    }
+    button:active {
+      transform: translateY(0);
+    }
+    .footer {
+      margin-top: 12px;
+      font-size: 10px;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+      <h1>Sensitivity Guard</h1>
+      <p>Real-time PII detection active</p>
+    </div>
+
+    <div id="result" class="status-box">
+      Ready to scan...
+    </div>
+
+  </div>
+  
+  <div class="footer">
+    Powered by TinyBERT & Heuristics
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
