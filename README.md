@@ -9,8 +9,8 @@ A privacy-focused Chrome Extension that detects and highlights sensitive informa
 -   **Privacy First**: All processing happens on your local machine via a Python server. No data leaves your computer.
 
 ## AI Model Engine
-This project runs on **TinyBERT** 
-**Why TinyBERT?** It is 96% smaller and 4x faster than standard BERT, making it perfect for real-time analysis on laptops without needing a powerful GPU.
+- This project runs on **TinyBERT.** 
+- **Why TinyBERT?** It is 96% smaller and 4x faster than standard BERT, making it perfect for real-time analysis on laptops without needing a powerful GPU.
 
 ## Installation
 
