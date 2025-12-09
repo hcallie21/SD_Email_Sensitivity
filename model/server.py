@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)  
 
 # CONFIGURATION
-MODEL_PATH = "./saved_model"
+MODEL_PATH = "./Model_s"
 OVERALL_THRESHOLD = 0.90
 SENTENCE_THRESHOLD = 0.90
 EMAIL_REGEX = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
