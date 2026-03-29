@@ -13,8 +13,11 @@ A privacy-focused Chrome Extension that detects and highlights sensitive informa
 - **Why TinyBERT?** It is 96% smaller and 4x faster than standard BERT, making it perfect for real-time analysis on laptops without needing a powerful GPU.
 
 ## Installation
-
-### 1. Start the Local Server
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 2. Start the Local Server
 The backend requires Python to run the AI model.
 
 1.  Navigate to the `model` directory:
@@ -32,7 +35,7 @@ The backend requires Python to run the AI model.
     ```
     *The server will start on http://127.0.0.1:5000*
 
-### 2. Load the Chrome Extension
+### 3. Load the Chrome Extension
 1.  Open Chrome and go to `chrome://extensions`.
 2.  Enable **Developer Mode** (top right toggle).
 3.  Click **Load unpacked**.
