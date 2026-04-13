@@ -15,7 +15,10 @@ A privacy-focused Chrome Extension that detects and highlights sensitive informa
 ## Installation
 ### 1. Install dependencies
 ```bash
-pip install -r requirements.txt
+uv init
+```
+```bash
+uv sync
 ```
 ### 2. Start the Local Server
 The backend requires Python to run the AI model.
