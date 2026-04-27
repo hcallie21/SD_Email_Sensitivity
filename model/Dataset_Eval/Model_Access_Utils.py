@@ -3,6 +3,9 @@ import re
 from datasets import Value
 
 path = "../Model_s"
+from pathlib import Path
+
+path = str(Path(__file__).resolve().parent.parent / "Model_s")
 overall_threshold = 0.90
 def load_sentence_Model():
     try:
@@ -27,57 +30,66 @@ def predict(text, tokenizer, torch, model):
         return prediction, score
 
 from datasets import Value, Sequence
-
 def _df_format_check(df):
-    # Hugging Face Dataset is empty if len(df) == 0
     if len(df) == 0:
         return False
 
     features = df.features
-    try:
-        # required columns
-        assert "id" in features
-        assert "source_text" in features
-        assert "text" in features
-        assert "sensitive" in features
 
-        # check types
-        assert features["id"] == Value("string")
-        assert features["source_text"] == Value("string") or features["source_text"] == Value("large_string")
-
-        # sentence-level lists
-        assert isinstance(features["text"], Sequence)
-        assert features["text"].feature == Value("string")
-
-        assert isinstance(features["sensitive"], Sequence)
-        assert features["sensitive"].feature == Value("bool")
-
+    # Case 1: Already correct format
+    if (
+        "id" in features and
+        "text" in features and
+        "sensitive" in features
+    ):
         return True
-    except AssertionError:
-        return False
 
-# def predict_dataset(df) -> Dict[str, List[bool, float]]:
-#     correct_format:bool = _df_format_check(df)
-#     if not correct_format:
-#         print(f"Dataset not formatted correctly: {df}")
+    # Case 2: SPY raw format
+    if (
+        "tokens" in features and
+        "ent_tags" in features and
+        "trailing_whitespaces" in features
+    ):
+        return True
+
+    return False
+# def _df_format_check(df):
+#     # Hugging Face Dataset is empty if len(df) == 0
+#     if len(df) == 0:
+#         return False
 #
-#     tokenizer, model = load_sentence_Model()
-#     #loop through each row in json dataset
-#     results:Dict[str, List[bool, float]] = {}
-#     for row in df.itertuples():
-#         sentences=split_into_sentences(row.source_text)
-#         for each_sentence in sentences:
-#             prediction, score = predict(each_sentence, tokenizer, model)
-#             results[each_sentence] = [prediction, score]
+#     features = df.features
+#     try:
+#         # required columns
+#         assert "id" in features
+#         assert "source_text" in features
+#         assert "text" in features
+#         assert "sensitive" in features
+#
+#         # check types
+#         assert features["id"] == Value("string")
+#         assert features["source_text"] == Value("string") or features["source_text"] == Value("large_string")
+#
+#         # sentence-level lists
+#         assert isinstance(features["text"], Sequence)
+#         assert features["text"].feature == Value("string")
+#
+#         assert isinstance(features["sensitive"], Sequence)
+#         assert features["sensitive"].feature == Value("bool")
+#
+#         return True
+#     except AssertionError:
+#         return False
+#
 
 import torch
 from typing import Dict, List
 
 def predict_dataset(df) -> Dict[str, Dict[str, List]]:
-    correct_format: bool = _df_format_check(df)
-    if not correct_format:
-        raise ValueError(f"Dataset not formatted correctly: {df}")
+    if not _df_format_check(df):
+        raise ValueError(f"Dataset not supported: {df}")
 
+    df = _normalize_dataset(df)
     tokenizer, model = load_sentence_Model()
     model.eval()
 
@@ -108,10 +120,10 @@ import torch
 from typing import Dict, List
 
 def sentence_aware_predict_dataset(df) -> Dict[str, Dict[str, List]]:
-    correct_format: bool = _df_format_check(df)
-    if not correct_format:
-        raise ValueError(f"Dataset not formatted correctly: {df}")
+    if not _df_format_check(df):
+        raise ValueError(f"Dataset not supported: {df}")
 
+    df = _normalize_dataset(df)
     tokenizer, model = load_sentence_Model()
     model.eval()
 
@@ -226,3 +238,85 @@ def classification_report_email_level(df, pred_dict):
 
     print("\nClassification Report (Email-Level):")
     print(classification_report(y_true, y_pred))
+
+def _normalize_dataset(df):
+    features = df.features
+
+    # --- Case 1: already normalized ---
+    if "text" in features and "sensitive" in features:
+        return df
+
+    # --- Case 2: SPY format ---
+    if "tokens" in features:
+
+        def reconstruct_text(tokens, trailing_ws):
+            return "".join(
+                tok + (" " if ws else "") for tok, ws in zip(tokens, trailing_ws)
+            ).strip()
+
+        def split_sentences(tokens, trailing_ws):
+            sentences = []
+            current = ""
+
+            for tok, ws in zip(tokens, trailing_ws):
+                current += tok
+                if ws:
+                    current += " "
+                if tok in {".", "!", "?"}:
+                    sentences.append(current.strip())
+                    current = ""
+
+            if current.strip():
+                sentences.append(current.strip())
+
+            return sentences
+
+        def compute_sensitive(tokens, trailing_ws, ent_tags, sentences):
+            # vectorized version
+            token_lengths = np.array([len(t) for t in tokens])
+            spaces = np.array(trailing_ws, dtype=int)
+
+            offsets = np.cumsum(np.concatenate([[0], token_lengths + spaces]))[:-1]
+            token_starts = offsets
+
+            full_text = reconstruct_text(tokens, trailing_ws)
+
+            sent_starts = []
+            cursor = 0
+            for s in sentences:
+                start = full_text.find(s, cursor)
+                sent_starts.append(start)
+                cursor = start + len(s)
+
+            sent_ends = np.array(sent_starts) + np.array([len(s) for s in sentences])
+
+            token_to_sent = np.searchsorted(sent_ends, token_starts, side="right")
+
+            is_entity = np.array(ent_tags) != "O"
+
+            sent_counts = np.bincount(
+                token_to_sent,
+                weights=is_entity.astype(int),
+                minlength=len(sentences)
+            )
+
+            return (sent_counts > 0).tolist()
+
+        def transform_row(row):
+            tokens = row["tokens"]
+            ws = row["trailing_whitespaces"]
+            ent_tags = row["ent_tags"]
+
+            sentences = split_sentences(tokens, ws)
+            sensitive = compute_sensitive(tokens, ws, ent_tags, sentences)
+
+            return {
+                "id": row.get("id", ""),
+                "source_text": reconstruct_text(tokens, ws),
+                "text": sentences,
+                "sensitive": sensitive
+            }
+
+        return df.map(transform_row)
+
+    raise ValueError("Unsupported dataset format")
